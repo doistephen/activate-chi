@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" href="/gallery/favicon.svg">
+
+
+  <title>{{ site.name }}</title>
+  <meta property="og:title" content="{{ site.name }}"/>
+
+  <meta name="description" content="{% if description %}{{ description }}{% else %}{{site.og_description}}{% endif %}">
+  <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{site.og_description}}{% endif %}"/>
+
+  <link rel="canonical" href="{{ site.permalink }}{{ page.url }}">
+  <meta property="og:url" content="{{ site.permalink }}{{ page.url }}" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="{% if share_image %} {{site.permalink}}/gallery/{{share_image}}/ {% else %} {{site.permalink}}/gallery/{{ page.url | replace('/reason', '') | replace('/', '') }}.jpg/{% endif %}"/>
+  <meta property="twitter:image" content="{% if share_image %} {{site.permalink}}/gallery/{{share_image}}/ {% else %} {{site.permalink}}/gallery/{{ page.url | replace('/reason', '') | replace('/', '') }}.jpg/{% endif %}"/>
+  <meta property="og:image:width" content="2063 " />
+  <meta property="og:image:height" content="1080" />
+  <meta property="og:image:alt" content="{% if description %}{{ description }}{% else %}{{site.og_description}}{% endif %}" />
+
+
+  <meta property="og:type" content="{% if page_type %}{{ page_type }}{% else %}{{site.page_type}}{% endif %}" />
+
+
+  {% if helpers.environment == "development" %}
+  <link rel="stylesheet" href="/css/main.css">
+  {% else %}
+  {# else, use the minified css file for production #}
+  <link rel="stylesheet" href="/css/main.min.css">
+  {% endif %}
+
+  {% if helpers.environment == "development" %}
+  <script src="/js/main.js" defer></script>
+  {% else %}
+  <script src="/js/main.min.js" defer></script>
+  {% endif %}
+
+  {# include social meta tags #}
+  {% include "components/_social-meta.njk" %}
+
+  {# lastly include favicon, fonts, etc #}
+  <link rel="icon" type="image/png" href="{{ site.images.favicon }}">
+  <link rel="stylesheet" href="https://use.typekit.net/qun7kft.css">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+
+</head>
