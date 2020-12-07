@@ -1,0 +1,6 @@
+{% macro navLink(text) %}
+    <a href="#{{text | lower | replace(" ", "-") }}"
+    class="px-6 pt-3 pb-2 text-base text-white text-opacity-75 transition-colors duration-150 border border-white border-opacity-50 rounded-full bg-gray hover:text-opacity-100 font-display hover:border-hue hover:border-opacity-100 animate-hue">
+        <span>{{text}}</span>
+    </a>
+{% endmacro %}

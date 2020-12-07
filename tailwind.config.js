@@ -9,35 +9,25 @@ module.exports = {
         lg: "3rem",
       },
     },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1120px",
+    },
     colors: {
-      gray: "#303030",
-      white: "#FCF9F7",
-      yellow: "#FFB906",
-      red: "#F86849",
-      "red-light": "#E85E40",
-      blue: "#8CCBD9",
+      gray: "#2E2F2B",
+      white: "#FFFFFF",
+      hue: "#B5C840",
       none: "transparent",
     },
     fontFamily: {
-      display: ["presicav", "inter", "sans-serif", "Arial"],
-      text: ["Arial Narrow", "sans-serif", "Arial"],
+      display: ["Sporting Grotesque", "sans-serif", "Arial"],
+      text: ["trade-gothic-next", "sans-serif", "Arial"],
     },
     extend: {
-      fontSize: {
-        "3xl": "1.75rem",
-        "7xl": "5rem",
-        "8xl": "6rem",
-      },
-      letterSpacing: {
-        narrow: ".015em",
-      },
-      rotate: {
-        "-3": "-3deg",
-        3: "3deg",
-        "-15": "-15deg",
-        15: "15deg",
-      },
+      fontSize: {},
       spacing: {
+        "2-5": ".625rem",
         xs: "20rem",
         sm: "24rem",
         md: "28rem",
@@ -45,20 +35,8 @@ module.exports = {
         xl: "36rem",
         full: "100%",
       },
-      lineHeight: {
-        tight: "1.15",
-        snug: "1.25",
-        comfy: "1.4",
-      },
       zIndex: {
         "-1": "-1",
-      },
-      borderWidth: {
-        "1-5": "1.5px",
-        6: "6px",
-      },
-      borderRadius: {
-        lg: "2.5rem",
       },
       translate: {
         50: "50%",
@@ -70,28 +48,16 @@ module.exports = {
         0: "0",
       },
       keyframes: {
-        slam: {
-          "0%": { opacity: "0", transform: "scale(2)" },
-          "100%": { opacity: "1", transform: "scale(1)" },
+        color: {
+          "0%": { filter: "hue-rotate(0deg)" },
+          "100%": { filter: "hue-rotate(360deg)" },
         },
       },
       animation: {
-        slam: "slam .1s .15s ease-out both",
-        spin: "spin 30s linear infinite",
-        "spin-fast": "spin 1s linear infinite",
+        hue: "color 20s ease-in-out infinite",
       },
     },
   },
-  variants: {
-    opacity: ["hover", "group-hover"],
-    visibility: ["hover", "group-hover"],
-    rotate: ["hover", "group-hover"],
-    scale: ["hover", "group-hover"],
-    translate: ["hover", "group-hover", "focus", "responsive"],
-    backgroundColor: ["hover", "even", "odd", "responsive"],
-    padding: ["responsive", "first", "last"],
-    display: ["responsive", "hover", "group-hover"],
-    boxShadow: ["responsive", "hover", "group-hover"],
-  },
+  variants: {},
   plugins: [],
 };

@@ -1,10 +1,11 @@
 @font-face {
-  font-family: "Arial Narrow";
-  font-weight: 700;
-  src: url("/assets/arial-narrow-bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Arial Narrow";
+  font-family: "Sporting Grotesque";
   font-weight: 400;
-  src: url("/assets/arial-narrow.ttf") format("truetype");
+  src: url("/assets/Sporting_Grotesque-Regular_web.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Sporting Grotesque";
+  font-weight: 700;
+  src: url("/assets/Sporting_Grotesque-Bold_web.woff2") format("woff2");
 }

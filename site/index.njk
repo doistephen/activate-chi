@@ -1,6 +1,73 @@
 ---
 layout: default
 title: Home
-share_image: share-image.jpg
 ---
-hillos
+
+{% import "./includes/components/_nav-link.njk" as navLink %}
+
+
+<main class="space-y-16">
+    <section class="space-y-8">
+        <nav class="flex items-center justify-between">
+        <div class="flex-shrink-0 w-48 text-hue animate-hue">
+        {% include "./includes/img/logo.svg" %}
+        </div>
+            <ul class="flex space-x-4">
+                {{ navLink.navLink("About") }}
+                {{ navLink.navLink("Initiatives") }}
+                {{ navLink.navLink("Our organizers") }}
+                {{ navLink.navLink("Contact us") }}
+            </ul>
+        </nav>
+
+        <header class="space-y-8">
+        <div class="flex space-x-4 overflow-x-auto h-72">
+            <img class="block object-cover w-auto h-full col-span-2" src="./assets/images/header-1@2x.jpg" alt="">
+            <img class="block object-cover w-auto h-full col-span-4" src="./assets/images/header-2@2x.jpg" alt="">
+            <img class="block object-cover w-auto h-full col-span-4" src="./assets/images/header-3@2x.jpg" alt="">
+        </div>
+            <h1 class="text-4xl leading-snug tracking-wide font-display">
+                <span class="animate-hue text-hue">Activate:Chi</span> believes that everyone can and should be an activist for the causes they are most passionate about.
+            </h1>
+            <a href="#about" class="inline-flex p-4 transition duration-150 transform scale-95 border border-white border-opacity-50 rounded-full hover:scale-100 hover:border-hue hover:border-opacity-100 bg-gray animate-hue">
+                <span class="block w-6 h-6">{% include "./includes/img/scroll-arrow.svg" %}</span>
+            </a>
+        </header>
+
+
+    </section>
+
+    {# about section #}
+    <section id="about">
+        <div class="flex flex-col items-start justify-between py-8 space-y-10">
+            <h2 class="px-4 pb-2 text-xs tracking-wider text-white text-opacity-75 bg-opacity-25 rounded-full bg-hue animate-hue font-display pt-2-5">About</h2>
+            <ul class="flex space-x-8 space-x-10">
+                <li>
+                    <h3 class="text-xl font-display">Our mission</h3>
+                    <p class="tracking-wide text-white text-opacity-75">Activate people to purposefully pursue and advocate for the social, economic, and political causes they are most passionate about.</p>
+                </li>
+                <li>
+                    <h3 class="text-xl font-display">Our vision</h3>
+                    <p class="tracking-wide text-white text-opacity-75">A people that have the resources and opportunity to be thoughtful and educated advocates for a more just, equitable, and accountable world.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    {# about section #}
+    <section id="initiatives">
+        <div class="flex flex-col items-start justify-between py-8 space-y-10">
+            <h2 class="px-4 pb-2 text-xs tracking-wider text-white text-opacity-75 bg-opacity-25 rounded-full bg-hue animate-hue font-display pt-2-5">Initiatives</h2>
+            {# <ul class="flex space-x-8 space-x-10">
+                <li>
+                    <h3 class="text-xl font-display">Our mission</h3>
+                    <p class="tracking-wide text-white text-opacity-75">Activate people to purposefully pursue and advocate for the social, economic, and political causes they are most passionate about.</p>
+                </li>
+                <li>
+                    <h3 class="text-xl font-display">Our vision</h3>
+                    <p class="tracking-wide text-white text-opacity-75">A people that have the resources and opportunity to be thoughtful and educated advocates for a more just, equitable, and accountable world.</p>
+                </li>
+            </ul> #}
+        </div>
+    </section>
+</main>
