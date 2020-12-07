@@ -8,18 +8,18 @@
   grid-row: 1/-1;
 }
 
-@supports (-webkit-text-stroke: 1px black) {
-  .text-stroke {
-    -webkit-text-stroke: clamp(0.8px, 0.027em, 1.5px) theme("colors.gray");
-  }
+.btn-outline {
+  @apply relative overflow-hidden text-white transition transform border border-white border-opacity-50 rounded-full text-opacity-90 hover:text-opacity-100 hover:border-opacity-75 hover:scale-103 bg-gray;
 }
 
-.bg-blur {
-  backdrop-filter: blur(20px) saturate(1.5);
+.btn-outline::before {
+  content: "";
+  border-radius: inherit;
+  @apply absolute inset-0 bg-white;
+  opacity: 0;
+  z-index: -1;
 }
 
-@screen lg {
-  .no-blur {
-    backdrop-filter: none;
-  }
+.btn-outline:hover::before {
+  opacity: 0.05;
 }

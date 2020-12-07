@@ -1,13 +1,27 @@
 {% include "components/_html-head.njk" %}
-
+{% import "components/_nav-link.njk" as navLink %}
 
 <body class="flex flex-col min-h-screen text-xl antialiased leading-normal text-white font-text bg-gray">
 
-<div class="container pt-12">
-    {{ content | safe }}
+<div class="container pt-12 space-y-12">
+    <nav class="flex items-center justify-between">
+        <a href="/" class="flex-shrink-0 w-24 text-hue">
+            {% include "img/logo.svg" %}
+        </a>
+        <ul class="flex space-x-4">
+            {{ navLink.navLink("About") }}
+            {{ navLink.navLink("Initiatives") }}
+            {{ navLink.navLink("Our organizers") }}
+            {{ navLink.navLink("Contact us") }}
+        </ul>
+    </nav>
+
+    <div>
+        {{ content | safe }}
+    </div>
 </div>
 
 <div class="fixed top-0 bottom-0 left-0 right-0 bg-repeat bg-gray animate-hue -z-1"
-style="background-image: url('./assets/images/noise.png'); background-size: 300px;"></div>
+style="background-image: url('./assets/images/noise.gif'); background-size: 300px;"></div>
 
 {% include "components/_html-foot.njk" %}

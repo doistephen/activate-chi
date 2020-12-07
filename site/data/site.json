@@ -1,6 +1,7 @@
 {
   "permalink": "https://vote.activate-chi.org",
-  "name": "Share why you're voting! | Activate:CHI",
+  "name": "Activate:CHI",
   "og_description": "The 2020 election is only days away. It's important to participate in for so many reasons. Share what yours is!",
-  "page_type": "website"
+  "page_type": "website",
+  "favicon": "/assets/images/favicon.svg"
 }
