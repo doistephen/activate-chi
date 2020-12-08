@@ -7,6 +7,5 @@ summary: Sanjee is a Bengali-American activist who has a passion for educational
   is a fair and just education for all people. Professionally, Sanjee is a
   higher education consultant where he works with universities on strategy and
   technology implementations. He studied engineering and philosophy at the
-  University of Michigan and graduated in 2019. Sanjee currently resides in
-  Logan Square.
+  University of Michigan and graduated in 2019.
 ---
