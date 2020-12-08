@@ -6,13 +6,12 @@ media_folder: "assets/images/uploads"
 
 collections:
   - name: "organizer",
-  - label: "Organizers",
-  - label_singular: "Organizer",
-  - description: "Members of Activate:Chi to display on the homepage in the Organizer section.",
-  - files: "site/data/organizers.json",
-  - fields:
-      { name: "name", label: "Name", widget: "string" },
-      { name: "job", label: "Job", widget: "string" },
-      { name: "image", label: "Image", widget: "image", allow_multiple: false },
-      { name: "summary", label: "Summary", widget: "text" }
-    -
+    label: "Organizers",
+    label_singular: "Organizer",
+    description: "Members of Activate:Chi to display on the homepage in the Organizer section.",
+    files: "site/data/organizers.json",
+    fields:
+      - { name: "name", label: "Name", widget: "string" },
+      - { name: "job", label: "Job", widget: "string" },
+      - { name: "image", label: "Image", widget: "image", allow_multiple: false },
+      - { name: "summary", label: "Summary", widget: "text" }
