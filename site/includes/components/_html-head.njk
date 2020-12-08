@@ -26,18 +26,18 @@
   <meta property="og:type" content="{% if page_type %}{{ page_type }}{% else %}{{site.page_type}}{% endif %}" />
 
 
-  {# {% if helpers.environment == "development" %}
+  {% if helpers.environment == "development" %}
   <link rel="stylesheet" href="/css/main.css">
-  {% else %} #}
+  {% else %}
   {# else, use the minified css file for production #}
   <link rel="stylesheet" href="/css/main.css">
-  {# {% endif %} #}
+  {% endif %}
 
-  {# {% if helpers.environment == "development" %} #}
+  {% if helpers.environment == "development" %}
   <script src="/js/main.js" defer></script>
-  {# {% else %}
+  {% else %}
   <script src="/js/main.min.js" defer></script>
-  {% endif %} #}
+  {% endif %}
 
   {# include social meta tags #}
   {% include "components/_social-meta.njk" %}

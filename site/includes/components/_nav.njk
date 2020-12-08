@@ -1,0 +1,13 @@
+ {% import "components/_nav-link.njk" as navLink %}
+
+ <nav class="flex items-center justify-between">
+        <a href="/" class="flex-shrink-0 w-24 text-hue">
+            {% include "img/logo.svg" %}
+        </a>
+        <ul class="flex space-x-4">
+            {{ navLink.navLink("About") }}
+            {{ navLink.navLink("Initiatives") }}
+            {{ navLink.navLink("Organizers") }}
+            {{ navLink.navLink("Support us", true) }}
+        </ul>
+    </nav>

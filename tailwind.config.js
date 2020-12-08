@@ -34,6 +34,20 @@ module.exports = {
     extend: {
       fontSize: {
         xs: ".8125rem",
+        xl: [
+          "1.25rem",
+          {
+            lineHeight: "1.5",
+            letterSpacing: "0.025em",
+          },
+        ],
+        "2xl": [
+          "1.5rem",
+          {
+            lineHeight: "1.5",
+            letterSpacing: "0.025em",
+          },
+        ],
       },
       spacing: {
         "2-5": ".625rem",
@@ -67,7 +81,7 @@ module.exports = {
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(calc(100% / -3))" },
+          "100%": { transform: "translateX(-50%)" },
         },
       },
       animation: {

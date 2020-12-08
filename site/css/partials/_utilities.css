@@ -9,7 +9,7 @@
 }
 
 .btn-outline {
-  @apply relative overflow-hidden text-white transition transform border border-white border-opacity-50 rounded-full text-opacity-90 hover:text-opacity-100 hover:border-opacity-75 hover:scale-103 bg-gray;
+  @apply relative overflow-hidden text-white transition transform border border-white border-opacity-50 rounded-full focus:outline-none focus:ring text-opacity-90 hover:text-opacity-100 hover:border-opacity-75 hover:scale-103 bg-gray;
 }
 
 .btn-outline::before {
@@ -22,4 +22,27 @@
 
 .btn-outline:hover::before {
   opacity: 0.05;
+}
+
+.btn-highlight::before {
+  @apply bg-hue;
+}
+
+.organizer-grid li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.organizer-grid li:nth-child(1),
+.organizer-grid li:nth-child(2) {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#site-bg {
+  background-image: url("/assets/images/noise.gif");
+  background-size: 300px;
+}
+
+@media (prefers-reduced-motion) {
+  #site-bg {
+    background-image: url("/assets/images/noise.png");
+  }
 }

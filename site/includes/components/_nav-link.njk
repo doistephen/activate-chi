@@ -1,6 +1,6 @@
-{% macro navLink(text) %}
+{% macro navLink(text, color=false) %}
     <a href="#{{text | lower | replace(" ", "-") }}"
-    class="px-6 pt-3 pb-2 text-base btn-outline font-display">
+    class="px-6 pt-3 pb-2 text-base btn-outline font-display {% if color %} border-hue border-opacity-75 btn-highlight{% endif %}">
         <span>{{text}}</span>
     </a>
 {% endmacro %}

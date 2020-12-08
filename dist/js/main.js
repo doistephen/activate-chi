@@ -11,7 +11,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
 var marquee = document.querySelector("[data-marquee]");
 
 if (marquee) {
-  var marquees = new Array(2).fill(null);
+  var marquees = new Array(1).fill(null);
   marquees.forEach(function (el) {
     marquee.parentNode.append(marquee.cloneNode(true));
   });

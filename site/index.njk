@@ -4,52 +4,13 @@ title: Home
 ---
 
 <main class="space-y-16">
-    <section class="space-y-8">
-        <header class="space-y-8">
-        <div class="overflow-hidden">
-            <div class="flex space-x-4 animate-marquee w-max">
-                <div class="flex flex-shrink-0 space-x-4 h-72" data-marquee>
-                    <img class="block object-cover w-auto h-full" src="./assets/images/header-1@2x.jpg" alt="">
-                    <img class="block object-cover w-auto h-full" src="./assets/images/header-2@2x.jpg" alt="">
-                    <img class="block object-cover w-auto h-full" src="./assets/images/header-3@2x.jpg" alt="">
-                    <img class="block object-cover w-auto h-full" src="./assets/images/header-4@2x.jpg" alt="">
-                </div>
-            </div>
-        </div>
-            <h1 class="text-4xl leading-snug tracking-wide font-display">
-                <span class="animate-hue text-hue">Activate:Chi</span> believes that everyone can and should be an activist for the causes they are most passionate about.
-            </h1>
-            <a href="#about" class="inline-flex p-4 btn-outline">
-                <span class="block w-6 h-6 text-current">{% include "./includes/img/scroll-arrow.svg" %}</span>
-            </a>
-        </header>
-
-    </section>
+    {# hero section #}
+    {% include "components/_home-header.njk" %}
 
     {# about section #}
-    <section id="about">
-        <div class="grid items-start justify-between grid-cols-12 gap-6 py-8">
-            <div class="flex col-span-12">
-                <h2 class="text-xs tracking-wider rounded-full text-hue font-display">About Activate:Chi</h2>
-            </div>
-            <div class="max-w-xl col-span-8 space-y-10">
-                <p class="text-2xl leading-normal">
-                    We focus on grassroots organizing because we believe the most meaningful change stems from the people. Our primary strategy is to connect passionate individuals with the resources and opportunities they need to be educated and purposeful advocates.
-                </p>
-                <a href="#" class="inline-flex px-5 pt-3 text-sm tracking-wider pb-2-5 btn-outline font-display">
-                    Read our history
-                </a>
-            </div>
-            <dl class="col-span-4">
-                <dt class="text-xl font-display">Our mission</dt>
-                <dd class="tracking-wide text-white text-opacity-75">
-                    Activate people to purposefully pursue and advocate for the social, economic, and political causes they are most passionate about.
-                </dd>
-                <dt class="mt-10 text-xl font-display">Our vision</dt>
-                <dd class="tracking-wide text-white text-opacity-75">
-                    A people that have the resources and opportunity to be thoughtful and educated advocates for a more just, equitable, and accountable world.
-                </dd>
-            </dl>
-        </div>
-    </section>
+    {% include "components/_home-about.njk" %}
+
+    {# team section #}
+    {% include "components/_home-organizers.njk" %}
+
 </main>
