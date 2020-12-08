@@ -3,10 +3,9 @@
         <div class="overflow-hidden">
             <div class="flex animate-marquee w-max">
                 <div class="flex flex-shrink-0 pr-4 space-x-4 h-72" data-marquee>
-                    <img class="block object-cover w-auto h-full" src="./assets/images/header/header-1@2x.jpg" alt="">
-                    <img class="block object-cover w-auto h-full" src="./assets/images/header/header-2@2x.jpg" alt="">
-                    <img class="block object-cover w-auto h-full" src="./assets/images/header/header-3@2x.jpg" alt="">
-                    <img class="block object-cover w-auto h-full" src="./assets/images/header/header-4@2x.jpg" alt="">
+                {% for item in headerImages %}
+                    <img class="block object-cover w-auto h-full" src="{{item}}" alt="">
+                {% endfor %}
                 </div>
             </div>
         </div>
@@ -17,5 +16,4 @@
                 <span class="block w-6 h-6 text-current">{% include "img/scroll-arrow.svg" %}</span>
             </a>
         </header>
-
     </section>
