@@ -25,13 +25,19 @@ module.exports = (eleventyConfig) => {
     return content;
   });
 
+  //Create collections
+  eleventyConfig.addCollection("organizer", function (collection) {
+    return collection.getFilteredByTag("organizer").sort(function (a, b) {
+      if (b.data.name > a.data.name) return -1;
+      else if (b.data.title < a.data.title) return 1;
+      else return 0;
+    });
+  });
+
   // Layout aliases
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
-  eleventyConfig.addLayoutAlias("category", "layouts/category.njk");
-  eleventyConfig.addLayoutAlias("landing", "layouts/landing.njk");
 
   // Include our static assets
-  eleventyConfig.addPassthroughCopy("gallery");
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("admin");
 

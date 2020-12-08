@@ -10,8 +10,8 @@
         </p>
     </div>
     <ul class="grid grid-cols-2 col-span-full gap-x-8 organizer-grid">
-    {% for person in organizers %}
-        {{ organizer.organizer(person.name, person.job, person.summary, person.image) }}
+    {% for person in collections.organizer %}
+        {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
     {% endfor %}
     </ul>
 </div>

@@ -8,8 +8,9 @@ collections:
   - name: "organizers"
     label: "Organizers"
     label_singular: "Organizer"
+    folder: "site/organizers"
+    create: true
     description: "Members of Activate:Chi to display on the homepage in the Organizer section."
-    files: "site/data/organizers.json"
     fields:
       - { name: "name", label: "Name", widget: "string" }
       - { name: "job", label: "Job", widget: "string" }
@@ -20,3 +21,4 @@ collections:
           allow_multiple: false,
         }
       - { name: "summary", label: "Summary", widget: "text" }
+      # - { name: "tags", label: "Tags", widget: "hidden", default: "organizer" }
