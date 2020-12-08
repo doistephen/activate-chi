@@ -33,6 +33,7 @@ module.exports = (eleventyConfig) => {
   // Include our static assets
   eleventyConfig.addPassthroughCopy("gallery");
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("admin");
 
   return {
     templateFormats: ["md", "njk"],
