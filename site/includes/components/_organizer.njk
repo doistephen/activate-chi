@@ -15,7 +15,7 @@
             @click="selected === '{{name}}' ? selected = 'none' : selected = '{{name}}'"
             class="w-8 h-8 rounded-full p-2-5 btn-outline"
         >
-            {% include "img/plus.svg" %}
+            <span :class="{'rotate-135' : selected === '{{name}}'}" class="block transition transform">{% include "img/plus.svg" %}</span>
         </button>
     </div>
     <div

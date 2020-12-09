@@ -15830,6 +15830,10 @@ button:focus {
   --tw-rotate: 90deg;
 }
 
+.rotate-135 {
+  --tw-rotate: 135deg;
+}
+
 .rotate-180 {
   --tw-rotate: 180deg;
 }
@@ -15898,6 +15902,10 @@ button:focus {
   --tw-rotate: 90deg;
 }
 
+.hover\:rotate-135:hover {
+  --tw-rotate: 135deg;
+}
+
 .hover\:rotate-180:hover {
   --tw-rotate: 180deg;
 }
@@ -15964,6 +15972,10 @@ button:focus {
 
 .focus\:rotate-90:focus {
   --tw-rotate: 90deg;
+}
+
+.focus\:rotate-135:focus {
+  --tw-rotate: 135deg;
 }
 
 .focus\:rotate-180:focus {
@@ -33943,6 +33955,10 @@ button:focus {
     --tw-rotate: 90deg;
   }
 
+  .sm\:rotate-135 {
+    --tw-rotate: 135deg;
+  }
+
   .sm\:rotate-180 {
     --tw-rotate: 180deg;
   }
@@ -34011,6 +34027,10 @@ button:focus {
     --tw-rotate: 90deg;
   }
 
+  .sm\:hover\:rotate-135:hover {
+    --tw-rotate: 135deg;
+  }
+
   .sm\:hover\:rotate-180:hover {
     --tw-rotate: 180deg;
   }
@@ -34077,6 +34097,10 @@ button:focus {
 
   .sm\:focus\:rotate-90:focus {
     --tw-rotate: 90deg;
+  }
+
+  .sm\:focus\:rotate-135:focus {
+    --tw-rotate: 135deg;
   }
 
   .sm\:focus\:rotate-180:focus {
@@ -52016,6 +52040,10 @@ button:focus {
     --tw-rotate: 90deg;
   }
 
+  .md\:rotate-135 {
+    --tw-rotate: 135deg;
+  }
+
   .md\:rotate-180 {
     --tw-rotate: 180deg;
   }
@@ -52084,6 +52112,10 @@ button:focus {
     --tw-rotate: 90deg;
   }
 
+  .md\:hover\:rotate-135:hover {
+    --tw-rotate: 135deg;
+  }
+
   .md\:hover\:rotate-180:hover {
     --tw-rotate: 180deg;
   }
@@ -52150,6 +52182,10 @@ button:focus {
 
   .md\:focus\:rotate-90:focus {
     --tw-rotate: 90deg;
+  }
+
+  .md\:focus\:rotate-135:focus {
+    --tw-rotate: 135deg;
   }
 
   .md\:focus\:rotate-180:focus {
@@ -70089,6 +70125,10 @@ button:focus {
     --tw-rotate: 90deg;
   }
 
+  .lg\:rotate-135 {
+    --tw-rotate: 135deg;
+  }
+
   .lg\:rotate-180 {
     --tw-rotate: 180deg;
   }
@@ -70157,6 +70197,10 @@ button:focus {
     --tw-rotate: 90deg;
   }
 
+  .lg\:hover\:rotate-135:hover {
+    --tw-rotate: 135deg;
+  }
+
   .lg\:hover\:rotate-180:hover {
     --tw-rotate: 180deg;
   }
@@ -70223,6 +70267,10 @@ button:focus {
 
   .lg\:focus\:rotate-90:focus {
     --tw-rotate: 90deg;
+  }
+
+  .lg\:focus\:rotate-135:focus {
+    --tw-rotate: 135deg;
   }
 
   .lg\:focus\:rotate-180:focus {
