@@ -1,16 +1,29 @@
-{% macro organizer(name, job, summary, image)%}
-<li class="flex items-center py-3 space-x-6">
-    <div class="flex flex-grow space-x-6">
-        <div class="flex-shrink-0 w-20 overflow-hidden border border-white border-opacity-50 rounded-full h-28">
-            <img class="object-cover w-full h-full" src="{{image}}" alt="">
+{% macro organizer(name, job, summary, image) %}
+
+<li class="relative py-3" data-organizer="wrapper">
+    <div class="flex items-center space-x-6 transition-all" data-organizer="metadata">
+        <div class="flex flex-grow space-x-6">
+            <div class="flex-shrink-0 w-20 overflow-hidden border border-white border-opacity-50 rounded-full h-28">
+                <img class="object-cover w-full h-full" src="{{image}}" alt="">
+            </div>
+            <div class="flex flex-col justify-center flex-grow">
+                <h3 class="text-base font-display">{{name}}</h3>
+                <p class="text-base text-white text-opacity-50">{{job}}</p>
+            </div>
         </div>
-        <div class="flex flex-col justify-center flex-grow">
-            <h3 class="text-base font-display">{{name}}</h3>
-            <p class="text-base text-white text-opacity-50">{{job}}</p>
+        <button
+            @click="selected === '{{name}}' ? selected = 'none' : selected = '{{name}}'"
+            class="w-8 h-8 rounded-full p-2-5 btn-outline"
+        >
+            {% include "img/plus.svg" %}
+        </button>
+    </div>
+    <div
+    x-bind:style="selected === '{{name}}' ? 'max-height: var(--summary-height)' : 'max-height: 0'"
+    class="overflow-hidden transition-all transform" data-organizer="summary">
+        <div class="px-1 pb-1 mt-4 text-base text-white">
+            {{summary}}
         </div>
     </div>
-    <button class="w-8 h-8 rounded-full p-2-5 btn-outline">
-        {% include "img/plus.svg" %}
-    </button>
 </li>
 {% endmacro %}

@@ -1,0 +1,28 @@
+ {% import "components/_organizer.njk" as organizer %}
+<section id="organizers">
+    <div class="grid items-start justify-between grid-cols-12 gap-6 py-8">
+    <div class="flex col-span-full">
+        <h2 class="text-xs tracking-wider rounded-full text-hue font-display">Our organizers</h2>
+    </div>
+    <div class="max-w-xl col-span-8 space-y-10">
+        <p class="text-2xl col-span-full">
+            {{ organizersSection.snippet }}
+        </p>
+    </div>
+    <ul
+        x-data="{ selected: `none` }"
+        class="grid items-start grid-cols-2 col-span-full gap-x-8 organizer-grid"
+    >
+    <div>
+        {% for person in collections.organizer | alphabetize | onlyOdd %}
+            {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
+        {% endfor %}
+    </div>
+    <div>
+        {% for person in collections.organizer | alphabetize | onlyEven %}
+            {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
+        {% endfor %}
+    </div>
+    </ul>
+</div>
+</section>

@@ -5,6 +5,42 @@ backend:
 media_folder: "assets/images/uploads"
 
 collections:
+  - name: "sections"
+    label: "Sections"
+    files:
+      - name: "introSection"
+        label: "Intro Section"
+        file: "site/data/introSection.json"
+        fields:
+          - {
+              name: "introText",
+              label: "Intro Text",
+              widget: "string",
+              hint: "This field should not be longer than one sentence. The site automatically puts the words `Activate:Chi` at the beginning of the sentence for you, so the field contents above should continue the sentence after those words.",
+            }
+      - name: "aboutSection"
+        label: "About Section"
+        file: "site/data/aboutSection.json"
+        fields:
+          - {
+              name: "snippet",
+              label: "Section Snippet",
+              widget: "text",
+              hint: "The text that appears in the larger paragraph underneath `About Activate:Chi`",
+            }
+          - { name: "mission", label: "Our Mission", widget: "text" }
+          - { name: "vision", label: "Our Vision", widget: "text" }
+      - name: "organizersSection"
+        label: "Organizers Section"
+        file: "site/data/organizersSection.json"
+        fields:
+          - {
+              name: "snippet",
+              label: "Section Snippet",
+              widget: "text",
+              hint: "The text that appears in the larger paragraph underneath `Our organizers`",
+            }
+
   - name: "organizers"
     label: "Organizers"
     label_singular: "Organizer"
@@ -21,4 +57,3 @@ collections:
           allow_multiple: false,
         }
       - { name: "summary", label: "Summary", widget: "text" }
-      # - { name: "tags", label: "Tags", widget: "hidden", default: "organizer" }

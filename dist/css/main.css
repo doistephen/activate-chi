@@ -678,22 +678,25 @@ button:focus {
   z-index: -1;
 }
 
-.btn-outline:hover::before {
-  opacity: 0.05;
-}
-
 .btn-highlight::before {
   --tw-bg-opacity: 1;
   background-color: rgba(248, 104, 73, var(--tw-bg-opacity));
+}
+
+.btn-outline:hover::before {
+  opacity: 0.05;
 }
 
 .organizer-grid li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.organizer-grid li:nth-child(1),
-.organizer-grid li:nth-child(2) {
+.organizer-grid li:nth-child(1) {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+[data-organizer="summary"] {
+  will-change: max-height;
 }
 
 #site-bg {
@@ -4418,7 +4421,7 @@ button:focus {
 
 .text-base {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.5;
 }
 
 .text-lg {
@@ -22544,7 +22547,7 @@ button:focus {
 
   .sm\:text-base {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.5;
   }
 
   .sm\:text-lg {
@@ -40617,7 +40620,7 @@ button:focus {
 
   .md\:text-base {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.5;
   }
 
   .md\:text-lg {
@@ -58690,7 +58693,7 @@ button:focus {
 
   .lg\:text-base {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.5;
   }
 
   .lg\:text-lg {
