@@ -8,7 +8,7 @@
 }
 
 .btn-outline {
-  @apply relative overflow-hidden text-white transition transform border border-white border-opacity-50 rounded-full focus:outline-none focus:ring text-opacity-90 hover:text-opacity-100 hover:border-opacity-75 hover:scale-103 bg-gray;
+  @apply relative inline-flex overflow-hidden text-white transition transform border border-white border-opacity-50 rounded-full focus:outline-none focus:ring text-opacity-90 hover:text-opacity-100 hover:border-opacity-75 hover:scale-103 bg-gray;
 }
 .btn-outline::before {
   content: "";

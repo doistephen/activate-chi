@@ -1,0 +1,9 @@
+{% macro button(text, href, as="a", color=false) %}
+    <{{as}}
+    {% if href %}
+        href="{{href}}"
+    {% endif %}
+    class="px-5 tracking-wide pt-3 pb-2 text-sm btn-outline font-display {% if color %} border-hue border-opacity-75 btn-highlight{% endif %}">
+        <span>{{text}}</span>
+    </{{as}}>
+{% endmacro %}

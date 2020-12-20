@@ -3,7 +3,9 @@
 
 <div class="container py-12 space-y-12">
     {% include "components/_nav.njk" %}
-    {{ content | safe }}
+    <div id="content">
+        {{ content | safe }}
+    </div>
 </div>
 
 <div id="site-bg" class="fixed top-0 bottom-0 left-0 right-0 bg-repeat bg-gray -z-1"></div>

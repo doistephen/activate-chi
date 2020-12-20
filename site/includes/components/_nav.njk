@@ -1,13 +1,19 @@
- {% import "components/_nav-link.njk" as navLink %}
+ {% import "components/_button.njk" as button %}
 
- <nav class="flex items-center justify-between">
-        <a href="/" class="flex-shrink-0 w-24 text-hue">
+ <nav class="relative flex items-center justify-between">
+        <a href="/" class="flex-shrink-0 w-24 transition transform text-hue hover:scale-103">
             {% include "img/logo.svg" %}
         </a>
-        <ul class="flex space-x-4">
-            {{ navLink.navLink("About") }}
-            {{ navLink.navLink("Initiatives") }}
-            {{ navLink.navLink("Organizers") }}
-            {{ navLink.navLink("Support us", true) }}
-        </ul>
+        {# <a href="#content" class="z-10 px-5 py-3 opacity-0 btn-outline bg-gray focus:opacity-100">Skip to content</a> #}
+        <div class="flex items-center -mr-2.5 space-x-5 divide-x divide-white divide-opacity-25">
+            <ul class="flex space-x-3">
+                {{ button.button("Blog", "/blog") }}
+                {{ button.button("Support us", "#support-us", color=true) }}
+            </ul>
+            <ul class="flex pl-2.5">
+                <li><a target="_blank" href="https://twitter.com/activate_chi?lang=en" class="block p-2.5 text-white text-opacity-100 transition transform hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2 rounded-full"><span class="block w-5 h-5">{% include "img/twitter.svg" %}</span></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/activate.chi/" class="block p-2.5 text-white text-opacity-100 transition transform hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2 rounded-full"><span class="block w-5 h-5">{% include "img/instagram.svg" %}</span></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/groups/212768039194574/" class="block p-2.5 text-white text-opacity-100 transition transform hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2 rounded-full"><span class="block w-5 h-5">{% include "img/facebook.svg" %}</span></a></li>
+            </ul>
+        </div>
     </nav>

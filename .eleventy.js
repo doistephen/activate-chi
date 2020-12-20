@@ -1,4 +1,5 @@
 const htmlmin = require("html-minifier");
+const pluginDate = require("eleventy-plugin-date");
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter("markdownify", (markdownString) => {
@@ -49,9 +50,14 @@ module.exports = (eleventyConfig) => {
     return newArray;
   });
 
+  // Plugins
+  eleventyConfig.addPlugin(pluginDate);
+
+  eleventyConfig.setDataDeepMerge(true);
+
   // Minify our HTML
   eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
-    if (outputPath.endsWith(".html")) {
+    if (outputPath && outputPath.endsWith(".html")) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
@@ -64,6 +70,7 @@ module.exports = (eleventyConfig) => {
 
   // Layout aliases
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
+  eleventyConfig.addLayoutAlias("blog-post", "layouts/blog-post.njk");
 
   // Include our static assets
   eleventyConfig.addPassthroughCopy("assets");

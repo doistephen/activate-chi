@@ -10,7 +10,3 @@ const getHeights = function () {
 };
 
 getHeights();
-
-// window.addEventListener("resize", function () {
-//   getHeights();
-// });

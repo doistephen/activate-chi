@@ -614,6 +614,7 @@ button:focus {
 .btn-outline {
   border-radius: 9999px;
   border-width: 1px;
+  display: inline-flex;
 }
 
 .btn-outline:focus {
@@ -1130,18 +1131,6 @@ button:focus {
   margin-left: calc(0.875rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-2-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(.625rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(.625rem * var(--tw-space-y-reverse));
-}
-
-.space-x-2-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(.625rem * var(--tw-space-x-reverse));
-  margin-left: calc(.625rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-y-xs > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(20rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1632,18 +1621,6 @@ button:focus {
   --tw-space-x-reverse: 0;
   margin-right: calc(-0.875rem * var(--tw-space-x-reverse));
   margin-left: calc(-0.875rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.-space-y-2-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(-0.625rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(-0.625rem * var(--tw-space-y-reverse));
-}
-
-.-space-x-2-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(-0.625rem * var(--tw-space-x-reverse));
-  margin-left: calc(-0.625rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .-space-y-xs > :not([hidden]) ~ :not([hidden]) {
@@ -4318,10 +4295,6 @@ button:focus {
   height: 0.875rem;
 }
 
-.h-2-5 {
-  height: .625rem;
-}
-
 .h-xs {
   height: 20rem;
 }
@@ -4696,10 +4669,6 @@ button:focus {
   margin: 0.875rem;
 }
 
-.m-2-5 {
-  margin: .625rem;
-}
-
 .m-xs {
   margin: 20rem;
 }
@@ -4862,10 +4831,6 @@ button:focus {
 
 .-m-3\.5 {
   margin: -0.875rem;
-}
-
-.-m-2-5 {
-  margin: -0.625rem;
 }
 
 .-m-xs {
@@ -5250,16 +5215,6 @@ button:focus {
 .mx-3\.5 {
   margin-left: 0.875rem;
   margin-right: 0.875rem;
-}
-
-.my-2-5 {
-  margin-top: .625rem;
-  margin-bottom: .625rem;
-}
-
-.mx-2-5 {
-  margin-left: .625rem;
-  margin-right: .625rem;
 }
 
 .my-xs {
@@ -5670,16 +5625,6 @@ button:focus {
 .-mx-3\.5 {
   margin-left: -0.875rem;
   margin-right: -0.875rem;
-}
-
-.-my-2-5 {
-  margin-top: -0.625rem;
-  margin-bottom: -0.625rem;
-}
-
-.-mx-2-5 {
-  margin-left: -0.625rem;
-  margin-right: -0.625rem;
 }
 
 .-my-xs {
@@ -6316,22 +6261,6 @@ button:focus {
 
 .ml-3\.5 {
   margin-left: 0.875rem;
-}
-
-.mt-2-5 {
-  margin-top: .625rem;
-}
-
-.mr-2-5 {
-  margin-right: .625rem;
-}
-
-.mb-2-5 {
-  margin-bottom: .625rem;
-}
-
-.ml-2-5 {
-  margin-left: .625rem;
 }
 
 .mt-xs {
@@ -6990,22 +6919,6 @@ button:focus {
   margin-left: -0.875rem;
 }
 
-.-mt-2-5 {
-  margin-top: -0.625rem;
-}
-
-.-mr-2-5 {
-  margin-right: -0.625rem;
-}
-
-.-mb-2-5 {
-  margin-bottom: -0.625rem;
-}
-
-.-ml-2-5 {
-  margin-left: -0.625rem;
-}
-
 .-mt-xs {
   margin-top: -20rem;
 }
@@ -7240,10 +7153,6 @@ button:focus {
 
 .max-h-3\.5 {
   max-height: 0.875rem;
-}
-
-.max-h-2-5 {
-  max-height: .625rem;
 }
 
 .max-h-xs {
@@ -8027,10 +7936,6 @@ button:focus {
   padding: 0.875rem;
 }
 
-.p-2-5 {
-  padding: .625rem;
-}
-
 .p-xs {
   padding: 20rem;
 }
@@ -8403,16 +8308,6 @@ button:focus {
 .px-3\.5 {
   padding-left: 0.875rem;
   padding-right: 0.875rem;
-}
-
-.py-2-5 {
-  padding-top: .625rem;
-  padding-bottom: .625rem;
-}
-
-.px-2-5 {
-  padding-left: .625rem;
-  padding-right: .625rem;
 }
 
 .py-xs {
@@ -9035,22 +8930,6 @@ button:focus {
   padding-left: 0.875rem;
 }
 
-.pt-2-5 {
-  padding-top: .625rem;
-}
-
-.pr-2-5 {
-  padding-right: .625rem;
-}
-
-.pb-2-5 {
-  padding-bottom: .625rem;
-}
-
-.pl-2-5 {
-  padding-left: .625rem;
-}
-
 .pt-xs {
   padding-top: 20rem;
 }
@@ -9603,13 +9482,6 @@ button:focus {
   left: 0.875rem;
 }
 
-.inset-2-5 {
-  top: .625rem;
-  right: .625rem;
-  bottom: .625rem;
-  left: .625rem;
-}
-
 .inset-xs {
   top: 20rem;
   right: 20rem;
@@ -9895,13 +9767,6 @@ button:focus {
   right: -0.875rem;
   bottom: -0.875rem;
   left: -0.875rem;
-}
-
-.-inset-2-5 {
-  top: -0.625rem;
-  right: -0.625rem;
-  bottom: -0.625rem;
-  left: -0.625rem;
 }
 
 .-inset-xs {
@@ -10390,16 +10255,6 @@ button:focus {
   left: 0.875rem;
 }
 
-.inset-y-2-5 {
-  top: .625rem;
-  bottom: .625rem;
-}
-
-.inset-x-2-5 {
-  right: .625rem;
-  left: .625rem;
-}
-
 .inset-y-xs {
   top: 20rem;
   bottom: 20rem;
@@ -10808,16 +10663,6 @@ button:focus {
 .-inset-x-3\.5 {
   right: -0.875rem;
   left: -0.875rem;
-}
-
-.-inset-y-2-5 {
-  top: -0.625rem;
-  bottom: -0.625rem;
-}
-
-.-inset-x-2-5 {
-  right: -0.625rem;
-  left: -0.625rem;
 }
 
 .-inset-y-xs {
@@ -11576,22 +11421,6 @@ button:focus {
   left: 0.875rem;
 }
 
-.top-2-5 {
-  top: .625rem;
-}
-
-.right-2-5 {
-  right: .625rem;
-}
-
-.bottom-2-5 {
-  bottom: .625rem;
-}
-
-.left-2-5 {
-  left: .625rem;
-}
-
 .top-xs {
   top: 20rem;
 }
@@ -12246,22 +12075,6 @@ button:focus {
 
 .-left-3\.5 {
   left: -0.875rem;
-}
-
-.-top-2-5 {
-  top: -0.625rem;
-}
-
-.-right-2-5 {
-  right: -0.625rem;
-}
-
-.-bottom-2-5 {
-  bottom: -0.625rem;
-}
-
-.-left-2-5 {
-  left: -0.625rem;
 }
 
 .-top-xs {
@@ -14171,10 +13984,6 @@ button:focus {
   width: 0.875rem;
 }
 
-.w-2-5 {
-  width: .625rem;
-}
-
 .w-xs {
   width: 20rem;
 }
@@ -14551,10 +14360,6 @@ button:focus {
   gap: 0.875rem;
 }
 
-.gap-2-5 {
-  gap: .625rem;
-}
-
 .gap-xs {
   gap: 20rem;
 }
@@ -14719,10 +14524,6 @@ button:focus {
   column-gap: 0.875rem;
 }
 
-.gap-x-2-5 {
-  column-gap: .625rem;
-}
-
 .gap-x-xs {
   column-gap: 20rem;
 }
@@ -14885,10 +14686,6 @@ button:focus {
 
 .gap-y-3\.5 {
   row-gap: 0.875rem;
-}
-
-.gap-y-2-5 {
-  row-gap: .625rem;
 }
 
 .gap-y-xs {
@@ -16162,10 +15959,6 @@ button:focus {
   --tw-translate-x: 0.875rem;
 }
 
-.translate-x-2-5 {
-  --tw-translate-x: .625rem;
-}
-
 .translate-x-xs {
   --tw-translate-x: 20rem;
 }
@@ -16328,10 +16121,6 @@ button:focus {
 
 .-translate-x-3\.5 {
   --tw-translate-x: -0.875rem;
-}
-
-.-translate-x-2-5 {
-  --tw-translate-x: -0.625rem;
 }
 
 .-translate-x-xs {
@@ -16562,10 +16351,6 @@ button:focus {
   --tw-translate-y: 0.875rem;
 }
 
-.translate-y-2-5 {
-  --tw-translate-y: .625rem;
-}
-
 .translate-y-xs {
   --tw-translate-y: 20rem;
 }
@@ -16728,10 +16513,6 @@ button:focus {
 
 .-translate-y-3\.5 {
   --tw-translate-y: -0.875rem;
-}
-
-.-translate-y-2-5 {
-  --tw-translate-y: -0.625rem;
 }
 
 .-translate-y-xs {
@@ -16962,10 +16743,6 @@ button:focus {
   --tw-translate-x: 0.875rem;
 }
 
-.hover\:translate-x-2-5:hover {
-  --tw-translate-x: .625rem;
-}
-
 .hover\:translate-x-xs:hover {
   --tw-translate-x: 20rem;
 }
@@ -17128,10 +16905,6 @@ button:focus {
 
 .hover\:-translate-x-3\.5:hover {
   --tw-translate-x: -0.875rem;
-}
-
-.hover\:-translate-x-2-5:hover {
-  --tw-translate-x: -0.625rem;
 }
 
 .hover\:-translate-x-xs:hover {
@@ -17362,10 +17135,6 @@ button:focus {
   --tw-translate-y: 0.875rem;
 }
 
-.hover\:translate-y-2-5:hover {
-  --tw-translate-y: .625rem;
-}
-
 .hover\:translate-y-xs:hover {
   --tw-translate-y: 20rem;
 }
@@ -17528,10 +17297,6 @@ button:focus {
 
 .hover\:-translate-y-3\.5:hover {
   --tw-translate-y: -0.875rem;
-}
-
-.hover\:-translate-y-2-5:hover {
-  --tw-translate-y: -0.625rem;
 }
 
 .hover\:-translate-y-xs:hover {
@@ -17762,10 +17527,6 @@ button:focus {
   --tw-translate-x: 0.875rem;
 }
 
-.focus\:translate-x-2-5:focus {
-  --tw-translate-x: .625rem;
-}
-
 .focus\:translate-x-xs:focus {
   --tw-translate-x: 20rem;
 }
@@ -17928,10 +17689,6 @@ button:focus {
 
 .focus\:-translate-x-3\.5:focus {
   --tw-translate-x: -0.875rem;
-}
-
-.focus\:-translate-x-2-5:focus {
-  --tw-translate-x: -0.625rem;
 }
 
 .focus\:-translate-x-xs:focus {
@@ -18162,10 +17919,6 @@ button:focus {
   --tw-translate-y: 0.875rem;
 }
 
-.focus\:translate-y-2-5:focus {
-  --tw-translate-y: .625rem;
-}
-
 .focus\:translate-y-xs:focus {
   --tw-translate-y: 20rem;
 }
@@ -18328,10 +18081,6 @@ button:focus {
 
 .focus\:-translate-y-3\.5:focus {
   --tw-translate-y: -0.875rem;
-}
-
-.focus\:-translate-y-2-5:focus {
-  --tw-translate-y: -0.625rem;
 }
 
 .focus\:-translate-y-xs:focus {
@@ -18819,6 +18568,512 @@ button:focus {
   animation: marquee 60s linear infinite;
 }
 
+.prose {
+  color: #FFFFFF;
+  max-width: 65ch;
+}
+
+.prose a {
+  color: #F86849;
+}
+
+.prose strong {
+  font-weight: 600;
+}
+
+.prose ol > li {
+  position: relative;
+  padding-left: 1.5em;
+}
+
+.prose ol > li:before {
+  content: counter(list-item) ".";
+  position: absolute;
+  font-weight: 400;
+  color: #FFFFFF;
+  opacity: 0.75;
+  left: 0;
+}
+
+.prose ul > li {
+  position: relative;
+  padding-left: 1.25em;
+}
+
+.prose ul > li:before {
+  content: "";
+  position: absolute;
+  background-color: #FFFFFF;
+  opacity: 0.5;
+  border-radius: 50%;
+  width: 0.375em;
+  height: 0.375em;
+  top: 0.6875em;
+  left: 0.25em;
+}
+
+.prose hr {
+  border-color: #FFFFFF;
+  opacity: 0.5;
+  border-top-width: 1px;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.prose blockquote {
+  font-weight: 500;
+  opacity: 0.75;
+  color: #FFFFFF;
+  border-left-width: 1px;
+  border-left-color: #F86849;
+  quotes: "\201C""\201D""\2018""\2019";
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  padding-left: 1em;
+}
+
+.prose blockquote p:first-of-type:before {
+  content: open-quote;
+}
+
+.prose blockquote p:last-of-type:after {
+  content: close-quote;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  font-weight: 800;
+}
+
+.prose h1 {
+  color: #FFFFFF;
+  font-size: 2.25em;
+  margin-top: 0;
+  margin-bottom: 0.8888889em;
+  line-height: 1.1111111;
+}
+
+.prose h2 {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  line-height: 1.3333333;
+}
+
+.prose h3 {
+  color: #FFFFFF;
+  font-size: 1.25em;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+  line-height: 1.6;
+}
+
+.prose h4 {
+  color: #FFFFFF;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+}
+
+.prose figure figcaption {
+  color: #FFFFFF;
+  opacity: 0.75;
+  font-size: 0.875em;
+  line-height: 1.4285714;
+  margin-top: 0.8571429em;
+}
+
+.prose code {
+  color: #FFFFFF;
+  font-size: 0.875em;
+  padding: 0.25em 0;
+  --tw-bg-opacity: 1;
+  background-color: rgba(20, 20, 20, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.1;
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  --tw-border-opacity: 0.25;
+  border-width: 1px;
+}
+
+.prose code:after,
+.prose code:before {
+  content: "`";
+}
+
+.prose a code {
+  color: #FFFFFF;
+}
+
+.prose pre {
+  --tw-bg-opacity: 1;
+  background-color: rgba(20, 20, 20, var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  --tw-border-opacity: 0.25;
+  border-width: 1px;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  --tw-text-opacity: 0.75;
+  overflow-x: auto;
+  font-size: 0.875em;
+  line-height: 1.7142857;
+  margin-top: 1.7142857em;
+  margin-bottom: 1.7142857em;
+  padding: 0.8571429em 1.1428571em;
+}
+
+.prose pre code {
+  background-color: transparent;
+  border-width: 0;
+  border-radius: 0;
+  padding: 0;
+  font-weight: 400;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+.prose pre code:after,
+.prose pre code:before {
+  content: "";
+}
+
+.prose table {
+  width: 100%;
+  table-layout: auto;
+  text-align: left;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 0.875em;
+  line-height: 1.7142857;
+}
+
+.prose thead {
+  color: #FFFFFF;
+  font-weight: 600;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(255, 255, 255, 0.75);
+}
+
+.prose thead th {
+  vertical-align: bottom;
+  padding-right: 0.5714286em;
+  padding-bottom: 0.5714286em;
+  padding-left: 0.5714286em;
+}
+
+.prose tbody tr {
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.prose tbody tr:last-child {
+  border-bottom-width: 0;
+}
+
+.prose tbody td {
+  vertical-align: top;
+  padding: 0.5714286em;
+}
+
+.prose {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+.prose p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.prose figure,
+.prose img,
+.prose video {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.prose figure > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.prose h2 code {
+  font-size: 0.875em;
+}
+
+.prose h3 code {
+  font-size: 0.9em;
+}
+
+.prose ol,
+.prose ul {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.prose li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.prose > ul > li p {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.prose > ul > li > :first-child {
+  margin-top: 1.25em;
+}
+
+.prose > ul > li > :last-child {
+  margin-bottom: 1.25em;
+}
+
+.prose > ol > li > :first-child {
+  margin-top: 1.25em;
+}
+
+.prose > ol > li > :last-child {
+  margin-bottom: 1.25em;
+}
+
+.prose ol ol,
+.prose ol ul,
+.prose ul ol,
+.prose ul ul {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.prose h2 + *,
+.prose h3 + *,
+.prose h4 + *,
+.prose hr + * {
+  margin-top: 0;
+}
+
+.prose thead th:first-child {
+  padding-left: 0;
+}
+
+.prose thead th:last-child {
+  padding-right: 0;
+}
+
+.prose tbody td:first-child {
+  padding-left: 0;
+}
+
+.prose tbody td:last-child {
+  padding-right: 0;
+}
+
+.prose > :first-child {
+  margin-top: 0;
+}
+
+.prose > :last-child {
+  margin-bottom: 0;
+}
+
+.prose-sm {
+  font-size: 1rem;
+  line-height: 1.7142857;
+}
+
+.prose-sm p {
+  margin-top: 1.1428571em;
+  margin-bottom: 1.1428571em;
+}
+
+.prose-sm blockquote {
+  margin-top: 1.3333333em;
+  margin-bottom: 1.3333333em;
+  padding-left: 1.1111111em;
+}
+
+.prose-sm h1 {
+  font-size: 2.1428571em;
+  margin-top: 0;
+  margin-bottom: 0.8em;
+  line-height: 1.2;
+}
+
+.prose-sm h2 {
+  font-size: 1.4285714em;
+  margin-top: 1.6em;
+  margin-bottom: 0.8em;
+  line-height: 1.4;
+}
+
+.prose-sm h3 {
+  font-size: 1.2857143em;
+  margin-top: 1.5555556em;
+  margin-bottom: 0.4444444em;
+  line-height: 1.5555556;
+}
+
+.prose-sm h4 {
+  margin-top: 1.4285714em;
+  margin-bottom: 0.5714286em;
+  line-height: 1.4285714;
+}
+
+.prose-sm figure,
+.prose-sm img,
+.prose-sm video {
+  margin-top: 1.7142857em;
+  margin-bottom: 1.7142857em;
+}
+
+.prose-sm figure > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.prose-sm figure figcaption {
+  font-size: 0.8571429em;
+  line-height: 1.3333333;
+  margin-top: 0.6666667em;
+}
+
+.prose-sm code {
+  font-size: 0.8571429em;
+}
+
+.prose-sm h2 code {
+  font-size: 0.9em;
+}
+
+.prose-sm h3 code {
+  font-size: 0.8888889em;
+}
+
+.prose-sm pre {
+  font-size: 0.8571429em;
+  line-height: 1.6666667;
+  margin-top: 1.6666667em;
+  margin-bottom: 1.6666667em;
+  border-radius: 0.25rem;
+  padding: 0.6666667em 1em;
+}
+
+.prose-sm ol,
+.prose-sm ul {
+  margin-top: 1.1428571em;
+  margin-bottom: 1.1428571em;
+}
+
+.prose-sm li {
+  margin-top: 0.2857143em;
+  margin-bottom: 0.2857143em;
+}
+
+.prose-sm ol > li {
+  padding-left: 1.5714286em;
+}
+
+.prose-sm ol > li:before {
+  left: 0;
+}
+
+.prose-sm ul > li {
+  padding-left: 1.5714286em;
+}
+
+.prose-sm ul > li:before {
+  height: 0.3571429em;
+  width: 0.3571429em;
+  top: 0.67857em;
+  left: 0.2142857em;
+}
+
+.prose-sm > ul > li p {
+  margin-top: 0.5714286em;
+  margin-bottom: 0.5714286em;
+}
+
+.prose-sm > ul > li > :first-child {
+  margin-top: 1.1428571em;
+}
+
+.prose-sm > ul > li > :last-child {
+  margin-bottom: 1.1428571em;
+}
+
+.prose-sm > ol > li > :first-child {
+  margin-top: 1.1428571em;
+}
+
+.prose-sm > ol > li > :last-child {
+  margin-bottom: 1.1428571em;
+}
+
+.prose-sm ol ol,
+.prose-sm ol ul,
+.prose-sm ul ol,
+.prose-sm ul ul {
+  margin-top: 0.5714286em;
+  margin-bottom: 0.5714286em;
+}
+
+.prose-sm hr {
+  margin-top: 2.8571429em;
+  margin-bottom: 2.8571429em;
+}
+
+.prose-sm h2 + *,
+.prose-sm h3 + *,
+.prose-sm h4 + *,
+.prose-sm hr + * {
+  margin-top: 0;
+}
+
+.prose-sm table {
+  font-size: 0.8571429em;
+  line-height: 1.5;
+}
+
+.prose-sm thead th {
+  padding-right: 1em;
+  padding-bottom: 0.6666667em;
+  padding-left: 1em;
+}
+
+.prose-sm thead th:first-child {
+  padding-left: 0;
+}
+
+.prose-sm thead th:last-child {
+  padding-right: 0;
+}
+
+.prose-sm tbody td {
+  padding: 0.6666667em 1em;
+}
+
+.prose-sm tbody td:first-child {
+  padding-left: 0;
+}
+
+.prose-sm tbody td:last-child {
+  padding-right: 0;
+}
+
+.prose-sm > :first-child {
+  margin-top: 0;
+}
+
+.prose-sm > :last-child {
+  margin-bottom: 0;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -19266,18 +19521,6 @@ button:focus {
     --tw-space-x-reverse: 0;
     margin-right: calc(0.875rem * var(--tw-space-x-reverse));
     margin-left: calc(0.875rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .sm\:space-y-2-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(.625rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(.625rem * var(--tw-space-y-reverse));
-  }
-
-  .sm\:space-x-2-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(.625rem * var(--tw-space-x-reverse));
-    margin-left: calc(.625rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .sm\:space-y-xs > :not([hidden]) ~ :not([hidden]) {
@@ -19770,18 +20013,6 @@ button:focus {
     --tw-space-x-reverse: 0;
     margin-right: calc(-0.875rem * var(--tw-space-x-reverse));
     margin-left: calc(-0.875rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .sm\:-space-y-2-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(-0.625rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(-0.625rem * var(--tw-space-y-reverse));
-  }
-
-  .sm\:-space-x-2-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(-0.625rem * var(--tw-space-x-reverse));
-    margin-left: calc(-0.625rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .sm\:-space-y-xs > :not([hidden]) ~ :not([hidden]) {
@@ -22456,10 +22687,6 @@ button:focus {
     height: 0.875rem;
   }
 
-  .sm\:h-2-5 {
-    height: .625rem;
-  }
-
   .sm\:h-xs {
     height: 20rem;
   }
@@ -22834,10 +23061,6 @@ button:focus {
     margin: 0.875rem;
   }
 
-  .sm\:m-2-5 {
-    margin: .625rem;
-  }
-
   .sm\:m-xs {
     margin: 20rem;
   }
@@ -23000,10 +23223,6 @@ button:focus {
 
   .sm\:-m-3\.5 {
     margin: -0.875rem;
-  }
-
-  .sm\:-m-2-5 {
-    margin: -0.625rem;
   }
 
   .sm\:-m-xs {
@@ -23388,16 +23607,6 @@ button:focus {
   .sm\:mx-3\.5 {
     margin-left: 0.875rem;
     margin-right: 0.875rem;
-  }
-
-  .sm\:my-2-5 {
-    margin-top: .625rem;
-    margin-bottom: .625rem;
-  }
-
-  .sm\:mx-2-5 {
-    margin-left: .625rem;
-    margin-right: .625rem;
   }
 
   .sm\:my-xs {
@@ -23808,16 +24017,6 @@ button:focus {
   .sm\:-mx-3\.5 {
     margin-left: -0.875rem;
     margin-right: -0.875rem;
-  }
-
-  .sm\:-my-2-5 {
-    margin-top: -0.625rem;
-    margin-bottom: -0.625rem;
-  }
-
-  .sm\:-mx-2-5 {
-    margin-left: -0.625rem;
-    margin-right: -0.625rem;
   }
 
   .sm\:-my-xs {
@@ -24454,22 +24653,6 @@ button:focus {
 
   .sm\:ml-3\.5 {
     margin-left: 0.875rem;
-  }
-
-  .sm\:mt-2-5 {
-    margin-top: .625rem;
-  }
-
-  .sm\:mr-2-5 {
-    margin-right: .625rem;
-  }
-
-  .sm\:mb-2-5 {
-    margin-bottom: .625rem;
-  }
-
-  .sm\:ml-2-5 {
-    margin-left: .625rem;
   }
 
   .sm\:mt-xs {
@@ -25128,22 +25311,6 @@ button:focus {
     margin-left: -0.875rem;
   }
 
-  .sm\:-mt-2-5 {
-    margin-top: -0.625rem;
-  }
-
-  .sm\:-mr-2-5 {
-    margin-right: -0.625rem;
-  }
-
-  .sm\:-mb-2-5 {
-    margin-bottom: -0.625rem;
-  }
-
-  .sm\:-ml-2-5 {
-    margin-left: -0.625rem;
-  }
-
   .sm\:-mt-xs {
     margin-top: -20rem;
   }
@@ -25378,10 +25545,6 @@ button:focus {
 
   .sm\:max-h-3\.5 {
     max-height: 0.875rem;
-  }
-
-  .sm\:max-h-2-5 {
-    max-height: .625rem;
   }
 
   .sm\:max-h-xs {
@@ -26165,10 +26328,6 @@ button:focus {
     padding: 0.875rem;
   }
 
-  .sm\:p-2-5 {
-    padding: .625rem;
-  }
-
   .sm\:p-xs {
     padding: 20rem;
   }
@@ -26541,16 +26700,6 @@ button:focus {
   .sm\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
-  }
-
-  .sm\:py-2-5 {
-    padding-top: .625rem;
-    padding-bottom: .625rem;
-  }
-
-  .sm\:px-2-5 {
-    padding-left: .625rem;
-    padding-right: .625rem;
   }
 
   .sm\:py-xs {
@@ -27173,22 +27322,6 @@ button:focus {
     padding-left: 0.875rem;
   }
 
-  .sm\:pt-2-5 {
-    padding-top: .625rem;
-  }
-
-  .sm\:pr-2-5 {
-    padding-right: .625rem;
-  }
-
-  .sm\:pb-2-5 {
-    padding-bottom: .625rem;
-  }
-
-  .sm\:pl-2-5 {
-    padding-left: .625rem;
-  }
-
   .sm\:pt-xs {
     padding-top: 20rem;
   }
@@ -27741,13 +27874,6 @@ button:focus {
     left: 0.875rem;
   }
 
-  .sm\:inset-2-5 {
-    top: .625rem;
-    right: .625rem;
-    bottom: .625rem;
-    left: .625rem;
-  }
-
   .sm\:inset-xs {
     top: 20rem;
     right: 20rem;
@@ -28033,13 +28159,6 @@ button:focus {
     right: -0.875rem;
     bottom: -0.875rem;
     left: -0.875rem;
-  }
-
-  .sm\:-inset-2-5 {
-    top: -0.625rem;
-    right: -0.625rem;
-    bottom: -0.625rem;
-    left: -0.625rem;
   }
 
   .sm\:-inset-xs {
@@ -28528,16 +28647,6 @@ button:focus {
     left: 0.875rem;
   }
 
-  .sm\:inset-y-2-5 {
-    top: .625rem;
-    bottom: .625rem;
-  }
-
-  .sm\:inset-x-2-5 {
-    right: .625rem;
-    left: .625rem;
-  }
-
   .sm\:inset-y-xs {
     top: 20rem;
     bottom: 20rem;
@@ -28946,16 +29055,6 @@ button:focus {
   .sm\:-inset-x-3\.5 {
     right: -0.875rem;
     left: -0.875rem;
-  }
-
-  .sm\:-inset-y-2-5 {
-    top: -0.625rem;
-    bottom: -0.625rem;
-  }
-
-  .sm\:-inset-x-2-5 {
-    right: -0.625rem;
-    left: -0.625rem;
   }
 
   .sm\:-inset-y-xs {
@@ -29714,22 +29813,6 @@ button:focus {
     left: 0.875rem;
   }
 
-  .sm\:top-2-5 {
-    top: .625rem;
-  }
-
-  .sm\:right-2-5 {
-    right: .625rem;
-  }
-
-  .sm\:bottom-2-5 {
-    bottom: .625rem;
-  }
-
-  .sm\:left-2-5 {
-    left: .625rem;
-  }
-
   .sm\:top-xs {
     top: 20rem;
   }
@@ -30384,22 +30467,6 @@ button:focus {
 
   .sm\:-left-3\.5 {
     left: -0.875rem;
-  }
-
-  .sm\:-top-2-5 {
-    top: -0.625rem;
-  }
-
-  .sm\:-right-2-5 {
-    right: -0.625rem;
-  }
-
-  .sm\:-bottom-2-5 {
-    bottom: -0.625rem;
-  }
-
-  .sm\:-left-2-5 {
-    left: -0.625rem;
   }
 
   .sm\:-top-xs {
@@ -32296,10 +32363,6 @@ button:focus {
     width: 0.875rem;
   }
 
-  .sm\:w-2-5 {
-    width: .625rem;
-  }
-
   .sm\:w-xs {
     width: 20rem;
   }
@@ -32676,10 +32739,6 @@ button:focus {
     gap: 0.875rem;
   }
 
-  .sm\:gap-2-5 {
-    gap: .625rem;
-  }
-
   .sm\:gap-xs {
     gap: 20rem;
   }
@@ -32844,10 +32903,6 @@ button:focus {
     column-gap: 0.875rem;
   }
 
-  .sm\:gap-x-2-5 {
-    column-gap: .625rem;
-  }
-
   .sm\:gap-x-xs {
     column-gap: 20rem;
   }
@@ -33010,10 +33065,6 @@ button:focus {
 
   .sm\:gap-y-3\.5 {
     row-gap: 0.875rem;
-  }
-
-  .sm\:gap-y-2-5 {
-    row-gap: .625rem;
   }
 
   .sm\:gap-y-xs {
@@ -34287,10 +34338,6 @@ button:focus {
     --tw-translate-x: 0.875rem;
   }
 
-  .sm\:translate-x-2-5 {
-    --tw-translate-x: .625rem;
-  }
-
   .sm\:translate-x-xs {
     --tw-translate-x: 20rem;
   }
@@ -34453,10 +34500,6 @@ button:focus {
 
   .sm\:-translate-x-3\.5 {
     --tw-translate-x: -0.875rem;
-  }
-
-  .sm\:-translate-x-2-5 {
-    --tw-translate-x: -0.625rem;
   }
 
   .sm\:-translate-x-xs {
@@ -34687,10 +34730,6 @@ button:focus {
     --tw-translate-y: 0.875rem;
   }
 
-  .sm\:translate-y-2-5 {
-    --tw-translate-y: .625rem;
-  }
-
   .sm\:translate-y-xs {
     --tw-translate-y: 20rem;
   }
@@ -34853,10 +34892,6 @@ button:focus {
 
   .sm\:-translate-y-3\.5 {
     --tw-translate-y: -0.875rem;
-  }
-
-  .sm\:-translate-y-2-5 {
-    --tw-translate-y: -0.625rem;
   }
 
   .sm\:-translate-y-xs {
@@ -35087,10 +35122,6 @@ button:focus {
     --tw-translate-x: 0.875rem;
   }
 
-  .sm\:hover\:translate-x-2-5:hover {
-    --tw-translate-x: .625rem;
-  }
-
   .sm\:hover\:translate-x-xs:hover {
     --tw-translate-x: 20rem;
   }
@@ -35253,10 +35284,6 @@ button:focus {
 
   .sm\:hover\:-translate-x-3\.5:hover {
     --tw-translate-x: -0.875rem;
-  }
-
-  .sm\:hover\:-translate-x-2-5:hover {
-    --tw-translate-x: -0.625rem;
   }
 
   .sm\:hover\:-translate-x-xs:hover {
@@ -35487,10 +35514,6 @@ button:focus {
     --tw-translate-y: 0.875rem;
   }
 
-  .sm\:hover\:translate-y-2-5:hover {
-    --tw-translate-y: .625rem;
-  }
-
   .sm\:hover\:translate-y-xs:hover {
     --tw-translate-y: 20rem;
   }
@@ -35653,10 +35676,6 @@ button:focus {
 
   .sm\:hover\:-translate-y-3\.5:hover {
     --tw-translate-y: -0.875rem;
-  }
-
-  .sm\:hover\:-translate-y-2-5:hover {
-    --tw-translate-y: -0.625rem;
   }
 
   .sm\:hover\:-translate-y-xs:hover {
@@ -35887,10 +35906,6 @@ button:focus {
     --tw-translate-x: 0.875rem;
   }
 
-  .sm\:focus\:translate-x-2-5:focus {
-    --tw-translate-x: .625rem;
-  }
-
   .sm\:focus\:translate-x-xs:focus {
     --tw-translate-x: 20rem;
   }
@@ -36053,10 +36068,6 @@ button:focus {
 
   .sm\:focus\:-translate-x-3\.5:focus {
     --tw-translate-x: -0.875rem;
-  }
-
-  .sm\:focus\:-translate-x-2-5:focus {
-    --tw-translate-x: -0.625rem;
   }
 
   .sm\:focus\:-translate-x-xs:focus {
@@ -36287,10 +36298,6 @@ button:focus {
     --tw-translate-y: 0.875rem;
   }
 
-  .sm\:focus\:translate-y-2-5:focus {
-    --tw-translate-y: .625rem;
-  }
-
   .sm\:focus\:translate-y-xs:focus {
     --tw-translate-y: 20rem;
   }
@@ -36453,10 +36460,6 @@ button:focus {
 
   .sm\:focus\:-translate-y-3\.5:focus {
     --tw-translate-y: -0.875rem;
-  }
-
-  .sm\:focus\:-translate-y-2-5:focus {
-    --tw-translate-y: -0.625rem;
   }
 
   .sm\:focus\:-translate-y-xs:focus {
@@ -37353,18 +37356,6 @@ button:focus {
     margin-left: calc(0.875rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:space-y-2-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(.625rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(.625rem * var(--tw-space-y-reverse));
-  }
-
-  .md\:space-x-2-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(.625rem * var(--tw-space-x-reverse));
-    margin-left: calc(.625rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .md\:space-y-xs > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(20rem * calc(1 - var(--tw-space-y-reverse)));
@@ -37855,18 +37846,6 @@ button:focus {
     --tw-space-x-reverse: 0;
     margin-right: calc(-0.875rem * var(--tw-space-x-reverse));
     margin-left: calc(-0.875rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:-space-y-2-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(-0.625rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(-0.625rem * var(--tw-space-y-reverse));
-  }
-
-  .md\:-space-x-2-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(-0.625rem * var(--tw-space-x-reverse));
-    margin-left: calc(-0.625rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:-space-y-xs > :not([hidden]) ~ :not([hidden]) {
@@ -40541,10 +40520,6 @@ button:focus {
     height: 0.875rem;
   }
 
-  .md\:h-2-5 {
-    height: .625rem;
-  }
-
   .md\:h-xs {
     height: 20rem;
   }
@@ -40919,10 +40894,6 @@ button:focus {
     margin: 0.875rem;
   }
 
-  .md\:m-2-5 {
-    margin: .625rem;
-  }
-
   .md\:m-xs {
     margin: 20rem;
   }
@@ -41085,10 +41056,6 @@ button:focus {
 
   .md\:-m-3\.5 {
     margin: -0.875rem;
-  }
-
-  .md\:-m-2-5 {
-    margin: -0.625rem;
   }
 
   .md\:-m-xs {
@@ -41473,16 +41440,6 @@ button:focus {
   .md\:mx-3\.5 {
     margin-left: 0.875rem;
     margin-right: 0.875rem;
-  }
-
-  .md\:my-2-5 {
-    margin-top: .625rem;
-    margin-bottom: .625rem;
-  }
-
-  .md\:mx-2-5 {
-    margin-left: .625rem;
-    margin-right: .625rem;
   }
 
   .md\:my-xs {
@@ -41893,16 +41850,6 @@ button:focus {
   .md\:-mx-3\.5 {
     margin-left: -0.875rem;
     margin-right: -0.875rem;
-  }
-
-  .md\:-my-2-5 {
-    margin-top: -0.625rem;
-    margin-bottom: -0.625rem;
-  }
-
-  .md\:-mx-2-5 {
-    margin-left: -0.625rem;
-    margin-right: -0.625rem;
   }
 
   .md\:-my-xs {
@@ -42539,22 +42486,6 @@ button:focus {
 
   .md\:ml-3\.5 {
     margin-left: 0.875rem;
-  }
-
-  .md\:mt-2-5 {
-    margin-top: .625rem;
-  }
-
-  .md\:mr-2-5 {
-    margin-right: .625rem;
-  }
-
-  .md\:mb-2-5 {
-    margin-bottom: .625rem;
-  }
-
-  .md\:ml-2-5 {
-    margin-left: .625rem;
   }
 
   .md\:mt-xs {
@@ -43213,22 +43144,6 @@ button:focus {
     margin-left: -0.875rem;
   }
 
-  .md\:-mt-2-5 {
-    margin-top: -0.625rem;
-  }
-
-  .md\:-mr-2-5 {
-    margin-right: -0.625rem;
-  }
-
-  .md\:-mb-2-5 {
-    margin-bottom: -0.625rem;
-  }
-
-  .md\:-ml-2-5 {
-    margin-left: -0.625rem;
-  }
-
   .md\:-mt-xs {
     margin-top: -20rem;
   }
@@ -43463,10 +43378,6 @@ button:focus {
 
   .md\:max-h-3\.5 {
     max-height: 0.875rem;
-  }
-
-  .md\:max-h-2-5 {
-    max-height: .625rem;
   }
 
   .md\:max-h-xs {
@@ -44250,10 +44161,6 @@ button:focus {
     padding: 0.875rem;
   }
 
-  .md\:p-2-5 {
-    padding: .625rem;
-  }
-
   .md\:p-xs {
     padding: 20rem;
   }
@@ -44626,16 +44533,6 @@ button:focus {
   .md\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
-  }
-
-  .md\:py-2-5 {
-    padding-top: .625rem;
-    padding-bottom: .625rem;
-  }
-
-  .md\:px-2-5 {
-    padding-left: .625rem;
-    padding-right: .625rem;
   }
 
   .md\:py-xs {
@@ -45258,22 +45155,6 @@ button:focus {
     padding-left: 0.875rem;
   }
 
-  .md\:pt-2-5 {
-    padding-top: .625rem;
-  }
-
-  .md\:pr-2-5 {
-    padding-right: .625rem;
-  }
-
-  .md\:pb-2-5 {
-    padding-bottom: .625rem;
-  }
-
-  .md\:pl-2-5 {
-    padding-left: .625rem;
-  }
-
   .md\:pt-xs {
     padding-top: 20rem;
   }
@@ -45826,13 +45707,6 @@ button:focus {
     left: 0.875rem;
   }
 
-  .md\:inset-2-5 {
-    top: .625rem;
-    right: .625rem;
-    bottom: .625rem;
-    left: .625rem;
-  }
-
   .md\:inset-xs {
     top: 20rem;
     right: 20rem;
@@ -46118,13 +45992,6 @@ button:focus {
     right: -0.875rem;
     bottom: -0.875rem;
     left: -0.875rem;
-  }
-
-  .md\:-inset-2-5 {
-    top: -0.625rem;
-    right: -0.625rem;
-    bottom: -0.625rem;
-    left: -0.625rem;
   }
 
   .md\:-inset-xs {
@@ -46613,16 +46480,6 @@ button:focus {
     left: 0.875rem;
   }
 
-  .md\:inset-y-2-5 {
-    top: .625rem;
-    bottom: .625rem;
-  }
-
-  .md\:inset-x-2-5 {
-    right: .625rem;
-    left: .625rem;
-  }
-
   .md\:inset-y-xs {
     top: 20rem;
     bottom: 20rem;
@@ -47031,16 +46888,6 @@ button:focus {
   .md\:-inset-x-3\.5 {
     right: -0.875rem;
     left: -0.875rem;
-  }
-
-  .md\:-inset-y-2-5 {
-    top: -0.625rem;
-    bottom: -0.625rem;
-  }
-
-  .md\:-inset-x-2-5 {
-    right: -0.625rem;
-    left: -0.625rem;
   }
 
   .md\:-inset-y-xs {
@@ -47799,22 +47646,6 @@ button:focus {
     left: 0.875rem;
   }
 
-  .md\:top-2-5 {
-    top: .625rem;
-  }
-
-  .md\:right-2-5 {
-    right: .625rem;
-  }
-
-  .md\:bottom-2-5 {
-    bottom: .625rem;
-  }
-
-  .md\:left-2-5 {
-    left: .625rem;
-  }
-
   .md\:top-xs {
     top: 20rem;
   }
@@ -48469,22 +48300,6 @@ button:focus {
 
   .md\:-left-3\.5 {
     left: -0.875rem;
-  }
-
-  .md\:-top-2-5 {
-    top: -0.625rem;
-  }
-
-  .md\:-right-2-5 {
-    right: -0.625rem;
-  }
-
-  .md\:-bottom-2-5 {
-    bottom: -0.625rem;
-  }
-
-  .md\:-left-2-5 {
-    left: -0.625rem;
   }
 
   .md\:-top-xs {
@@ -50381,10 +50196,6 @@ button:focus {
     width: 0.875rem;
   }
 
-  .md\:w-2-5 {
-    width: .625rem;
-  }
-
   .md\:w-xs {
     width: 20rem;
   }
@@ -50761,10 +50572,6 @@ button:focus {
     gap: 0.875rem;
   }
 
-  .md\:gap-2-5 {
-    gap: .625rem;
-  }
-
   .md\:gap-xs {
     gap: 20rem;
   }
@@ -50929,10 +50736,6 @@ button:focus {
     column-gap: 0.875rem;
   }
 
-  .md\:gap-x-2-5 {
-    column-gap: .625rem;
-  }
-
   .md\:gap-x-xs {
     column-gap: 20rem;
   }
@@ -51095,10 +50898,6 @@ button:focus {
 
   .md\:gap-y-3\.5 {
     row-gap: 0.875rem;
-  }
-
-  .md\:gap-y-2-5 {
-    row-gap: .625rem;
   }
 
   .md\:gap-y-xs {
@@ -52372,10 +52171,6 @@ button:focus {
     --tw-translate-x: 0.875rem;
   }
 
-  .md\:translate-x-2-5 {
-    --tw-translate-x: .625rem;
-  }
-
   .md\:translate-x-xs {
     --tw-translate-x: 20rem;
   }
@@ -52538,10 +52333,6 @@ button:focus {
 
   .md\:-translate-x-3\.5 {
     --tw-translate-x: -0.875rem;
-  }
-
-  .md\:-translate-x-2-5 {
-    --tw-translate-x: -0.625rem;
   }
 
   .md\:-translate-x-xs {
@@ -52772,10 +52563,6 @@ button:focus {
     --tw-translate-y: 0.875rem;
   }
 
-  .md\:translate-y-2-5 {
-    --tw-translate-y: .625rem;
-  }
-
   .md\:translate-y-xs {
     --tw-translate-y: 20rem;
   }
@@ -52938,10 +52725,6 @@ button:focus {
 
   .md\:-translate-y-3\.5 {
     --tw-translate-y: -0.875rem;
-  }
-
-  .md\:-translate-y-2-5 {
-    --tw-translate-y: -0.625rem;
   }
 
   .md\:-translate-y-xs {
@@ -53172,10 +52955,6 @@ button:focus {
     --tw-translate-x: 0.875rem;
   }
 
-  .md\:hover\:translate-x-2-5:hover {
-    --tw-translate-x: .625rem;
-  }
-
   .md\:hover\:translate-x-xs:hover {
     --tw-translate-x: 20rem;
   }
@@ -53338,10 +53117,6 @@ button:focus {
 
   .md\:hover\:-translate-x-3\.5:hover {
     --tw-translate-x: -0.875rem;
-  }
-
-  .md\:hover\:-translate-x-2-5:hover {
-    --tw-translate-x: -0.625rem;
   }
 
   .md\:hover\:-translate-x-xs:hover {
@@ -53572,10 +53347,6 @@ button:focus {
     --tw-translate-y: 0.875rem;
   }
 
-  .md\:hover\:translate-y-2-5:hover {
-    --tw-translate-y: .625rem;
-  }
-
   .md\:hover\:translate-y-xs:hover {
     --tw-translate-y: 20rem;
   }
@@ -53738,10 +53509,6 @@ button:focus {
 
   .md\:hover\:-translate-y-3\.5:hover {
     --tw-translate-y: -0.875rem;
-  }
-
-  .md\:hover\:-translate-y-2-5:hover {
-    --tw-translate-y: -0.625rem;
   }
 
   .md\:hover\:-translate-y-xs:hover {
@@ -53972,10 +53739,6 @@ button:focus {
     --tw-translate-x: 0.875rem;
   }
 
-  .md\:focus\:translate-x-2-5:focus {
-    --tw-translate-x: .625rem;
-  }
-
   .md\:focus\:translate-x-xs:focus {
     --tw-translate-x: 20rem;
   }
@@ -54138,10 +53901,6 @@ button:focus {
 
   .md\:focus\:-translate-x-3\.5:focus {
     --tw-translate-x: -0.875rem;
-  }
-
-  .md\:focus\:-translate-x-2-5:focus {
-    --tw-translate-x: -0.625rem;
   }
 
   .md\:focus\:-translate-x-xs:focus {
@@ -54372,10 +54131,6 @@ button:focus {
     --tw-translate-y: 0.875rem;
   }
 
-  .md\:focus\:translate-y-2-5:focus {
-    --tw-translate-y: .625rem;
-  }
-
   .md\:focus\:translate-y-xs:focus {
     --tw-translate-y: 20rem;
   }
@@ -54538,10 +54293,6 @@ button:focus {
 
   .md\:focus\:-translate-y-3\.5:focus {
     --tw-translate-y: -0.875rem;
-  }
-
-  .md\:focus\:-translate-y-2-5:focus {
-    --tw-translate-y: -0.625rem;
   }
 
   .md\:focus\:-translate-y-xs:focus {
@@ -55438,18 +55189,6 @@ button:focus {
     margin-left: calc(0.875rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .lg\:space-y-2-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(.625rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(.625rem * var(--tw-space-y-reverse));
-  }
-
-  .lg\:space-x-2-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(.625rem * var(--tw-space-x-reverse));
-    margin-left: calc(.625rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .lg\:space-y-xs > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(20rem * calc(1 - var(--tw-space-y-reverse)));
@@ -55940,18 +55679,6 @@ button:focus {
     --tw-space-x-reverse: 0;
     margin-right: calc(-0.875rem * var(--tw-space-x-reverse));
     margin-left: calc(-0.875rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:-space-y-2-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(-0.625rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(-0.625rem * var(--tw-space-y-reverse));
-  }
-
-  .lg\:-space-x-2-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(-0.625rem * var(--tw-space-x-reverse));
-    margin-left: calc(-0.625rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:-space-y-xs > :not([hidden]) ~ :not([hidden]) {
@@ -58626,10 +58353,6 @@ button:focus {
     height: 0.875rem;
   }
 
-  .lg\:h-2-5 {
-    height: .625rem;
-  }
-
   .lg\:h-xs {
     height: 20rem;
   }
@@ -59004,10 +58727,6 @@ button:focus {
     margin: 0.875rem;
   }
 
-  .lg\:m-2-5 {
-    margin: .625rem;
-  }
-
   .lg\:m-xs {
     margin: 20rem;
   }
@@ -59170,10 +58889,6 @@ button:focus {
 
   .lg\:-m-3\.5 {
     margin: -0.875rem;
-  }
-
-  .lg\:-m-2-5 {
-    margin: -0.625rem;
   }
 
   .lg\:-m-xs {
@@ -59558,16 +59273,6 @@ button:focus {
   .lg\:mx-3\.5 {
     margin-left: 0.875rem;
     margin-right: 0.875rem;
-  }
-
-  .lg\:my-2-5 {
-    margin-top: .625rem;
-    margin-bottom: .625rem;
-  }
-
-  .lg\:mx-2-5 {
-    margin-left: .625rem;
-    margin-right: .625rem;
   }
 
   .lg\:my-xs {
@@ -59978,16 +59683,6 @@ button:focus {
   .lg\:-mx-3\.5 {
     margin-left: -0.875rem;
     margin-right: -0.875rem;
-  }
-
-  .lg\:-my-2-5 {
-    margin-top: -0.625rem;
-    margin-bottom: -0.625rem;
-  }
-
-  .lg\:-mx-2-5 {
-    margin-left: -0.625rem;
-    margin-right: -0.625rem;
   }
 
   .lg\:-my-xs {
@@ -60624,22 +60319,6 @@ button:focus {
 
   .lg\:ml-3\.5 {
     margin-left: 0.875rem;
-  }
-
-  .lg\:mt-2-5 {
-    margin-top: .625rem;
-  }
-
-  .lg\:mr-2-5 {
-    margin-right: .625rem;
-  }
-
-  .lg\:mb-2-5 {
-    margin-bottom: .625rem;
-  }
-
-  .lg\:ml-2-5 {
-    margin-left: .625rem;
   }
 
   .lg\:mt-xs {
@@ -61298,22 +60977,6 @@ button:focus {
     margin-left: -0.875rem;
   }
 
-  .lg\:-mt-2-5 {
-    margin-top: -0.625rem;
-  }
-
-  .lg\:-mr-2-5 {
-    margin-right: -0.625rem;
-  }
-
-  .lg\:-mb-2-5 {
-    margin-bottom: -0.625rem;
-  }
-
-  .lg\:-ml-2-5 {
-    margin-left: -0.625rem;
-  }
-
   .lg\:-mt-xs {
     margin-top: -20rem;
   }
@@ -61548,10 +61211,6 @@ button:focus {
 
   .lg\:max-h-3\.5 {
     max-height: 0.875rem;
-  }
-
-  .lg\:max-h-2-5 {
-    max-height: .625rem;
   }
 
   .lg\:max-h-xs {
@@ -62335,10 +61994,6 @@ button:focus {
     padding: 0.875rem;
   }
 
-  .lg\:p-2-5 {
-    padding: .625rem;
-  }
-
   .lg\:p-xs {
     padding: 20rem;
   }
@@ -62711,16 +62366,6 @@ button:focus {
   .lg\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
-  }
-
-  .lg\:py-2-5 {
-    padding-top: .625rem;
-    padding-bottom: .625rem;
-  }
-
-  .lg\:px-2-5 {
-    padding-left: .625rem;
-    padding-right: .625rem;
   }
 
   .lg\:py-xs {
@@ -63343,22 +62988,6 @@ button:focus {
     padding-left: 0.875rem;
   }
 
-  .lg\:pt-2-5 {
-    padding-top: .625rem;
-  }
-
-  .lg\:pr-2-5 {
-    padding-right: .625rem;
-  }
-
-  .lg\:pb-2-5 {
-    padding-bottom: .625rem;
-  }
-
-  .lg\:pl-2-5 {
-    padding-left: .625rem;
-  }
-
   .lg\:pt-xs {
     padding-top: 20rem;
   }
@@ -63911,13 +63540,6 @@ button:focus {
     left: 0.875rem;
   }
 
-  .lg\:inset-2-5 {
-    top: .625rem;
-    right: .625rem;
-    bottom: .625rem;
-    left: .625rem;
-  }
-
   .lg\:inset-xs {
     top: 20rem;
     right: 20rem;
@@ -64203,13 +63825,6 @@ button:focus {
     right: -0.875rem;
     bottom: -0.875rem;
     left: -0.875rem;
-  }
-
-  .lg\:-inset-2-5 {
-    top: -0.625rem;
-    right: -0.625rem;
-    bottom: -0.625rem;
-    left: -0.625rem;
   }
 
   .lg\:-inset-xs {
@@ -64698,16 +64313,6 @@ button:focus {
     left: 0.875rem;
   }
 
-  .lg\:inset-y-2-5 {
-    top: .625rem;
-    bottom: .625rem;
-  }
-
-  .lg\:inset-x-2-5 {
-    right: .625rem;
-    left: .625rem;
-  }
-
   .lg\:inset-y-xs {
     top: 20rem;
     bottom: 20rem;
@@ -65116,16 +64721,6 @@ button:focus {
   .lg\:-inset-x-3\.5 {
     right: -0.875rem;
     left: -0.875rem;
-  }
-
-  .lg\:-inset-y-2-5 {
-    top: -0.625rem;
-    bottom: -0.625rem;
-  }
-
-  .lg\:-inset-x-2-5 {
-    right: -0.625rem;
-    left: -0.625rem;
   }
 
   .lg\:-inset-y-xs {
@@ -65884,22 +65479,6 @@ button:focus {
     left: 0.875rem;
   }
 
-  .lg\:top-2-5 {
-    top: .625rem;
-  }
-
-  .lg\:right-2-5 {
-    right: .625rem;
-  }
-
-  .lg\:bottom-2-5 {
-    bottom: .625rem;
-  }
-
-  .lg\:left-2-5 {
-    left: .625rem;
-  }
-
   .lg\:top-xs {
     top: 20rem;
   }
@@ -66554,22 +66133,6 @@ button:focus {
 
   .lg\:-left-3\.5 {
     left: -0.875rem;
-  }
-
-  .lg\:-top-2-5 {
-    top: -0.625rem;
-  }
-
-  .lg\:-right-2-5 {
-    right: -0.625rem;
-  }
-
-  .lg\:-bottom-2-5 {
-    bottom: -0.625rem;
-  }
-
-  .lg\:-left-2-5 {
-    left: -0.625rem;
   }
 
   .lg\:-top-xs {
@@ -68466,10 +68029,6 @@ button:focus {
     width: 0.875rem;
   }
 
-  .lg\:w-2-5 {
-    width: .625rem;
-  }
-
   .lg\:w-xs {
     width: 20rem;
   }
@@ -68846,10 +68405,6 @@ button:focus {
     gap: 0.875rem;
   }
 
-  .lg\:gap-2-5 {
-    gap: .625rem;
-  }
-
   .lg\:gap-xs {
     gap: 20rem;
   }
@@ -69014,10 +68569,6 @@ button:focus {
     column-gap: 0.875rem;
   }
 
-  .lg\:gap-x-2-5 {
-    column-gap: .625rem;
-  }
-
   .lg\:gap-x-xs {
     column-gap: 20rem;
   }
@@ -69180,10 +68731,6 @@ button:focus {
 
   .lg\:gap-y-3\.5 {
     row-gap: 0.875rem;
-  }
-
-  .lg\:gap-y-2-5 {
-    row-gap: .625rem;
   }
 
   .lg\:gap-y-xs {
@@ -70457,10 +70004,6 @@ button:focus {
     --tw-translate-x: 0.875rem;
   }
 
-  .lg\:translate-x-2-5 {
-    --tw-translate-x: .625rem;
-  }
-
   .lg\:translate-x-xs {
     --tw-translate-x: 20rem;
   }
@@ -70623,10 +70166,6 @@ button:focus {
 
   .lg\:-translate-x-3\.5 {
     --tw-translate-x: -0.875rem;
-  }
-
-  .lg\:-translate-x-2-5 {
-    --tw-translate-x: -0.625rem;
   }
 
   .lg\:-translate-x-xs {
@@ -70857,10 +70396,6 @@ button:focus {
     --tw-translate-y: 0.875rem;
   }
 
-  .lg\:translate-y-2-5 {
-    --tw-translate-y: .625rem;
-  }
-
   .lg\:translate-y-xs {
     --tw-translate-y: 20rem;
   }
@@ -71023,10 +70558,6 @@ button:focus {
 
   .lg\:-translate-y-3\.5 {
     --tw-translate-y: -0.875rem;
-  }
-
-  .lg\:-translate-y-2-5 {
-    --tw-translate-y: -0.625rem;
   }
 
   .lg\:-translate-y-xs {
@@ -71257,10 +70788,6 @@ button:focus {
     --tw-translate-x: 0.875rem;
   }
 
-  .lg\:hover\:translate-x-2-5:hover {
-    --tw-translate-x: .625rem;
-  }
-
   .lg\:hover\:translate-x-xs:hover {
     --tw-translate-x: 20rem;
   }
@@ -71423,10 +70950,6 @@ button:focus {
 
   .lg\:hover\:-translate-x-3\.5:hover {
     --tw-translate-x: -0.875rem;
-  }
-
-  .lg\:hover\:-translate-x-2-5:hover {
-    --tw-translate-x: -0.625rem;
   }
 
   .lg\:hover\:-translate-x-xs:hover {
@@ -71657,10 +71180,6 @@ button:focus {
     --tw-translate-y: 0.875rem;
   }
 
-  .lg\:hover\:translate-y-2-5:hover {
-    --tw-translate-y: .625rem;
-  }
-
   .lg\:hover\:translate-y-xs:hover {
     --tw-translate-y: 20rem;
   }
@@ -71823,10 +71342,6 @@ button:focus {
 
   .lg\:hover\:-translate-y-3\.5:hover {
     --tw-translate-y: -0.875rem;
-  }
-
-  .lg\:hover\:-translate-y-2-5:hover {
-    --tw-translate-y: -0.625rem;
   }
 
   .lg\:hover\:-translate-y-xs:hover {
@@ -72057,10 +71572,6 @@ button:focus {
     --tw-translate-x: 0.875rem;
   }
 
-  .lg\:focus\:translate-x-2-5:focus {
-    --tw-translate-x: .625rem;
-  }
-
   .lg\:focus\:translate-x-xs:focus {
     --tw-translate-x: 20rem;
   }
@@ -72223,10 +71734,6 @@ button:focus {
 
   .lg\:focus\:-translate-x-3\.5:focus {
     --tw-translate-x: -0.875rem;
-  }
-
-  .lg\:focus\:-translate-x-2-5:focus {
-    --tw-translate-x: -0.625rem;
   }
 
   .lg\:focus\:-translate-x-xs:focus {
@@ -72457,10 +71964,6 @@ button:focus {
     --tw-translate-y: 0.875rem;
   }
 
-  .lg\:focus\:translate-y-2-5:focus {
-    --tw-translate-y: .625rem;
-  }
-
   .lg\:focus\:translate-y-xs:focus {
     --tw-translate-y: 20rem;
   }
@@ -72623,10 +72126,6 @@ button:focus {
 
   .lg\:focus\:-translate-y-3\.5:focus {
     --tw-translate-y: -0.875rem;
-  }
-
-  .lg\:focus\:-translate-y-2-5:focus {
-    --tw-translate-y: -0.625rem;
   }
 
   .lg\:focus\:-translate-y-xs:focus {

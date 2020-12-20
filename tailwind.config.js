@@ -56,7 +56,6 @@ module.exports = {
         ],
       },
       spacing: {
-        "2-5": ".625rem",
         xs: "20rem",
         sm: "24rem",
         md: "28rem",
@@ -98,6 +97,10 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      translate: ["focus"],
+    },
+  },
   plugins: [],
 };

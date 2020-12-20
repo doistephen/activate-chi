@@ -1,0 +1,19 @@
+---
+layout: default
+title: Blog
+eleventyExcludeFromCollections: true
+---
+
+<main class="space-y-16">
+    <h1 class="text-4xl leading-snug tracking-wide font-display">
+        <span class="text-hue">Activate:Chi</span> blog by writers and thinkers organizing for justice in Chicago.
+    </h1>
+<ul class="grid grid-cols-2 gap-12">
+    {% for item in collections.blog %}
+        <li>
+            {% include "components/_blog-card.njk" %}
+        </li>
+    {% endfor %}
+</ul>
+
+</main>

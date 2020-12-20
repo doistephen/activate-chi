@@ -27,6 +27,4 @@ var getHeights = function getHeights() {
   });
 };
 
-getHeights(); // window.addEventListener("resize", function () {
-//   getHeights();
-// });
+getHeights();

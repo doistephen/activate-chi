@@ -13,9 +13,9 @@
         </div>
         <button
             @click="selected === '{{name}}' ? selected = 'none' : selected = '{{name}}'"
-            class="w-8 h-8 rounded-full p-2-5 btn-outline"
+            class="rounded-full p-2.5 btn-outline"
         >
-            <span :class="{'rotate-135' : selected === '{{name}}'}" class="block transition transform">{% include "img/plus.svg" %}</span>
+            <span :class="{'rotate-135' : selected === '{{name}}'}" class="block w-3 h-3 transition transform">{% include "img/plus.svg" %}</span>
         </button>
     </div>
     <div

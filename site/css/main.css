@@ -8,3 +8,4 @@
 @import "tailwindcss/components";
 @import "partials/_utilities";
 @import "tailwindcss/utilities";
+@import "partials/_prose";

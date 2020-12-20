@@ -1,3 +1,5 @@
+ {% import "components/_button.njk" as button %}
+
 <section id="about">
         <div class="grid items-start justify-between grid-cols-12 gap-6 py-8">
             <div class="flex col-span-12">
@@ -7,9 +9,7 @@
                 <p class="text-2xl">
                     {{ aboutSection.snippet }}
                 </p>
-                <a href="#" class="inline-flex px-5 pt-3 pb-2 text-sm tracking-wider btn-outline font-display">
-                    Read our history
-                </a>
+                {{ button.button("Read our story", as="button") }}
             </div>
             <dl class="col-span-4">
                 <dt class="font-display">Our mission</dt>
