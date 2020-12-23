@@ -5,12 +5,12 @@ eleventyExcludeFromCollections: true
 ---
 
 <main class="space-y-16">
-    <h1 class="text-4xl leading-snug tracking-wide font-display">
+    <h1 class="text-4xl leading-snug tracking-wide text-center font-display">
         <span class="text-hue">Activate:Chi</span> blog by writers and thinkers organizing for justice in Chicago.
     </h1>
-<ul class="grid grid-cols-2 gap-12">
+<ul class="grid grid-cols-12 gap-12">
     {% for item in collections.blog %}
-        <li>
+        <li class="col-span-8 col-start-3">
             {% include "components/_blog-card.njk" %}
         </li>
     {% endfor %}

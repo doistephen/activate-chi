@@ -58,6 +58,24 @@ collections:
         }
       - { name: "summary", label: "Summary", widget: "text" }
 
+  - name: "initiatives"
+    label: "Initiatives"
+    label_singular: "Initiative"
+    folder: "site/initiatives"
+    create: true
+    description: "Activate:Chi initiatives to display on the homepage in the Initiatives section."
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "type", label: "Type of Initiative", widget: "string" }
+      - { name: "date", label: "Date", widget: "string" }
+      - {
+          name: "image",
+          label: "Image",
+          widget: "image",
+          allow_multiple: false,
+        }
+      - { name: "summary", label: "Summary", widget: "text" }
+
   - name: "blog"
     label: "Blog"
     label_singular: "Blog post"

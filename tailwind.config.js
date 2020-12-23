@@ -16,7 +16,7 @@ module.exports = {
     },
     colors: {
       gray: "#141414",
-      white: "#FFFFFF",
+      white: "#ffffff",
       yellow: "#FFB906",
       hue: "#F86849",
       none: "transparent",
@@ -56,6 +56,7 @@ module.exports = {
         ],
       },
       spacing: {
+        38: "9.5rem",
         xs: "20rem",
         sm: "24rem",
         md: "28rem",
@@ -82,9 +83,6 @@ module.exports = {
       },
       scale: {
         103: "1.03",
-      },
-      transitionDuration: {
-        0: "0",
       },
       keyframes: {
         marquee: {

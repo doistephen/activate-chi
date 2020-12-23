@@ -1,0 +1,40 @@
+{% macro initiative(type, title, date, summary, image) %}
+<div class="pb-5 border-b border-white border-opacity-25" data-organizer="wrapper">
+    <div id="top" class="flex items-center justify-between pt-4 space-x-5">
+
+        <div class="flex items-center space-x-6">
+            <div
+                :class="{'opacity-0' : selected === '{{title}}'}"
+                :class="{'opacity-90' : selected !== '{{title}}'}"
+                class="flex-shrink-0 w-32 h-20 overflow-hidden transition-opacity border border-white border-opacity-50 rounded-full duration-50">
+        	    <img class="object-cover w-full h-full" src="{{image}}" alt="">
+        	</div>
+        	<div class="flex flex-col justify-end space-y-2 transition transform"
+                :class="{'-translate-x-38' : selected === '{{title}}'}">
+        	        <span class="text-sm text-opacity-75 text-hue">{{type}}</span>
+        	        <h3 class="flex-grow text-xl font-display">{{title}}</h3>
+        	</div>
+
+        </div>
+        <button
+            @click="selected === '{{title}}' ? selected = 'none' : selected = '{{title}}'"
+            class="flex-shrink-0 p-2.5 rounded-full btn-outline"
+            >
+            <span :class="{'rotate-135' : selected === '{{title}}'}" class="block w-3 h-3 transition transform">{% include "img/plus.svg" %}</span>
+        </button>
+    </div>
+    <div
+    x-bind:style="selected === '{{title}}' ? 'max-height: var(--summary-height)' : 'max-height: 0'"
+    class="flex justify-between space-x-5 overflow-hidden transition-all transform" data-organizer="summary">
+        <div class="flex space-x-5">
+            {# <div class="flex-shrink-0 w-32"></div> #}
+            <div class="max-w-2xl text-xl text-white text-opacity-50">
+                {{summary}}
+            </div>
+        </div>
+        <div class="flex-shrink-0 text-sm tracking-wider text-right text-white text-opacity-75 uppercase min-w-max">
+            <date>{{date}}</date>
+        </div>
+    </div>
+</div>
+{% endmacro %}

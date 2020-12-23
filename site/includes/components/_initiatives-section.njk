@@ -1,13 +1,17 @@
-
- {% import "components/_organizer.njk" as organizer %}
+ {% import "components/_initiative.njk" as initiative %}
 <section id="initiatives">
     <div class="grid items-start justify-between grid-cols-12 gap-6 py-8">
-    <div class="flex col-span-full">
-        <h2 class="text-xs tracking-wider rounded-full text-hue font-display">Our initiatives</h2>
+        <div class="flex col-span-full">
+            <h2 class="text-xs tracking-wider text-center rounded-full text-hue font-display">Our initiatives</h2>
+        </div>
+        <div class="text-base col-span-full">
+            <h3 class="text-4xl leading-snug tracking-wide font-display">We create and support initiatives that encourage individuals to start taking meaningful action where they're at.</h3>
+        </div>
+        <ul class="grid grid-cols-1 mt-6 border-t border-white border-opacity-25 col-span-full"
+            x-data="{ selected: `none` }">
+            {{ initiative.initiative("Voter Turnout Initiative", "Who’s Next?", "Fall 2020", image="assets/images/uploads/header-1@2x.jpg", "“Who’s Next” was Activate:Chi’s initiative to increase voter turnout in Chicago. We wanted people to choose at the ballot box who is next to make a change in their community, in Chicago, and in the nation!") }}
+            {{ initiative.initiative("Voter Turnout Initiative", "Carpool to Kenosha For Jacob Blake", "Fall 2020", image="assets/images/uploads/header-3@2x.jpg", "“Who’s Next” was Activate:Chi’s initiative to increase voter turnout in Chicago. We wanted people to choose at the ballot box who is next to make a change in their community, in Chicago, and in the nation!") }}
+            {{ initiative.initiative("Voter Turnout Initiative", "Chicago March of Justice", "Fall 2020", image="assets/images/uploads/header-4@2x.jpg", "“Who’s Next” was Activate:Chi’s initiative to increase voter turnout in Chicago. We wanted people to choose at the ballot box who is next to make a change in their community, in Chicago, and in the nation!") }}
+        </ul>
     </div>
-
-    <div class="col-span-6 text-base">
-    </div>
-
-</div>
 </section>

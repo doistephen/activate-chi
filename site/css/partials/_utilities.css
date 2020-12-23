@@ -25,10 +25,10 @@
 }
 
 .organizer-grid li {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  @apply border-b border-white border-opacity-25;
 }
 .organizer-grid li:nth-child(1) {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  @apply border-t border-white border-opacity-25;
 }
 [data-organizer="summary"] {
   will-change: max-height;
