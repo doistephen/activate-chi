@@ -1,12 +1,11 @@
-{% macro initiative(type, title, date, summary, image) %}
-<div class="pb-5 border-b border-white border-opacity-25" data-organizer="wrapper">
-    <div id="top" class="flex items-center justify-between pt-4 space-x-5">
-
+{% macro initiative(title, type, date, summary, image) %}
+<div class="pb-1 border-b border-white border-opacity-25" data-organizer="wrapper">
+    <div class="flex items-center justify-between pt-4 space-x-5">
         <div class="flex items-center space-x-6">
             <div
-                :class="{'opacity-0' : selected === '{{title}}'}"
+                :class="{'opacity-0 -translate-x-12' : selected === '{{title}}'}"
                 :class="{'opacity-90' : selected !== '{{title}}'}"
-                class="flex-shrink-0 w-32 h-20 overflow-hidden transition-opacity border border-white border-opacity-50 rounded-full duration-50">
+                class="flex-shrink-0 w-32 h-20 overflow-hidden transition transform border border-white border-opacity-50 rounded-full duration-50">
         	    <img class="object-cover w-full h-full" src="{{image}}" alt="">
         	</div>
         	<div class="flex flex-col justify-end space-y-2 transition transform"
@@ -25,15 +24,20 @@
     </div>
     <div
     x-bind:style="selected === '{{title}}' ? 'max-height: var(--summary-height)' : 'max-height: 0'"
-    class="flex justify-between space-x-5 overflow-hidden transition-all transform" data-organizer="summary">
-        <div class="flex space-x-5">
-            {# <div class="flex-shrink-0 w-32"></div> #}
-            <div class="max-w-2xl text-xl text-white text-opacity-50">
-                {{summary}}
+    class="pt-3 overflow-hidden transition-all transform" data-organizer="summary">
+        <div class="flex items-start justify-between pb-3 space-x-12">
+            <div class="flex-shrink-0 space-y-5">
+                <div class="max-w-xl text-xl text-white text-opacity-50">
+                    {{summary}}
+                </div>
+                <div class="flex-shrink-0 text-sm tracking-wider text-white text-opacity-75 uppercase min-w-max">
+                    <date>{{date}}</date>
+                </div>
             </div>
-        </div>
-        <div class="flex-shrink-0 text-sm tracking-wider text-right text-white text-opacity-75 uppercase min-w-max">
-            <date>{{date}}</date>
+            <div class="flex-shrink h-56 max-w-xs mb-px overflow-hidden transition transform border border-white border-opacity-50"
+                :class="{'opacity-0' : selected !== '{{title}}'}">
+                <img class="block object-cover w-full h-full" src="{{image}}" alt="">
+            </div>
         </div>
     </div>
 </div>

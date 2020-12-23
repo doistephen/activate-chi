@@ -1,7 +1,7 @@
 ---
 title: Chicago March of Justice
 type: Emergency Action
-date: June 6, 2020
+dates: June 6, 2020
 image: /assets/images/uploads/header-4@2x.jpg
 summary: Activate:Chi organized the Chicago March of Justice in reaction to the
   murder of George Floyd, seeking to highlight the indelible and unequal
