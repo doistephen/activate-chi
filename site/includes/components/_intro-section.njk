@@ -1,9 +1,9 @@
     <section class="space-y-8">
         <header class="space-y-8">
-            <div class="flex justify-center space-x-4 col-span-full h-72">
+            <div class="flex justify-center space-x-4 col-span-full h-80">
             {% for item in headerImages %}
                 <div>
-                    <img class="block object-cover w-auto h-full border border-white border-opacity-50" src="{{item}}" alt="">
+                    <img class="block object-cover w-full h-full border border-white border-opacity-50" src="{{item}}" alt="">
                 </div>
             {% endfor %}
             </div>
@@ -11,9 +11,19 @@
             <h1 class="text-4xl leading-snug tracking-wide font-display">
                 <span class="text-hue">Activate:Chi</span> {{introSection.introText}}
             </h1>
+        <div class="flex pr-16 space-x-4">
+            <div class="text-base col-span-full">
+                <h3 class="text-4xl leading-snug tracking-wide text-white text-opacity-40 font-display">We create and support initiatives that encourage individuals to start taking meaningful action where they're at.</h3>
+            </div>
+            <div class="flex-shrink-0 -mt-8 h-72">
+                <img class="block object-cover w-auto h-full border border-white border-opacity-50" src="assets/images/uploads/header-1@2x.jpg" alt="">
+            </div>
+        </div>
 
-            <a href="#about" class="inline-flex p-4 btn-outline">
-                <span class="block w-6 h-6 text-current">{% include "img/arrow.svg" %}</span>
-            </a>
+            <div class="flex items-center">
+                <a href="#initiatives" class="inline-flex p-5 mt-8 mb-12 btn-outline">
+                    <span class="block w-5 h-5 text-current">{% include "img/arrow.svg" %}</span>
+                </a>
+            </div>
         </header>
     </section>

@@ -18725,6 +18725,54 @@ button:focus {
   transition-duration: 300ms;
 }
 
+.ease-linear {
+  transition-timing-function: linear;
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duration-75 {
+  transition-duration: 75ms;
+}
+
+.duration-100 {
+  transition-duration: 100ms;
+}
+
+.duration-150 {
+  transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.duration-700 {
+  transition-duration: 700ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
 .delay-75 {
   transition-delay: 75ms;
 }
@@ -37183,6 +37231,54 @@ button:focus {
     transition-duration: 300ms;
   }
 
+  .sm\:ease-linear {
+    transition-timing-function: linear;
+  }
+
+  .sm\:ease-in {
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+
+  .sm\:ease-out {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  .sm\:ease-in-out {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .sm\:duration-75 {
+    transition-duration: 75ms;
+  }
+
+  .sm\:duration-100 {
+    transition-duration: 100ms;
+  }
+
+  .sm\:duration-150 {
+    transition-duration: 150ms;
+  }
+
+  .sm\:duration-200 {
+    transition-duration: 200ms;
+  }
+
+  .sm\:duration-300 {
+    transition-duration: 300ms;
+  }
+
+  .sm\:duration-500 {
+    transition-duration: 500ms;
+  }
+
+  .sm\:duration-700 {
+    transition-duration: 700ms;
+  }
+
+  .sm\:duration-1000 {
+    transition-duration: 1000ms;
+  }
+
   .sm\:delay-75 {
     transition-delay: 75ms;
   }
@@ -55264,6 +55360,54 @@ button:focus {
     transition-duration: 300ms;
   }
 
+  .md\:ease-linear {
+    transition-timing-function: linear;
+  }
+
+  .md\:ease-in {
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+
+  .md\:ease-out {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  .md\:ease-in-out {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .md\:duration-75 {
+    transition-duration: 75ms;
+  }
+
+  .md\:duration-100 {
+    transition-duration: 100ms;
+  }
+
+  .md\:duration-150 {
+    transition-duration: 150ms;
+  }
+
+  .md\:duration-200 {
+    transition-duration: 200ms;
+  }
+
+  .md\:duration-300 {
+    transition-duration: 300ms;
+  }
+
+  .md\:duration-500 {
+    transition-duration: 500ms;
+  }
+
+  .md\:duration-700 {
+    transition-duration: 700ms;
+  }
+
+  .md\:duration-1000 {
+    transition-duration: 1000ms;
+  }
+
   .md\:delay-75 {
     transition-delay: 75ms;
   }
@@ -73343,6 +73487,54 @@ button:focus {
     transition-property: transform;
     transition-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
     transition-duration: 300ms;
+  }
+
+  .lg\:ease-linear {
+    transition-timing-function: linear;
+  }
+
+  .lg\:ease-in {
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+
+  .lg\:ease-out {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  .lg\:ease-in-out {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .lg\:duration-75 {
+    transition-duration: 75ms;
+  }
+
+  .lg\:duration-100 {
+    transition-duration: 100ms;
+  }
+
+  .lg\:duration-150 {
+    transition-duration: 150ms;
+  }
+
+  .lg\:duration-200 {
+    transition-duration: 200ms;
+  }
+
+  .lg\:duration-300 {
+    transition-duration: 300ms;
+  }
+
+  .lg\:duration-500 {
+    transition-duration: 500ms;
+  }
+
+  .lg\:duration-700 {
+    transition-duration: 700ms;
+  }
+
+  .lg\:duration-1000 {
+    transition-duration: 1000ms;
   }
 
   .lg\:delay-75 {

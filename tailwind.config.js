@@ -25,12 +25,6 @@ module.exports = {
       display: ["Sporting Grotesque", "sans-serif", "Arial"],
       text: ["trade-gothic-next", "sans-serif", "Arial"],
     },
-    transitionDuration: {
-      DEFAULT: "300ms",
-    },
-    transitionTimingFunction: {
-      DEFAULT: "cubic-bezier(0.2, 0.8, 0.2, 1)",
-    },
     extend: {
       fontSize: {
         xs: ".8125rem",
@@ -66,6 +60,12 @@ module.exports = {
       },
       zIndex: {
         "-1": "-1",
+      },
+      transitionDuration: {
+        DEFAULT: "300ms",
+      },
+      transitionTimingFunction: {
+        DEFAULT: "cubic-bezier(0.2, 0.8, 0.2, 1)",
       },
       opacity: {
         5: ".05",

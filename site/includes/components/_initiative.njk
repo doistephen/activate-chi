@@ -1,36 +1,43 @@
 {% macro initiative(title, type, date, summary, image) %}
-<div class="pb-1 border-b border-white border-opacity-25" data-organizer="wrapper">
+{% import "components/_button.njk" as button %}
+<div class="flex flex-col pb-1 border-b border-white border-opacity-25" data-organizer="wrapper">
     <div class="flex items-center justify-between pt-4 space-x-5">
-        <div class="flex items-center space-x-6">
+        <div
+        :class="{'opacity-25' : selected !== 'none','opacity-100' : selected === 'none','opacity-100' : selected === '{{title}}'}"
+        class="flex items-center space-x-6 transition-opacity">
             <div
-                :class="{'opacity-0 -translate-x-12' : selected === '{{title}}'}"
+                :class="{'opacity-0' : selected === '{{title}}'}"
                 :class="{'opacity-90' : selected !== '{{title}}'}"
-                class="flex-shrink-0 w-32 h-20 overflow-hidden transition transform border border-white border-opacity-50 rounded-full duration-50">
+                class="flex-shrink-0 w-32 h-20 overflow-hidden transition duration-100 transform border border-white border-opacity-50 rounded-full">
         	    <img class="object-cover w-full h-full" src="{{image}}" alt="">
         	</div>
-        	<div class="flex flex-col justify-end space-y-2 transition transform"
+        	<div class="flex flex-col justify-end space-y-2 transition duration-200 transform"
                 :class="{'-translate-x-38' : selected === '{{title}}'}">
         	        <span class="text-sm text-opacity-75 text-hue">{{type}}</span>
-        	        <h3 class="flex-grow text-xl font-display">{{title}}</h3>
+        	        <h3 class="flex-grow text-xl text-white font-display">
+                        {{title}}
+                    </h3>
         	</div>
 
         </div>
-        <button
+        <div>
+            <button
             @click="selected === '{{title}}' ? selected = 'none' : selected = '{{title}}'"
-            class="flex-shrink-0 p-2.5 rounded-full btn-outline"
-            >
-            <span :class="{'rotate-135' : selected === '{{title}}'}" class="block w-3 h-3 transition transform">{% include "img/plus.svg" %}</span>
-        </button>
+            class="grid px-5 pt-3 pb-2 text-sm tracking-wide grid-absolute btn-outline font-display">
+                <span :class="{'opacity-0' : selected !== '{{title}}'}" class="grid-inset-0">Read less</span>
+                <span :class="{'opacity-0' : selected === '{{title}}'}" class="grid-inset-0">Read more</span>
+            </button>
+        </div>
     </div>
     <div
     x-bind:style="selected === '{{title}}' ? 'max-height: var(--summary-height)' : 'max-height: 0'"
-    class="pt-3 overflow-hidden transition-all transform" data-organizer="summary">
-        <div class="flex items-start justify-between pb-3 space-x-12">
-            <div class="flex-shrink-0 space-y-5">
-                <div class="max-w-xl text-xl text-white text-opacity-50">
+    class="flex flex-col pt-3 overflow-hidden transition-all transform" data-organizer="summary">
+        <div class="flex items-start justify-between flex-1 h-full pb-3 space-x-5">
+            <div class="flex flex-col justify-between flex-1 flex-shrink-0 pt-5 space-y-5 border-t border-white border-opacity-25">
+                <div class="text-lg text-white text-opacity-50">
                     {{summary}}
                 </div>
-                <div class="flex-shrink-0 text-sm tracking-wider text-white text-opacity-75 uppercase min-w-max">
+                <div class="flex-shrink-0 text-xs tracking-widest text-white uppercase min-w-max">
                     <date>{{date}}</date>
                 </div>
             </div>
