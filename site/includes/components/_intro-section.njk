@@ -2,7 +2,7 @@
         <header class="space-y-8">
             <div class="flex justify-center space-x-4 col-span-full h-80">
             {% for item in headerImages %}
-                <div>
+                <div class="w-full">
                     <img class="block object-cover w-full h-full border border-white border-opacity-50" src="{{item}}" alt="">
                 </div>
             {% endfor %}
@@ -11,19 +11,27 @@
             <h1 class="text-4xl leading-snug tracking-wide font-display">
                 <span class="text-hue">Activate:Chi</span> {{introSection.introText}}
             </h1>
-        <div class="flex pr-16 space-x-4">
-            <div class="text-base col-span-full">
-                <h3 class="text-4xl leading-snug tracking-wide text-white text-opacity-40 font-display">We create and support initiatives that encourage individuals to start taking meaningful action where they're at.</h3>
-            </div>
-            <div class="flex-shrink-0 -mt-8 h-72">
-                <img class="block object-cover w-auto h-full border border-white border-opacity-50" src="assets/images/uploads/header-1@2x.jpg" alt="">
-            </div>
-        </div>
-
-            <div class="flex items-center">
-                <a href="#initiatives" class="inline-flex p-5 mt-8 mb-12 btn-outline">
+        <div class="flex space-x-4">
+            <div class="flex flex-col items-start justify-between text-base col-span-full">
+                <a href="#initiatives" class="inline-flex p-5 btn-outline">
                     <span class="block w-5 h-5 text-current">{% include "img/arrow.svg" %}</span>
                 </a>
             </div>
+        </div>
         </header>
+    </section>
+    <section>
+        <div class="flex space-x-4">
+            <div class="flex flex-col items-start justify-between text-base col-span-full">
+                <h3 class="text-4xl leading-normal tracking-wide text-white font-display">We create and support initiatives that encourage individuals to start taking meaningful action where they're at.</h3>
+            </div>
+            <div class="grid flex-shrink-0 grid-cols-4 grid-rows-4 w-96 h-96">
+                <div class="col-span-3 col-start-2 row-span-3 row-start-1">
+                    <img class="block object-cover w-auto h-full border border-white border-opacity-50" src="assets/images/uploads/header-1@2x.jpg" alt="">
+                </div>
+                <div class="col-span-2 col-start-1 row-span-2 row-start-3">
+                    <img class="block object-cover w-auto h-full transform border border-opacity-75 rounded-full -rotate-6 border-hue" src="assets/images/uploads/header-4@2x.jpg" alt="">
+                </div>
+            </div>
+        </div>
     </section>

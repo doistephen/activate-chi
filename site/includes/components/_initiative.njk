@@ -1,17 +1,17 @@
 {% macro initiative(title, type, date, summary, image) %}
 {% import "components/_button.njk" as button %}
-<div class="flex flex-col pb-1 border-b border-white border-opacity-25" data-organizer="wrapper">
-    <div class="flex items-center justify-between pt-4 space-x-5">
+<div class="flex flex-col border-b border-white border-opacity-25" data-organizer="wrapper">
+    <div class="flex items-center justify-between transition-opacity"
+        :class="{'opacity-25 hover:opacity-100' : selected !== 'none','opacity-100' : selected === 'none','opacity-100' : selected === '{{title}}'}">
         <div
-        :class="{'opacity-25' : selected !== 'none','opacity-100' : selected === 'none','opacity-100' : selected === '{{title}}'}"
-        class="flex items-center space-x-6 transition-opacity">
+        class="flex items-center flex-1 py-4 pr-5 space-x-6">
             <div
                 :class="{'opacity-0' : selected === '{{title}}'}"
                 :class="{'opacity-90' : selected !== '{{title}}'}"
                 class="flex-shrink-0 w-32 h-20 overflow-hidden transition duration-100 transform border border-white border-opacity-50 rounded-full">
         	    <img class="object-cover w-full h-full" src="{{image}}" alt="">
         	</div>
-        	<div class="flex flex-col justify-end space-y-2 transition duration-200 transform"
+        	<div class="flex flex-col justify-end space-y-2 transition transform"
                 :class="{'-translate-x-38' : selected === '{{title}}'}">
         	        <span class="text-sm text-opacity-75 text-hue">{{type}}</span>
         	        <h3 class="flex-grow text-xl text-white font-display">
@@ -31,12 +31,13 @@
     </div>
     <div
     x-bind:style="selected === '{{title}}' ? 'max-height: var(--summary-height)' : 'max-height: 0'"
-    class="flex flex-col pt-3 overflow-hidden transition-all transform" data-organizer="summary">
-        <div class="flex items-start justify-between flex-1 h-full pb-3 space-x-5">
+    class="flex flex-col overflow-hidden transition-all transform" data-organizer="summary">
+        <div class="flex items-start justify-between flex-1 h-full pb-4 space-x-5 transition-opacity duration-500"
+            :class="{'opacity-0' : selected !=='{{title}}'}">
             <div class="flex flex-col justify-between flex-1 flex-shrink-0 pt-5 space-y-5 border-t border-white border-opacity-25">
-                <div class="text-lg text-white text-opacity-50">
+                <p class="max-w-xl text-lg text-white text-opacity-50">
                     {{summary}}
-                </div>
+                </p>
                 <div class="flex-shrink-0 text-xs tracking-widest text-white uppercase min-w-max">
                     <date>{{date}}</date>
                 </div>
