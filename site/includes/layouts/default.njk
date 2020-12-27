@@ -1,13 +1,13 @@
 {% include "components/_html-head.njk" %}
 <body class="flex flex-col min-h-screen text-xl antialiased leading-normal text-white font-text bg-gray">
 
-<div class="container py-12 space-y-20">
+<div class="container py-8 space-y-16">
     {% include "components/_nav.njk" %}
     <div id="content">
         {{ content | safe }}
     </div>
 </div>
 
-<div id="site-bg" class="fixed top-0 bottom-0 left-0 right-0 bg-repeat bg-gray -z-1"></div>
+<div class="fixed top-0 bottom-0 left-0 right-0 bg-repeat noise-bg -z-1"></div>
 
 {% include "components/_html-foot.njk" %}

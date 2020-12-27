@@ -1,10 +1,18 @@
  {% import "components/_initiative.njk" as initiative %}
-<section id="initiatives">
-    <div class="grid items-start justify-between grid-cols-12 gap-6 py-8">
+<section id="initiatives" class="pt-8">
+    <div class="grid items-end justify-between grid-cols-12 gap-y-6">
+        {# <div class="relative col-span-3 pb-full">
+            <div class="absolute inset-0 w-full h-full col-span-3 col-start-2 row-span-3 row-start-1">
+                <img class="block object-cover w-auto h-full border border-white border-opacity-50 rounded-full" src="assets/images/uploads/header-1@2x.jpg" alt="">
+            </div>
+        </div> #}
         <div class="flex col-span-full">
-            <h2 class="text-3xl tracking-wider text-white font-display">Our initiatives</h2>
+            <h2 class="text-xs tracking-wider rounded-full text-hue font-display">Recent initiatives</h2>
         </div>
-        <ul class="grid grid-cols-1 border-t border-white border-opacity-25 col-span-full"
+        <div class="flex col-span-full">
+            <h3 class="text-3xl leading-normal tracking-wide text-white font-display">Our initiatives encourage individuals to start taking meaningful action from wherever they're at.</h2>
+        </div>
+        <ul class="border-t border-white border-opacity-25 col-span-full"
             x-data="{ selected: `none` }">
             {% for item in collections.initiative %}
                 {{ initiative.initiative(item.data.title, item.data.type, item.data.dates, item.data.summary, item.data.image) }}

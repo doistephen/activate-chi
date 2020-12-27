@@ -34,12 +34,12 @@
   will-change: max-height;
 }
 
-#site-bg {
+.noise-bg {
   background-image: url("/assets/images/noise.gif");
   background-size: 300px;
 }
 @media (prefers-reduced-motion) {
-  #site-bg {
+  .noise-bg {
     background-image: url("/assets/images/noise.png");
   }
 }

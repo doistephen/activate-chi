@@ -1,20 +1,17 @@
 {% macro initiative(title, type, date, summary, image) %}
 {% import "components/_button.njk" as button %}
 <div class="flex flex-col border-b border-white border-opacity-25" data-organizer="wrapper">
-    <div class="flex items-center justify-between transition-opacity"
-        :class="{'opacity-25 hover:opacity-100' : selected !== 'none','opacity-100' : selected === 'none','opacity-100' : selected === '{{title}}'}">
-        <div
-        class="flex items-center flex-1 py-4 pr-5 space-x-6">
-            <div
+    <div class="flex items-center justify-between transition-opacity">
+        <div class="flex items-center flex-1 py-4 pr-5 space-x-6">
+            <div class="flex-shrink-0 w-32 h-20 overflow-hidden transition duration-100 transform border border-white border-opacity-50 rounded-full"
                 :class="{'opacity-0' : selected === '{{title}}'}"
-                :class="{'opacity-90' : selected !== '{{title}}'}"
-                class="flex-shrink-0 w-32 h-20 overflow-hidden transition duration-100 transform border border-white border-opacity-50 rounded-full">
+                :class="{'opacity-90' : selected !== '{{title}}'}">
         	    <img class="object-cover w-full h-full" src="{{image}}" alt="">
         	</div>
         	<div class="flex flex-col justify-end space-y-2 transition transform"
                 :class="{'-translate-x-38' : selected === '{{title}}'}">
-        	        <span class="text-sm text-opacity-75 text-hue">{{type}}</span>
-        	        <h3 class="flex-grow text-xl text-white font-display">
+        	        <span class="text-sm text-white text-opacity-50">{{type}}</span>
+        	        <h3 class="flex-grow text-lg text-white font-display">
                         {{title}}
                     </h3>
         	</div>
