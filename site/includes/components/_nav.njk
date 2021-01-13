@@ -25,12 +25,12 @@
                 <span class="block w-3.5 h-3.5 text-current">{% include "img/menu.svg" %}</span>
             </button>
             <div @click="isOpen = !isOpen" class="fixed inset-0 z-10 transition-opacity bg-opacity-80 bg-gray" x-show="isOpen" x-transition:enter-start="opacity-0" x-transition:leave-end="opacity-0"></div>
-            <div x-show="isOpen" class="absolute z-20 px-4 pt-8 pb-5 mt-4 border border-white border-opacity-50 bg-gray bg-noise left-4 right-4">
+            <div x-show="isOpen" class="absolute z-20 px-4 pt-8 pb-5 mt-6 transition transform border border-white border-opacity-50 bg-gray bg-noise left-6 right-6" x-transition:enter-start="opacity-0 -translate-y-4" x-transition:leave-end="opacity-0 translate-y-4">
                 <div class="items-center space-y-8 divide-y divide-white divide-opacity-25">
-                    <ul class="flex flex-col space-y-4">
-                        {{ button.button("Our Initiatives", "#initiatives") }}
-                        {{ button.button("About Activate", "#about") }}
-                        {{ button.button("Our organizers", "#organizers") }}
+                    <ul class="flex flex-col space-y-4" @click="isOpen = false">
+                        {{ button.button("Our Initiatives", "/#initiatives") }}
+                        {{ button.button("About Activate", "/#about") }}
+                        {{ button.button("Our organizers", "/#organizers") }}
                         {{ button.button("Read the blog", "/blog") }}
                         {{ button.button("Volunteer", "https://stephenbarkan.com", color=true, newTab=true) }}
                     </ul>
