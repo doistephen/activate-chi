@@ -5,12 +5,17 @@ eleventyExcludeFromCollections: true
 ---
 
 <main class="space-y-16">
-    <h1 class="text-4xl leading-snug tracking-wide text-center font-display">
-        <span class="text-hue">Activate:Chi</span> blog by writers and thinkers organizing for justice in Chicago.
-    </h1>
+    <header class="pt-8 space-y-4">
+        <h1 class="text-4xl leading-snug tracking-wide text-center font-display">
+            <span class="text-hue">Connect the Dots</span> sentence about what the blog content will be.
+        </h1>
+        <div class="max-w-sm mx-auto prose text-center">
+            <p>Interested in writing an essay for <em>Connect the Dots</em>? Send an email to <a href="mailto:sanjeechoudhuri@activate-chi.org">sanjeechoudhuri@activate-chi.org</a>.</p>
+        </div>
+    </header>
 <ul class="grid grid-cols-12 gap-12">
     {% for item in collections.blog %}
-        <li class="col-span-8 col-start-3">
+        <li class="col-span-10 col-start-2">
             {% include "components/_blog-card.njk" %}
         </li>
     {% endfor %}

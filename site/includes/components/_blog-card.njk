@@ -1,15 +1,15 @@
-<a href="{{item.fileSlug}}" class="space-y-6">
-    <img class="object-cover w-full border border-white border-opacity-50 h-72" src="{{item.data.image}}" alt="">
-    <div class="flex items-center justify-between">
+<a href="{{item.fileSlug}}" class="flex p-5 space-x-6 border border-white border-opacity-25 group">
+    <div class="flex flex-col items-start flex-1 p-1 space-y-6">
+        <date class="block text-sm col-span-full text-hue">{{page.date | readableDate}}</date>
         <div class="flex flex-col -space-y-0.5">
-            <h2 class="text-base font-display">{{item.data.title}}</h2>
-            <span class="text-base text-white text-opacity-50">{{item.data.author}}</span>
+            <h2 class="font-display">{{item.data.title}}</h2>
+            <span class="text-base text-white text-opacity-50">By {{item.data.author}}</span>
         </div>
-        <div class="flex-shrink-0">
-            <div class="inline-flex p-3 btn-outline">
-                <span class="sr-only">Read {{item.data.title}}</span>
-                <span class="block w-5 h-5 text-current transform -rotate-90">{% include "img/arrow.svg" %}</span>
-            </div>
+        <div class="grid px-5 pt-3 pb-2 text-xs tracking-wide text-center grid-absolute btn-outline font-display">
+            <span :class="{'opacity-0' : selected === '{{title}}'}" class="grid-inset-0">Read essay</span>
         </div>
+    </div>
+    <div class="flex-1 h-64 max-w-lg overflow-hidden border border-white border-opacity-50 w-md">
+        <img class="object-cover w-full h-full" src="{{item.data.image}}" alt="">
     </div>
 </a>

@@ -565,6 +565,8 @@ button:focus {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @media (min-width: 640px) {
@@ -683,17 +685,6 @@ button:focus {
   border-radius: inherit;
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-}
-
-.group:hover .btn-outline::before {
-  opacity: .05;
-}
-
-.btn-outline::before:hover {
-  opacity: .05;
-}
-
-.btn-outline::before {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -701,6 +692,14 @@ button:focus {
   left: 0px;
   opacity: 0;
   z-index: -1;
+}
+
+.btn-outline:hover::before {
+  opacity: .05;
+}
+
+.group:hover .btn-outline::before {
+  opacity: .05;
 }
 
 .btn-highlight::before {
@@ -4501,6 +4500,10 @@ button:focus {
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
+}
+
+.text-xxs {
+  font-size: .75rem;
 }
 
 .leading-3 {
@@ -19041,13 +19044,6 @@ button:focus {
 }
 
 .prose a {
-  --tw-text-opacity: 1;
-  color: rgba(248, 104, 73, var(--tw-text-opacity));
-  --tw-text-opacity: .9;
-}
-
-.prose a:hover {
-  --tw-text-opacity: 1;
   text-decoration: underline;
 }
 
@@ -19375,6 +19371,8 @@ button:focus {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   @media (min-width: 640px) {
@@ -23163,6 +23161,10 @@ button:focus {
   .sm\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .sm\:text-xxs {
+    font-size: .75rem;
   }
 
   .sm\:leading-3 {
@@ -37647,6 +37649,8 @@ button:focus {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   @media (min-width: 640px) {
@@ -41435,6 +41439,10 @@ button:focus {
   .md\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .md\:text-xxs {
+    font-size: .75rem;
   }
 
   .md\:leading-3 {
@@ -55919,6 +55927,8 @@ button:focus {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   @media (min-width: 640px) {
@@ -59707,6 +59717,10 @@ button:focus {
   .lg\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .lg\:text-xxs {
+    font-size: .75rem;
   }
 
   .lg\:leading-3 {

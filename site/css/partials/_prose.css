@@ -3,7 +3,7 @@
   max-width: 65ch;
 }
 .prose a {
-  @apply text-opacity-90 text-hue hover:underline hover:text-opacity-100;
+  @apply underline;
 }
 .prose strong {
   @apply font-bold;

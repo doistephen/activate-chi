@@ -4,7 +4,7 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        default: "1rem",
+        DEFAULT: "1rem",
         sm: "2rem",
         lg: "3rem",
       },
@@ -27,6 +27,7 @@ module.exports = {
     },
     extend: {
       fontSize: {
+        xxs: ".75rem",
         xs: ".8125rem",
         base: [
           "1rem",

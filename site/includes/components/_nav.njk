@@ -1,19 +1,45 @@
  {% import "components/_button.njk" as button %}
 
- <nav class="relative flex items-center justify-between">
-        <a href="/" class="flex-shrink-0 w-24 transition transform text-hue hover:scale-103">
+ <nav class="sticky top-0 z-10 flex items-center justify-between px-4 py-4 -mx-4 transition border-white border-opacity-25"
+    x-cloak
+	:class="{'bg-gray border-b bg-repeat noise-bg' : !atTop}"
+	x-data="{ atTop: true }"
+	@scroll.window="atTop = (window.pageYOffset > 16) ? false : true">
+        <a href="/" class="flex-shrink-0 w-20 transition transform md:w-24 text-hue hover:scale-103">
             {% include "img/logo.svg" %}
         </a>
-        {# <a href="#content" class="z-10 px-5 py-3 opacity-0 btn-outline bg-gray focus:opacity-100">Skip to content</a> #}
-        <div class="flex items-center -mr-2.5 space-x-5 divide-x divide-white divide-opacity-25">
+        <div class="sm:flex hidden items-center -mr-2.5 space-x-5 divide-x divide-white divide-opacity-25">
             <ul class="flex space-x-3">
-                {{ button.button("Blog", "/blog") }}
-                {{ button.button("Get involved", "https://stephenbarkan.com", color=true, newTab=true) }}
+                {{ button.button("Read the blog", "/blog") }}
+                {{ button.button("Volunteer", "https://stephenbarkan.com", color=true, newTab=true) }}
             </ul>
             <ul class="flex pl-2.5">
                 <li><a target="_blank" href="https://twitter.com/activate_chi?lang=en" class="block p-2.5 text-white text-opacity-100 transition transform hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2 rounded-full"><span class="block w-5 h-5">{% include "img/twitter.svg" %}</span></a></li>
                 <li><a target="_blank" href="https://www.instagram.com/activate.chi/" class="block p-2.5 text-white text-opacity-100 transition transform hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2 rounded-full"><span class="block w-5 h-5">{% include "img/instagram.svg" %}</span></a></li>
                 <li><a target="_blank" href="https://www.facebook.com/groups/212768039194574/" class="block p-2.5 text-white text-opacity-100 transition transform hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2 rounded-full"><span class="block w-5 h-5">{% include "img/facebook.svg" %}</span></a></li>
             </ul>
+        </div>
+        {# mobile navigation #}
+        <div class="sm:hidden" x-data="{isOpen: false}">
+            <button @click="isOpen = !isOpen" class="z-20 inline-flex p-4 border-white border-opacity-75 btn-outline">
+                <span class="block w-3.5 h-3.5 text-current">{% include "img/menu.svg" %}</span>
+            </button>
+            <div @click="isOpen = !isOpen" class="fixed inset-0 z-10 transition-opacity bg-opacity-80 bg-gray" x-show="isOpen" x-transition:enter-start="opacity-0" x-transition:leave-end="opacity-0"></div>
+            <div x-show="isOpen" class="absolute z-20 px-4 pt-8 pb-5 mt-4 border border-white border-opacity-50 bg-gray bg-noise left-4 right-4">
+                <div class="items-center space-y-8 divide-y divide-white divide-opacity-25">
+                    <ul class="flex flex-col space-y-4">
+                        {{ button.button("Our Initiatives", "#initiatives") }}
+                        {{ button.button("About Activate", "#about") }}
+                        {{ button.button("Our organizers", "#organizers") }}
+                        {{ button.button("Read the blog", "/blog") }}
+                        {{ button.button("Volunteer", "https://stephenbarkan.com", color=true, newTab=true) }}
+                    </ul>
+                    <ul class="flex justify-around pt-5">
+                        <li><a target="_blank" href="https://twitter.com/activate_chi?lang=en" class="block p-3 text-white text-opacity-100 transition transform rounded-full hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2"><span class="block w-5 h-5">{% include "img/twitter.svg" %}</span></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/activate.chi/" class="block p-3 text-white text-opacity-100 transition transform rounded-full hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2"><span class="block w-5 h-5">{% include "img/instagram.svg" %}</span></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/groups/212768039194574/" class="block p-3 text-white text-opacity-100 transition transform rounded-full hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2"><span class="block w-5 h-5">{% include "img/facebook.svg" %}</span></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </nav>

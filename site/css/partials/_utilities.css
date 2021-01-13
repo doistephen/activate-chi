@@ -13,9 +13,15 @@
 .btn-outline::before {
   content: "";
   border-radius: inherit;
-  @apply absolute inset-0 bg-white hover:opacity-5 group-hover:opacity-5;
+  @apply absolute inset-0 bg-white;
   opacity: 0;
   z-index: -1;
+}
+.btn-outline:hover::before {
+  @apply opacity-5;
+}
+.group:hover .btn-outline::before {
+  @apply opacity-5;
 }
 .btn-highlight::before {
   @apply bg-hue;
