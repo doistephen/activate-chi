@@ -98,6 +98,11 @@ module.exports = {
   variants: {
     extend: {
       translate: ["focus"],
+      scale: ["group-hover"],
+      textColor: ["group-hover"],
+      borderColor: ["group-hover"],
+      backgroundColor: ["group-hover"],
+      opacity: ["group-hover"],
     },
   },
   plugins: [],

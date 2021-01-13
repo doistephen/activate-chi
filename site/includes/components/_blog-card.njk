@@ -1,4 +1,4 @@
-<div class="space-y-6">
+<a href="{{item.fileSlug}}" class="space-y-6">
     <img class="object-cover w-full border border-white border-opacity-50 h-72" src="{{item.data.image}}" alt="">
     <div class="flex items-center justify-between">
         <div class="flex flex-col -space-y-0.5">
@@ -6,10 +6,10 @@
             <span class="text-base text-white text-opacity-50">{{item.data.author}}</span>
         </div>
         <div class="flex-shrink-0">
-            <a href="{{item.fileSlug}}" class="inline-flex p-3 btn-outline">
+            <div class="inline-flex p-3 btn-outline">
                 <span class="sr-only">Read {{item.data.title}}</span>
                 <span class="block w-5 h-5 text-current transform -rotate-90">{% include "img/arrow.svg" %}</span>
-            </a>
+            </div>
         </div>
     </div>
-</div>
+</a>

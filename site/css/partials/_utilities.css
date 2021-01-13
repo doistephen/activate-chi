@@ -8,20 +8,17 @@
 }
 
 .btn-outline {
-  @apply relative inline-flex overflow-hidden text-white transition transform border border-white border-opacity-50 rounded-full focus:outline-none focus:ring text-opacity-90 hover:text-opacity-100 hover:border-opacity-75 hover:scale-103 bg-gray;
+  @apply relative inline-flex overflow-hidden text-white transition transform border border-white border-opacity-50 rounded-full focus:outline-none focus:ring text-opacity-90 hover:text-opacity-100 hover:border-opacity-75 hover:scale-103 group-hover:text-opacity-100 group-hover:border-opacity-75 group-hover:scale-103 bg-gray;
 }
 .btn-outline::before {
   content: "";
   border-radius: inherit;
-  @apply absolute inset-0 bg-white;
+  @apply absolute inset-0 bg-white hover:opacity-5 group-hover:opacity-5;
   opacity: 0;
   z-index: -1;
 }
 .btn-highlight::before {
   @apply bg-hue;
-}
-.btn-outline:hover::before {
-  opacity: 0.05;
 }
 
 .organizer-grid li {

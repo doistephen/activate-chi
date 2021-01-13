@@ -1,7 +1,8 @@
 {% macro initiative(title, type, date, summary, image) %}
 {% import "components/_button.njk" as button %}
-<div class="flex flex-col border-b border-white border-opacity-25" data-organizer="wrapper">
-    <div class="flex items-center justify-between transition-opacity">
+<div class="flex flex-col items-stretch border-b border-white border-opacity-25"data-organizer="wrapper">
+    <button class="flex items-center justify-between flex-1 w-full text-left transition-opacity group"
+     @click="selected === '{{title}}' ? selected = 'none' : selected = '{{title}}'" >
         <div class="flex items-center flex-1 py-4 pr-5 space-x-6">
             <div class="flex-shrink-0 w-32 h-20 overflow-hidden transition duration-100 transform border border-white border-opacity-50 rounded-full"
                 :class="{'opacity-0' : selected === '{{title}}'}"
@@ -10,7 +11,7 @@
         	</div>
         	<div class="flex flex-col justify-end space-y-2 transition transform"
                 :class="{'-translate-x-38' : selected === '{{title}}'}">
-        	        <span class="text-sm text-white text-opacity-50">{{type}}</span>
+        	        <span class="text-sm text-hue text-opacity-90">{{type}}</span>
         	        <h3 class="flex-grow text-lg text-white font-display">
                         {{title}}
                     </h3>
@@ -18,17 +19,15 @@
 
         </div>
         <div>
-            <button
-            @click="selected === '{{title}}' ? selected = 'none' : selected = '{{title}}'"
-            class="grid px-5 pt-3 pb-2 text-sm tracking-wide grid-absolute btn-outline font-display">
+            <div class="grid px-5 pt-3 pb-2 text-xs tracking-wide text-center grid-absolute btn-outline font-display">
                 <span :class="{'opacity-0' : selected !== '{{title}}'}" class="grid-inset-0">Read less</span>
                 <span :class="{'opacity-0' : selected === '{{title}}'}" class="grid-inset-0">Read more</span>
-            </button>
+            </div>
         </div>
-    </div>
+    </button>
     <div
-    x-bind:style="selected === '{{title}}' ? 'max-height: var(--summary-height)' : 'max-height: 0'"
-    class="flex flex-col overflow-hidden transition-all transform" data-organizer="summary">
+        x-bind:style="selected === '{{title}}' ? 'max-height: var(--summary-height)' : 'max-height: 0'"
+        class="flex flex-col overflow-hidden transition-all transform" data-organizer="summary">
         <div class="flex items-start justify-between flex-1 h-full pb-4 space-x-5 transition-opacity duration-500"
             :class="{'opacity-0' : selected !=='{{title}}'}">
             <div class="flex flex-col justify-between flex-1 flex-shrink-0 pt-5 space-y-5 border-t border-white border-opacity-25">
