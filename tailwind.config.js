@@ -104,6 +104,7 @@ module.exports = {
       borderColor: ["group-hover"],
       backgroundColor: ["group-hover"],
       opacity: ["group-hover"],
+      ringWidth: ["group-focus"],
     },
   },
   plugins: [],
