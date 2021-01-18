@@ -19270,7 +19270,13 @@ button:focus {
 /* ****************************** */
 
 .text-2xl {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 640px) {
+  .text-2xl {
+    font-size: 1.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -19451,7 +19457,13 @@ button:focus {
   line-height: 1.25;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 640px) {
+  .prose h2 {
+    font-size: 1.25rem;
+  }
 }
 
 @media (min-width: 768px) {

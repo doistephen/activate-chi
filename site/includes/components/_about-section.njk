@@ -1,11 +1,11 @@
  {% import "components/_button.njk" as button %}
 
 <section id="about" class="relative pt-8" x-data="{open: false}">
-        <div class="grid items-start justify-between grid-cols-12 gap-x-12 gap-y-6">
+        <div class="grid items-start justify-between grid-cols-1 sm:grid-cols-12 gap-x-12 gap-y-6">
             <div class="flex col-span-full">
                 <h2 class="text-xs tracking-wider rounded-full text-hue font-display">About Activate:Chi</h2>
             </div>
-            <div class="max-w-xl col-span-8 space-y-10">
+            <div class="max-w-xl space-y-6 sm:space-y-10 col-span-full sm:col-span-8">
                 <p class="text-2xl">
                     {{ aboutSection.snippet }}
                 </p>
@@ -13,7 +13,7 @@
                     {{ button.button("Read our story", as="button") }}
                 </div>
             </div>
-            <dl class="col-span-4 text-lg">
+            <dl class="pt-6 text-lg sm:pt-0 col-span-full sm:col-span-4">
                 <dt class="font-display">Our mission</dt>
                 <dd class="text-lg text-white text-opacity-50">
                     {{ aboutSection.mission }}

@@ -27,7 +27,12 @@
 }
 /* ****************************** */
 .text-2xl {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+}
+@screen sm {
+  .text-2xl {
+    font-size: 1.25rem;
+  }
 }
 @screen md {
   .text-2xl {
