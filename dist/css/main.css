@@ -19279,7 +19279,7 @@ button:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1120px) {
   .text-2xl {
     font-size: 1.5rem;
   }
@@ -19301,6 +19301,12 @@ button:focus {
 
 .text-lg {
   font-size: 0.9375rem;
+}
+
+@media (min-width: 640px) {
+  .text-lg {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -19466,7 +19472,7 @@ button:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1120px) {
   .prose h2 {
     font-size: 1.5rem;
   }
@@ -19507,6 +19513,12 @@ button:focus {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
   font-size: 0.9375rem;
+}
+
+@media (min-width: 640px) {
+  .prose h4 {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 768px) {

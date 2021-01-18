@@ -34,7 +34,7 @@
     font-size: 1.25rem;
   }
 }
-@screen md {
+@screen lg {
   .text-2xl {
     font-size: 1.5rem;
   }
@@ -51,6 +51,11 @@
 /* ****************************** */
 .text-lg {
   font-size: 0.9375rem;
+}
+@screen sm {
+  .text-lg {
+    font-size: 1rem;
+  }
 }
 @screen md {
   .text-lg {

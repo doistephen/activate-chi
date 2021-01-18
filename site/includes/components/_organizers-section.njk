@@ -1,26 +1,26 @@
  {% import "components/_organizer.njk" as organizer %}
-<section id="organizers">
-    <div class="grid items-start justify-between grid-cols-12 gap-6 py-8">
-    <div class="flex col-span-full">
-        <h2 class="text-xs tracking-wider rounded-full text-hue font-display">Our organizers</h2>
+<section id="organizers" class="pt-24">
+    <div class="grid items-start justify-between grid-cols-12 gap-6">
+        <div class="flex col-span-full">
+            <h2 class="text-xs tracking-wider rounded-full text-hue font-display">Our organizers</h2>
+        </div>
+        <ul x-data="{ selected: `none` }"
+            class="grid items-start md:grid-cols-2 col-span-full gap-x-8 organizer-grid">
+            <div class="hidden md:block">
+                {% for person in collections.organizer | alphabetize | onlyOdd %}
+                    {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
+                {% endfor %}
+            </div>
+            <div class="hidden md:block">
+                {% for person in collections.organizer | alphabetize | onlyEven %}
+                    {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
+                {% endfor %}
+            </div>
+            <div class="md:hidden">
+                {% for person in collections.organizer | alphabetize %}
+                    {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
+                {% endfor %}
+            </div>
+        </ul>
     </div>
-    <ul x-data="{ selected: `none` }"
-        class="grid items-start sm:grid-cols-2 col-span-full gap-x-8 organizer-grid">
-        <div class="hidden sm:block">
-            {% for person in collections.organizer | alphabetize | onlyOdd %}
-                {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
-            {% endfor %}
-        </div>
-        <div class="hidden sm:block">
-            {% for person in collections.organizer | alphabetize | onlyEven %}
-                {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
-            {% endfor %}
-        </div>
-        <div class="sm:hidden">
-            {% for person in collections.organizer | alphabetize %}
-                {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
-            {% endfor %}
-        </div>
-    </ul>
-</div>
 </section>
