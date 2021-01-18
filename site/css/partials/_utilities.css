@@ -17,16 +17,17 @@
   opacity: 0;
   z-index: -1;
 }
-.btn-outline:hover::before {
-  @apply opacity-5;
-}
+.btn-outline:hover::before,
 .group:hover .btn-outline::before {
-  @apply opacity-5;
+  opacity: 0.05;
 }
 .btn-highlight::before {
   @apply bg-hue;
 }
-
+.btn-outline.btn-highlight:hover::before,
+.group:hover .btn-outline.btn-highlight::before {
+  opacity: 0.07;
+}
 .organizer-grid li {
   @apply border-b border-white border-opacity-25;
 }
