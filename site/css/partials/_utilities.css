@@ -47,3 +47,7 @@
     background-image: url("/assets/images/noise.png");
   }
 }
+
+#mc_embed_signup input.mce_inline_error {
+  border-color: theme("colors.hue") !important;
+}

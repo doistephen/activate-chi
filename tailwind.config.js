@@ -20,7 +20,7 @@ module.exports = {
       yellow: "#FFB906",
       hue: "#F86849",
       none: "transparent",
-      link: "#2d81ff",
+      link: "#619ffb",
     },
     fontFamily: {
       display: ["Sporting Grotesque", "sans-serif", "Arial"],

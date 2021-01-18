@@ -5,12 +5,12 @@
      @click="selected === '{{title}}' ? selected = 'none' : selected = '{{title}}'" >
         <div class="flex flex-col items-center flex-1 py-4 space-y-4 sm:pr-5 sm:space-x-6 sm:flex-row">
             <div class="flex-shrink-0 h-20 overflow-hidden transition duration-100 transform border border-white border-opacity-50 rounded-full w-36 sm:w-32"
-                :class="{'sm:opacity-0' : selected === '{{title}}'}"
-                :class="{'sm:opacity-90' : selected !== '{{title}}'}">
+                :class="{'md:opacity-0' : selected === '{{title}}'}"
+                :class="{'md:opacity-90' : selected !== '{{title}}'}">
         	    <img class="object-cover w-full h-full" src="{{image}}" alt="">
         	</div>
         	<div class="flex flex-col justify-end pl-2 space-y-2 text-center transition transform sm:text-left sm:pl-0"
-                :class="{'sm:-translate-x-38' : selected === '{{title}}'}">
+                :class="{'md:-translate-x-38' : selected === '{{title}}'}">
         	        <span class="text-sm tracking-wider text-hue text-opacity-90">{{type}}</span>
         	        <h3 class="flex-grow text-lg text-white font-display">
                         {{title}}
@@ -30,7 +30,7 @@
         class="flex flex-col overflow-hidden transition-all transform" data-organizer="summary">
         <div class="flex items-start justify-between flex-1 h-full pb-4 space-x-5 transition-opacity duration-500"
             :class="{'opacity-0' : selected !=='{{title}}'}">
-            <div class="flex flex-col justify-between flex-1 flex-shrink-0 space-y-5 border-white border-opacity-25 sm:pt-5 sm:border-t">
+            <div class="flex flex-col justify-between flex-1 flex-shrink-0 space-y-5 border-white border-opacity-25 md:pt-5 md:border-t">
                 <p class="max-w-xl text-lg text-white text-opacity-75">
                     {{summary}}
                 </p>
@@ -38,7 +38,7 @@
                     <date>{{date}}</date>
                 </div>
             </div>
-            <div class="flex-shrink hidden h-56 max-w-xs mb-px overflow-hidden transition transform border border-white border-opacity-50 sm:block"
+            <div class="flex-shrink hidden h-56 max-w-xs mb-px overflow-hidden transition transform border border-white border-opacity-50 md:block"
                 :class="{'opacity-0' : selected !== '{{title}}'}">
                 <img class="block object-cover w-full h-full" src="{{image}}" alt="">
             </div>
