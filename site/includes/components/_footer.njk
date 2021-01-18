@@ -1,5 +1,6 @@
  {% import "components/_button.njk" as button %}
 
-<footer class="py-24 border-t border-white border-opacity-25">
-    {{ button.button("Volunteer", "https://stephenbarkan.com", color=true, newTab=true) }}
+<footer class="flex flex-col items-center px-4 pt-12 pb-16 -mx-4 space-y-6 border-t border-white border-opacity-25">
+    <h2 class="text-2xl text-center font-display">Interested in getting involved?</h2>
+    {{ button.button("Sign up to volunteer", "https://docs.google.com/forms/d/e/1FAIpQLSei88vvBKV-oApI7-7IRWrf_vf99DYTgBtUx2pQ0ECsJutlMw/viewform", color=true, newTab=true) }}
 </footer>

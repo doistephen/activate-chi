@@ -20,6 +20,7 @@ module.exports = {
       yellow: "#FFB906",
       hue: "#F86849",
       none: "transparent",
+      link: "#2d81ff",
     },
     fontFamily: {
       display: ["Sporting Grotesque", "sans-serif", "Arial"],
@@ -35,6 +36,12 @@ module.exports = {
             lineHeight: "1.5",
           },
         ],
+        lg: [
+          "1.125rem",
+          {
+            lineHeight: "1.5",
+          },
+        ],
         xl: [
           "1.25rem",
           {
@@ -46,6 +53,13 @@ module.exports = {
           "1.5rem",
           {
             lineHeight: "1.5",
+            letterSpacing: "0.025em",
+          },
+        ],
+        "4xl": [
+          "2.25rem",
+          {
+            lineHeight: "1.4",
             letterSpacing: "0.025em",
           },
         ],

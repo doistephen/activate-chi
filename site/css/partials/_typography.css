@@ -1,0 +1,93 @@
+.text-4xl {
+  font-size: 1.5rem;
+}
+@screen sm {
+  .text-4xl {
+    font-size: 1.875rem;
+  }
+}
+@screen md {
+  .text-4xl {
+    font-size: 2.25rem;
+  }
+}
+/* ****************************** */
+.text-3xl {
+  font-size: 1.25rem;
+}
+@screen sm {
+  .text-3xl {
+    font-size: 1.5rem;
+  }
+}
+@screen md {
+  .text-3xl {
+    font-size: 1.875rem;
+  }
+}
+/* ****************************** */
+.text-2xl {
+  font-size: 1.25rem;
+}
+@screen md {
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+}
+/* ****************************** */
+.text-xl {
+  font-size: 1rem;
+}
+@screen md {
+  .text-xl {
+    font-size: 1.25rem;
+  }
+}
+/* ****************************** */
+.text-lg {
+  font-size: 0.9375rem;
+}
+@screen md {
+  .text-lg {
+    font-size: 1.125rem;
+  }
+}
+/* ****************************** */
+.text-base {
+  font-size: 0.875rem;
+}
+
+@screen md {
+  .text-base {
+    font-size: 1rem;
+  }
+}
+/* ****************************** */
+.text-sm {
+  font-size: 0.8125rem;
+}
+
+@screen md {
+  .text-sm {
+    font-size: 0.875rem;
+  }
+}
+/* ****************************** */
+.text-xs {
+  font-size: 0.75rem;
+}
+@screen md {
+  .text-xs {
+    font-size: 0.8125rem;
+  }
+}
+/* ****************************** */
+.text-xxs {
+  font-size: 0.6875rem;
+}
+
+@screen md {
+  .text-xxs {
+    font-size: 0.75rem;
+  }
+}

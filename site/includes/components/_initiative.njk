@@ -1,16 +1,16 @@
 {% macro initiative(title, type, date, summary, image) %}
 {% import "components/_button.njk" as button %}
 <div class="flex flex-col items-stretch border-b border-white border-opacity-25"data-organizer="wrapper">
-    <button class="flex items-center justify-between flex-1 w-full text-left transition-opacity group"
+    <button class="flex flex-col justify-between flex-1 w-full pb-4 text-left transition-opacity sm:items-center sm:pb-0 sm:flex-row group"
      @click="selected === '{{title}}' ? selected = 'none' : selected = '{{title}}'" >
-        <div class="flex items-center flex-1 py-4 pr-5 space-x-6">
-            <div class="flex-shrink-0 w-32 h-20 overflow-hidden transition duration-100 transform border border-white border-opacity-50 rounded-full"
-                :class="{'opacity-0' : selected === '{{title}}'}"
-                :class="{'opacity-90' : selected !== '{{title}}'}">
+        <div class="flex flex-col flex-1 py-4 space-y-4 sm:items-center sm:pr-5 sm:space-x-6 sm:flex-row">
+            <div class="flex-shrink-0 h-20 overflow-hidden transition duration-100 transform border border-white border-opacity-50 rounded-full w-36 sm:w-32"
+                :class="{'sm:opacity-0' : selected === '{{title}}'}"
+                :class="{'sm:opacity-90' : selected !== '{{title}}'}">
         	    <img class="object-cover w-full h-full" src="{{image}}" alt="">
         	</div>
-        	<div class="flex flex-col justify-end space-y-2 transition transform"
-                :class="{'-translate-x-38' : selected === '{{title}}'}">
+        	<div class="flex flex-col justify-end pl-2 space-y-2 transition transform sm:pl-0"
+                :class="{'sm:-translate-x-38' : selected === '{{title}}'}">
         	        <span class="text-sm tracking-wider text-hue text-opacity-90">{{type}}</span>
         	        <h3 class="flex-grow text-lg text-white font-display">
                         {{title}}
@@ -18,7 +18,7 @@
         	</div>
 
         </div>
-        <div>
+        <div class="pl-1 sm:pl-0">
             <div class="grid px-5 pt-3 pb-2 text-xs tracking-wide text-center grid-absolute btn-outline font-display group-focus:ring">
                 <span :class="{'opacity-0' : selected !== '{{title}}'}" class="grid-inset-0">Read less</span>
                 <span :class="{'opacity-0' : selected === '{{title}}'}" class="grid-inset-0">Read more</span>
@@ -31,14 +31,14 @@
         <div class="flex items-start justify-between flex-1 h-full pb-4 space-x-5 transition-opacity duration-500"
             :class="{'opacity-0' : selected !=='{{title}}'}">
             <div class="flex flex-col justify-between flex-1 flex-shrink-0 pt-5 space-y-5 border-t border-white border-opacity-25">
-                <p class="max-w-xl text-lg text-white text-opacity-50">
+                <p class="max-w-xl text-lg text-white text-opacity-75">
                     {{summary}}
                 </p>
                 <div class="flex-shrink-0 text-xs tracking-widest text-white uppercase min-w-max">
                     <date>{{date}}</date>
                 </div>
             </div>
-            <div class="flex-shrink h-56 max-w-xs mb-px overflow-hidden transition transform border border-white border-opacity-50"
+            <div class="flex-shrink hidden h-56 max-w-xs mb-px overflow-hidden transition transform border border-white border-opacity-50 sm:block"
                 :class="{'opacity-0' : selected !== '{{title}}'}">
                 <img class="block object-cover w-full h-full" src="{{image}}" alt="">
             </div>

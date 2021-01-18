@@ -3,7 +3,7 @@
   max-width: 65ch;
 }
 .prose a {
-  @apply underline;
+  @apply underline text-link;
 }
 .prose strong {
   @apply font-bold;
