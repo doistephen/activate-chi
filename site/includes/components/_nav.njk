@@ -20,7 +20,7 @@
             </ul>
         </div>
         {# mobile navigation #}
-        <div class="sm:hidden" x-data="{isOpen: true}">
+        <div class="sm:hidden" x-data="{isOpen: false}">
             <button @click="isOpen = !isOpen" class="z-50 inline-flex p-4 border-white border-opacity-75 btn-outline">
                 <span class="block w-3.5 h-3.5 text-current">{% include "img/menu.svg" %}</span>
             </button>
