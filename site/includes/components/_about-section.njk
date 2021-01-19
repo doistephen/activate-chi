@@ -1,6 +1,6 @@
  {% import "components/_button.njk" as button %}
 
-<section id="about" class="relative pt-24" x-data="{open: false}">
+<section id="about" class="relative pt-24 has-modal" x-data="{isOpen: false}" :class="{'modal-open' : isOpen === true}">
         <div class="grid items-start justify-between grid-cols-1 md:grid-cols-12 gap-x-12 gap-y-6">
             <div class="flex col-span-full">
                 <h2 class="text-xs tracking-wider rounded-full text-hue font-display">About Activate:Chi</h2>
@@ -9,7 +9,7 @@
                 <p class="text-2xl">
                     {{ aboutSection.snippet }}
                 </p>
-                <div @click="open = !open">
+                <div @click="isOpen = !isOpen">
                     {{ button.button("Read our story", as="button") }}
                 </div>
             </div>
@@ -24,19 +24,19 @@
                 </dd>
             </dl>
         </div>
-        <div class="fixed inset-y-0 right-0 z-20 w-full max-w-2xl p-16 transition-transform transform bg-opacity-75 border-l border-white border-opacity-25 noise-bg bg-gray"
-            @click.away="open = false"
-            x-show="open === true"
+        <div class="fixed inset-y-0 right-0 z-20 w-full h-screen max-w-2xl px-6 pt-8 overflow-y-auto transition-transform transform bg-opacity-75 border-l border-white border-opacity-25 lg:p-16 noise-bg bg-gray"
+            @click.away="isOpen = false"
+            x-show="isOpen === true"
             x-transition:enter-start="translate-x-full"
             x-transition:leave-end="translate-x-full">
                 <div class="flex flex-col items-start justify-between text-base col-span-full">
-                <button @click="open = false" class="inline-flex p-5 border-white border-opacity-75 btn-outline">
-                    <span class="block w-5 h-5 text-current transform rotate-90">{% include "img/arrow.svg" %}</span>
+                <button @click="isOpen = false" class="inline-flex p-4 border-white border-opacity-75 btn-outline">
+                    <span class="block w-3.5 h-3.5 text-current transform rotate-90">{% include "img/arrow.svg" %}</span>
                 </button>
             </div>
             <h2 class="mt-12 text-2xl font-display">Our Story</h2>
             <div class="mt-4 prose">{{aboutSection.ourStory | markdownify | safe}}</div>
         </div>
-        <div class="fixed inset-0 z-10 transition-opacity bg-opacity-80 bg-gray" x-show="open === true" x-transition:enter-start="opacity-0"
+        <div class="fixed inset-0 z-10 transition-opacity bg-opacity-80 bg-gray" x-show="isOpen === true" x-transition:enter-start="opacity-0"
             x-transition:leave-end="opacity-0"></div>
     </section>

@@ -19455,7 +19455,24 @@ button:focus {
 
 .prose h1 {
   color: #ffffff;
-  font-size: 2.25em;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .prose h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .prose h1 {
+    font-size: 1.875rem;
+  }
+}
+
+.prose h1 {
   margin-top: 0;
   margin-bottom: 0.8888889em;
   line-height: 1.1111111;
@@ -19644,7 +19661,20 @@ button:focus {
 
 .prose {
   font-size: 1.125rem;
-  line-height: 1.75;
+  line-height: 1.5;
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 640px) {
+  .prose {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .prose {
+    font-size: 1.125rem;
+  }
 }
 
 .prose p {

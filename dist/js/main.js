@@ -16,6 +16,32 @@ if (marquee) {
     marquee.parentNode.append(marquee.cloneNode(true));
   });
 }
+var modalSections = document.querySelectorAll(".has-modal");
+var body = document.querySelector("body");
+var classToCheck = "modal-open";
+modalSections.forEach(function (section) {
+  var prevClassState = section.classList.contains(classToCheck);
+  var observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      if (mutation.attributeName == "class") {
+        var currentClassState = mutation.target.classList.contains(classToCheck);
+
+        if (prevClassState !== currentClassState) {
+          prevClassState = currentClassState;
+
+          if (currentClassState) {
+            body.classList.add("h-screen", "overflow-hidden");
+          } else {
+            body.classList.remove("h-screen", "overflow-hidden");
+          }
+        }
+      }
+    });
+  });
+  observer.observe(section, {
+    attributes: true
+  });
+});
 var organizers = document.querySelectorAll("[data-organizer=\"wrapper\"]");
 
 var getHeights = function getHeights() {

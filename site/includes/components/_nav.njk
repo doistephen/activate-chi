@@ -10,17 +10,19 @@
         </a>
         <div class="sm:flex hidden items-center -mr-2.5 space-x-5 divide-x divide-white divide-opacity-25">
             <ul class="flex space-x-3">
-                {{ button.button("Read our blog", "/blog") }}
-                {{ button.button("Volunteer", "https://docs.google.com/forms/d/e/1FAIpQLSei88vvBKV-oApI7-7IRWrf_vf99DYTgBtUx2pQ0ECsJutlMw/viewform", color=true, newTab=true) }}
+                {% if collections.blog.length > 0 %}
+                    {{ button.button("Read our blog", "/blog") }}
+                {% endif %}
+                {{ button.button("Get involved", site.volunteerLink, color=true, newTab=true) }}
             </ul>
             <ul class="flex pl-2.5">
-                <li><a target="_blank" href="https://twitter.com/activate_chi?lang=en" class="block p-2.5 text-white text-opacity-100 transition transform hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2 rounded-full"><span class="block w-5 h-5">{% include "img/twitter.svg" %}</span></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/activate.chi/" class="block p-2.5 text-white text-opacity-100 transition transform hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2 rounded-full"><span class="block w-5 h-5">{% include "img/instagram.svg" %}</span></a></li>
-                <li><a target="_blank" href="https://www.facebook.com/groups/212768039194574/" class="block p-2.5 text-white text-opacity-100 transition transform hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2 rounded-full"><span class="block w-5 h-5">{% include "img/facebook.svg" %}</span></a></li>
+                <li><a target="_blank" href="{{site.twitterLink}}" class="block p-2.5 text-white text-opacity-100 transition transform hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2 rounded-full"><span class="block w-5 h-5">{% include "img/twitter.svg" %}</span></a></li>
+                <li><a target="_blank" href="{{site.instagramLink}}" class="block p-2.5 text-white text-opacity-100 transition transform hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2 rounded-full"><span class="block w-5 h-5">{% include "img/instagram.svg" %}</span></a></li>
+                <li><a target="_blank" href="{{site.facebookLink}}" class="block p-2.5 text-white text-opacity-100 transition transform hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2 rounded-full"><span class="block w-5 h-5">{% include "img/facebook.svg" %}</span></a></li>
             </ul>
         </div>
         {# mobile navigation #}
-        <div class="sm:hidden" x-data="{isOpen: false}">
+        <div class="sm:hidden has-modal" x-data="{isOpen: false}" :class="{'modal-open' : isOpen === true}">
             <button @click="isOpen = !isOpen" class="z-50 inline-flex p-4 border-white border-opacity-75 btn-outline">
                 <span class="block w-3.5 h-3.5 text-current">{% include "img/menu.svg" %}</span>
             </button>
@@ -29,16 +31,16 @@
                 <div class="flex flex-col items-center justify-center flex-1 space-y-8 divide-y divide-white divide-opacity-25">
                     <ul class="flex flex-col space-y-6" @click="isOpen = false">
                     <a class="block text-sm tracking-wide text-center font-display" href="/">Home</a>
-                    <a class="block text-sm tracking-wide text-center font-display" href="/#initiatives">Our initiatives</a>
+                    <a class="block text-sm tracking-wide text-center font-display" href="/#initiatives">Recent initiatives</a>
                     <a class="block text-sm tracking-wide text-center font-display" href="/#about">About Activate:Chi</a>
                     <a class="block text-sm tracking-wide text-center font-display" href="/#organizers">Our organizers</a>
                         {{ button.button("Read the blog", "/blog") }}
-                        {{ button.button("Volunteer", "https://docs.google.com/forms/d/e/1FAIpQLSei88vvBKV-oApI7-7IRWrf_vf99DYTgBtUx2pQ0ECsJutlMw/viewform", color=true, newTab=true) }}
+                        {{ button.button("Get involved", site.volunteerLink, color=true, newTab=true) }}
                     </ul>
                     <ul class="flex justify-around pt-5">
-                        <li><a target="_blank" href="https://twitter.com/activate_chi?lang=en" class="block p-4 text-white text-opacity-100 transition transform rounded-full hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2"><span class="block w-5 h-5">{% include "img/twitter.svg" %}</span></a></li>
-                        <li><a target="_blank" href="https://www.instagram.com/activate.chi/" class="block p-4 text-white text-opacity-100 transition transform rounded-full hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2"><span class="block w-5 h-5">{% include "img/instagram.svg" %}</span></a></li>
-                        <li><a target="_blank" href="https://www.facebook.com/groups/212768039194574/" class="block p-4 text-white text-opacity-100 transition transform rounded-full hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2"><span class="block w-5 h-5">{% include "img/facebook.svg" %}</span></a></li>
+                        <li><a target="_blank" href="{{site.twitterLink}}" class="block p-4 text-white text-opacity-100 transition transform rounded-full hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2"><span class="block w-5 h-5">{% include "img/twitter.svg" %}</span></a></li>
+                        <li><a target="_blank" href="{{site.instagramLink}}" class="block p-4 text-white text-opacity-100 transition transform rounded-full hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2"><span class="block w-5 h-5">{% include "img/instagram.svg" %}</span></a></li>
+                        <li><a target="_blank" href="{{site.facebookLink}}" class="block p-4 text-white text-opacity-100 transition transform rounded-full hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2"><span class="block w-5 h-5">{% include "img/facebook.svg" %}</span></a></li>
                     </ul>
                 </div>
             </div>
