@@ -118,7 +118,7 @@ collections:
               buttons:
                 ["bold", "italic", "link", "bulleted-list", "numbered-list"],
               editor_components: [],
-              # modes: ["rich_text"],
+              modes: ["rich_text"],
             }
       - name: "blogPage"
         label: "Blog Page"
