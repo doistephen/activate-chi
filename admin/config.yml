@@ -18,6 +18,13 @@ collections:
               widget: "string",
               hint: "This field should not be longer than one sentence. The site automatically puts the words `Activate:Chi` at the beginning of the sentence for you, so the field contents above should continue the sentence after those words.",
             }
+          - {
+              name: "bannerImage",
+              label: "Banner Image",
+              widget: "image",
+              allow_multiple: false,
+              hint: "When uploading a new image, make sure it is not too large, which would slow down the website loading speed. The image should not be more than 2048px × 640px in size and jpg format. You can also use an image compression website to minimize the size of your image.",
+            }
       - name: "aboutSection"
         label: "About Section"
         file: "site/data/aboutSection.json"
@@ -40,6 +47,11 @@ collections:
               widget: "text",
               hint: "The text that appears in the larger paragraph underneath `Our organizers`",
             }
+      - name: "footer"
+        label: "Footer"
+        file: "site/data/footer.json"
+        fields:
+          - { name: "heading", label: "Heading", widget: "text" }
 
   - name: "organizers"
     label: "Organizers"
