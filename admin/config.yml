@@ -51,7 +51,18 @@ collections:
         label: "Footer"
         file: "site/data/footer.json"
         fields:
-          - { name: "heading", label: "Heading", widget: "text" }
+          - {
+              name: "heading",
+              label: "Heading",
+              widget: "string",
+              hint: "The text that appears above the sign up button in the site footer",
+            }
+          - {
+              name: "link",
+              label: "Link to Sign up form",
+              widget: "string",
+              hint: "The link to the Activate:Chi volunteer sign up form",
+            }
 
   - name: "organizers"
     label: "Organizers"
