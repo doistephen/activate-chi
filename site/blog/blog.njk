@@ -7,10 +7,10 @@ eleventyExcludeFromCollections: true
 <main class="space-y-8 md:space-y-16">
     <header class="pt-8 space-y-4">
         <h1 class="max-w-4xl mx-auto text-4xl leading-snug tracking-wide text-center font-display">
-            <span class="text-hue">Connecting the Dots:</span> how small efforts can cascade into big changes for our communities.
+            <span class="text-hue">{{blogPage.blogName}}:</span> {{blogPage.introText}}
         </h1>
         <div class="max-w-sm mx-auto prose text-center">
-            <p class="leading-normal">Interested in writing an essay for <em>Connecting the Dots</em>? Send an email to <a href="mailto:sanjeechoudhuri@activate-chi.org">sanjeechoudhuri@activate-chi.org</a>.</p>
+            <div class="leading-normal">{{blogPage.callForWriters | markdownify | safe }}</div>
         </div>
     </header>
 <ul class="grid grid-cols-1 gap-12 sm:grid-cols-12">
