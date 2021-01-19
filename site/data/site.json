@@ -1,7 +1,15 @@
 {
-  "permalink": "https://activate-chi.org",
-  "name": "Activate:CHI",
-  "og_description": "The 2020 election is only days away. It's important to participate in for so many reasons. Share what yours is!",
+  "facebookLink": "https://www.facebook.com/groups/212768039194574/",
+  "volunteerLink": "\"https://docs.google.com/forms/d/e/1FAIpQLSei88vvBKV-oApI7-7IRWrf_vf99DYTgBtUx2pQ0ECsJutlMw/viewform\"",
+  "footerHeading": "Interested in volunteering or becoming an organizer?",
   "page_type": "website",
-  "favicon": "/assets/images/favicon.svg"
+  "name": "Activate:CHI",
+  "permalink": "https://activate-chi.org",
+  "instagramLink": "https://www.instagram.com/activate.chi/",
+  "twitterLink": "https://twitter.com/activate_chi?lang=en",
+  "socialSnippet": "Encouraging individuals to start taking meaningful action however they can.",
+  "siteName": "Activate:Chi",
+  "favicon": "/assets/images/favicon.svg",
+  "og_description": "The 2020 election is only days away. It's important to participate in for so many reasons. Share what yours is!",
+  "socialGraphic": "/assets/images/uploads/social-share.jpg"
 }
