@@ -6,8 +6,71 @@ media_folder: "assets/images/uploads"
 
 collections:
   - name: "sections"
-    label: "Sections"
+    label: "Site Copy"
     files:
+      - name: "site"
+        label: "Site Data"
+        file: "site/data/site.json"
+        fields:
+          - {
+              name: "siteName",
+              label: "Site Name",
+              widget: "string",
+              hint: "The name of the website. Should probably just say 'Activate:Chi'",
+              default: "Activate:Chi",
+            }
+          - {
+              name: "permalink",
+              label: "Website URL",
+              widget: "string",
+              hint: "The URL that this website lives on",
+              default: "https://activate-chi.org",
+            }
+          - {
+              name: "socialSnippet",
+              label: "Social Sharing Description",
+              widget: "string",
+              hint: "The short snippet of text that appears in the website share card on social media. Should be around 200 characters max.",
+            }
+          - {
+              name: "socialGraphic",
+              label: "Social Sharing Graphic",
+              widget: "image",
+              hint: "The graphic that appears in the website share card on social media. Should be 2400px × 1260px",
+            }
+          - {
+              name: "favicon",
+              label: "Website Icon",
+              widget: "image",
+              hint: "The little icon that appears in the browser tab next to the site title.",
+            }
+          - {
+              name: "footerHeading",
+              label: "Footer heading",
+              widget: "string",
+              hint: "The text that appears above the sign up button in the site footer",
+            }
+          - {
+              name: "volunteerLink",
+              label: "Link to volunteer sign up form",
+              widget: "string",
+              hint: "The link to the Activate:Chi volunteer sign up form",
+            }
+          - {
+              name: "twitterLink",
+              label: "Link to A:C Twitter account",
+              widget: "string",
+            }
+          - {
+              name: "instagramLink",
+              label: "Link to A:C Instagram account",
+              widget: "string",
+            }
+          - {
+              name: "facebookLink",
+              label: "Link to A:C Facebook account",
+              widget: "string",
+            }
       - name: "introSection"
         label: "Intro Section"
         file: "site/data/introSection.json"
@@ -25,43 +88,63 @@ collections:
               allow_multiple: false,
               hint: "When uploading a new image, make sure it is not too large, which would slow down the website loading speed. The image should not be more than 2048px × 640px in size and jpg format. You can also use an image compression website to minimize the size of your image.",
             }
+      - name: "initiativesSection"
+        label: "Initiatives Section"
+        file: "site/data/initiativesSection.json"
+        fields:
+          - {
+              name: "introText",
+              label: "Intro Text",
+              widget: "string",
+              hint: "This field should describe A:C's initiative strategy and should not be longer than one sentence.",
+            }
       - name: "aboutSection"
         label: "About Section"
         file: "site/data/aboutSection.json"
         fields:
           - {
               name: "snippet",
-              label: "Section Snippet",
+              label: "Section snippet",
               widget: "text",
               hint: "The text that appears in the larger paragraph underneath `About Activate:Chi`",
             }
-          - { name: "mission", label: "Our Mission", widget: "text" }
-          - { name: "vision", label: "Our Vision", widget: "text" }
-      - name: "organizersSection"
-        label: "Organizers Section"
-        file: "site/data/organizersSection.json"
+          - { name: "mission", label: "Our mission", widget: "string" }
+          - { name: "vision", label: "Our vision", widget: "string" }
+          - {
+              name: "ourStory",
+              label: "Our story",
+              widget: "markdown",
+              hint: "A longer, 2-3 paragraph background on Activate:Chi, its origins, and history.",
+              buttons:
+                ["bold", "italic", "link", "bulleted-list", "numbered-list"],
+              editor_components: [],
+              modes: ["rich_text"],
+            }
+      - name: "blogPage"
+        label: "Blog Page"
+        file: "site/data/blogPage.json"
         fields:
           - {
-              name: "snippet",
-              label: "Section Snippet",
-              widget: "text",
-              hint: "The text that appears in the larger paragraph underneath `Our organizers`",
-            }
-      - name: "footer"
-        label: "Footer"
-        file: "site/data/footer.json"
-        fields:
-          - {
-              name: "heading",
-              label: "Heading",
+              name: "blogName",
+              label: "Blog name",
               widget: "string",
-              hint: "The text that appears above the sign up button in the site footer",
+              hint: "The name of the Activate:Chi blog",
             }
           - {
-              name: "link",
-              label: "Link to Sign up form",
+              name: "introText",
+              label: "Intro sentence",
               widget: "string",
-              hint: "The link to the Activate:Chi volunteer sign up form",
+              hint: "This field should not be longer than one sentence. The site automatically puts the blogName at the beginning of the sentence for you, so the field contents above should continue the sentence after those words.",
+            }
+          - {
+              name: "callForWriters",
+              label: "Call for writers",
+              widget: "markdown",
+              minimal: true,
+              buttons: ["bold", "italic", "link"],
+              editor_components: [],
+              modes: ["rich_text"],
+              hint: "The small text to display underneath the intro sentence that gives people a way to contact A:C when they're interested in writing for the blog.",
             }
 
   - name: "organizers"
@@ -100,7 +183,7 @@ collections:
       - { name: "summary", label: "Summary", widget: "text" }
 
   - name: "blog"
-    label: "Blog"
+    label: "Blog Posts"
     label_singular: "Blog post"
     folder: "site/blog"
     create: true
