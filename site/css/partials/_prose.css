@@ -1,5 +1,5 @@
 .prose {
-  @apply text-white text-opacity-80;
+  @apply text-lg leading-relaxed text-white text-opacity-80;
   max-width: 65ch;
 }
 .prose a {
@@ -140,9 +140,6 @@
 .prose tbody td {
   vertical-align: top;
   padding: 0.5714286em;
-}
-.prose {
-  @apply text-lg;
 }
 .prose p {
   margin-top: 1.25em;

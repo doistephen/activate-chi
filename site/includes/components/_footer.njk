@@ -1,8 +1,8 @@
  {% import "components/_button.njk" as button %}
 
 <footer class="pt-24">
-    <div class="flex flex-col items-center px-4 py-12 -mx-4 space-y-6 border-t border-white border-opacity-25 sm:pb-16">
-        <h2 class="max-w-md text-2xl text-center font-display">{{site.footerHeading}}</h2>
+    <div class="flex flex-col items-center px-4 pt-12 -mx-4 space-y-6 border-t border-white border-opacity-25">
+        <h2 class="max-w-md text-xl text-center font-display">{{site.footerHeading}}</h2>
         {{ button.button("Sign up to get involved", site.volunteerLink, color=true, newTab=true) }}
     </div>
 </footer>

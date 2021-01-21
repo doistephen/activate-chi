@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-  <title>{{ site.siteName }}</title>
+  <title>{% if title %} {{ title }} | {% endif %} {{ site.siteName }}</title>
   <meta property="og:title" content="{{ site.siteName }}"/>
 
-  <meta name="description" content="{{site.socialSnippet}}">
-  <meta property="og:description" content="{{site.socialSnippet}}"/>
+  <meta name="description" content="{% if socialSnippet %}{{ socialSnippet}}{% else %}{{site.socialSnippet}}{% endif %}">
+  <meta property="og:description" content="{% if socialSnippet %}{{ socialSnippet}}{% else %}{{site.socialSnippet}}{% endif %}"/>
 
   <link rel="canonical" href="{{ site.permalink }}{{ page.url }}">
   <meta property="og:url" content="{{ site.permalink }}{{ page.url }}" />

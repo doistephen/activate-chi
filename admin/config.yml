@@ -86,7 +86,7 @@ collections:
               label: "Banner Image",
               widget: "image",
               allow_multiple: false,
-              hint: "When uploading a new image, make sure it is not too large, which would slow down the website loading speed. The image should not be more than 2048px × 640px in size and jpg format. You can also use an image compression website to minimize the size of your image.",
+              hint: "Image file should be 2048px × 640px in size and .jpg format. You should use an image compression website to minimize the size of your image.",
             }
       - name: "initiativesSection"
         label: "Initiatives Section"
@@ -134,7 +134,7 @@ collections:
               name: "introText",
               label: "Intro sentence",
               widget: "string",
-              hint: "This field should not be longer than one sentence. The site automatically puts the blogName at the beginning of the sentence for you, so the field contents above should continue the sentence after those words.",
+              hint: "This field should not be longer than one sentence. The site automatically puts the Blog Name at the beginning of the sentence for you, so the field contents above should continue the sentence after those words.",
             }
           - {
               name: "callForWriters",
@@ -193,9 +193,16 @@ collections:
       - { name: "author", label: "Author", widget: "string" }
       - { name: "date", label: "Date of Publishing", widget: "date" }
       - {
+          name: "socialSnippet",
+          label: "Social Sharing Snippet",
+          widget: "string",
+          hint: "This snippet of text will be used in Twitter and Facebook sharing cards underneath the image and article title. Make it describe the article content and something that will encourage people to read it!",
+        }
+      - {
           name: "image",
           label: "Featured Image",
           widget: "image",
           allow_multiple: false,
+          hint: "Image file should be 2048px × 640px in size and .jpg format. You should use an image compression website to minimize the size of your image.",
         }
       - { name: "body", label: "Article Content", widget: "markdown" }
