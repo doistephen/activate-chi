@@ -1,6 +1,6 @@
 ---
 title: "Connecting the Dots: An Introduction"
-author: Sanjee Chourhuri
+author: Sanjee Choudhuri
 date: 2021-01-21T15:11:56.687Z
 image: /assets/images/uploads/connect-dots-introduction-2x.jpg
 ---
