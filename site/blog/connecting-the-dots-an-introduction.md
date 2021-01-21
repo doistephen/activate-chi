@@ -2,6 +2,9 @@
 title: "Connecting the Dots: An Introduction"
 author: Sanjee Choudhuri
 date: 2021-01-21T15:11:56.687Z
+socialSnippet: Welcome to Connecting the Dots, exploring social causes in
+  Chicago and highlighting how a small effort from an individual can have
+  cascading positive effects through a community.
 image: /assets/images/uploads/connect-dots-introduction-2x.jpg
 ---
 Activate:Chi was started based on the belief that everyone can and should become an activist for the causes they care most about. In that same spirit we’ve decided to start our new column “Connecting the Dots,” dedicated to helping explore different social causes here in Chicago and highlight how a small effort from an individual can have cascading positive effects through a community. 
