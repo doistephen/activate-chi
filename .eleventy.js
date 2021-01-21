@@ -1,5 +1,6 @@
 const htmlmin = require("html-minifier");
 const pluginDate = require("eleventy-plugin-date");
+const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter("markdownify", (markdownString) => {
@@ -52,6 +53,11 @@ module.exports = (eleventyConfig) => {
 
   // Plugins
   eleventyConfig.addPlugin(pluginDate);
+  eleventyConfig.addPlugin(sitemap, {
+    sitemap: {
+      hostname: "https://activate-chi.org",
+    },
+  });
 
   eleventyConfig.setDataDeepMerge(true);
 
