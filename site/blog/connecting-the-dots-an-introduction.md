@@ -1,6 +1,7 @@
 ---
 title: "Connecting the Dots: An Introduction"
 author: Sanjee Choudhuri
+authorPortrait: /assets/images/uploads/sanjee@2x.jpg
 date: 2021-01-21T15:11:56.687Z
 socialSnippet: Welcome to Connecting the Dots, exploring social causes in
   Chicago and highlighting how a small effort from an individual can have
