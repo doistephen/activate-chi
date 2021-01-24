@@ -152,10 +152,17 @@ collections:
         fields:
           - {
               name: "images",
-              label: "Images",
-              widget: "image",
-              allow_multiple: true,
-              hint: "Images you want to be included in the gallery marquee.",
+              label: "Gallery images",
+              widget: "list",
+              collapsed: true,
+              field:
+                {
+                  name: "images",
+                  label: "Images",
+                  widget: "image",
+                  allow_multiple: true,
+                  hint: "Images you want to be included in the gallery marquee.",
+                },
             }
 
   - name: "organizers"
