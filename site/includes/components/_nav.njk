@@ -1,8 +1,7 @@
  {% import "components/_button.njk" as button %}
-
- <nav class="sticky top-0 z-10 flex items-center justify-between px-4 py-4 -mx-4 transition border-white border-opacity-25"
+ <nav class="sticky top-0 z-10 ">
+ <div class="container flex items-center justify-between px-0 py-4 transition transform"
     x-cloak
-	:class="{'bg-gray border-b bg-repeat noise-bg' : !atTop}"
 	x-data="{ atTop: true }"
 	@scroll.window="atTop = (window.pageYOffset > 16) ? false : true">
         <a href="/" class="z-50 flex-shrink-0 w-20 transition transform md:w-24 text-hue hover:scale-103">
@@ -45,4 +44,6 @@
                 </div>
             </div>
         </div>
+        <div :class="{'border-b' : !atTop}"class="absolute top-0 bottom-0 w-screen transform -translate-x-1/2 bg-repeat border-white border-opacity-25 bg-gray noise-bg left-1/2 -z-1"></div>
+    </div>
     </nav>
