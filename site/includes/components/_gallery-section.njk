@@ -1,7 +1,7 @@
 <section id="about" class="relative w-screen py-24 overflow-hidden transform -translate-x-50 left-1/2" x-data="{isOpen: false}" :class="{'modal-open' : isOpen === true}">
     <div class="flex flex-nowrap w-max animate-marquee">
-        <div class="flex flex-shrink-0 space-x-20 h-96" data-marquee>
-        {% for images in gallerySection.json %}
+        <div class="flex flex-shrink-0 h-64 space-x-20 md:h-80" data-marquee>
+        {% for images in gallerySection.images %}
             <img class="flex-shrink-0 object-cover w-auto h-full transition-all transform border border-white border-opacity-50 g-img" src="{{images}}" alt="">
         {% endfor %}
         <div>
