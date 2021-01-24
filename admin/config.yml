@@ -146,6 +146,17 @@ collections:
               modes: ["rich_text"],
               hint: "The small text to display underneath the intro sentence that gives people a way to contact A:C when they're interested in writing for the blog.",
             }
+      - name: "gallerySection"
+        label: "Gallery Section"
+        file: "site/data/gallerySection.json"
+        fields:
+          - {
+              name: "images",
+              label: "Images",
+              widget: "image",
+              allow_multiple: true,
+              hint: "Images you want to be included in the gallery marquee.",
+            }
 
   - name: "organizers"
     label: "Organizers"

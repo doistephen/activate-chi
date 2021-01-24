@@ -1,13 +1,9 @@
 <section id="about" class="relative w-screen py-24 overflow-hidden transform -translate-x-50 left-1/2" x-data="{isOpen: false}" :class="{'modal-open' : isOpen === true}">
     <div class="flex flex-nowrap w-max animate-marquee">
         <div class="flex flex-shrink-0 space-x-20 h-96" data-marquee>
-            <img class="flex-shrink-0 object-cover w-auto h-full transition-all transform border border-white border-opacity-50 g-img" src="/assets/images/uploads/header-1@2x.jpg" alt="">
-            <img class="flex-shrink-0 object-cover w-auto h-full transition-all transform border border-white border-opacity-50 g-img" src="/assets/images/uploads/header-3@2x.jpg" alt="">
-            <img class="flex-shrink-0 object-cover w-auto h-full transition-all transform border border-white border-opacity-50 g-img" src="/assets/images/uploads/header-4@2x.jpg" alt="">
-            <img class="flex-shrink-0 object-cover w-auto h-full transition-all transform border border-white border-opacity-50 g-img" src="/assets/images/uploads/header-5@2x.jpg" alt="">
-            <img class="flex-shrink-0 object-cover w-auto h-full transition-all transform border border-white border-opacity-50 g-img" src="/assets/images/uploads/img_8559.jpg" alt="">
-            <img class="flex-shrink-0 object-cover w-auto h-full transition-all transform border border-white border-opacity-50 g-img" src="/assets/images/uploads/header-1@2x.jpg" alt="">
-            <img class="flex-shrink-0 object-cover w-auto h-full transition-all transform border border-white border-opacity-50 g-img" src="/assets/images/uploads/header-4@2x.jpg" alt="">
+        {% for images in gallerySection.json %}
+            <img class="flex-shrink-0 object-cover w-auto h-full transition-all transform border border-white border-opacity-50 g-img" src="{{images}}" alt="">
+        {% endfor %}
         <div>
     </div>
 </section>
