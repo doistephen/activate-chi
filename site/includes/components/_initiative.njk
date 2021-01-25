@@ -3,7 +3,7 @@
 <div class="flex flex-col items-stretch border-b border-white border-opacity-25"data-organizer="wrapper">
     <button class="flex flex-col items-center justify-between flex-1 w-full pb-4 text-left transition-opacity sm:pb-0 sm:flex-row group"
      @click="selected === '{{title}}' ? selected = 'none' : selected = '{{title}}'" >
-        <div class="flex flex-col items-center flex-1 py-4 space-y-4 sm:pr-5 sm:space-x-6 sm:flex-row">
+        <div class="flex flex-col items-center flex-1 py-4 space-y-4 sm:space-y-0 sm:pr-5 sm:space-x-6 sm:flex-row">
             <div class="flex-shrink-0 h-20 overflow-hidden transition duration-100 transform border border-white border-opacity-50 rounded-full w-36 sm:w-32"
                 :class="{'md:opacity-0' : selected === '{{title}}'}"
                 :class="{'md:opacity-90' : selected !== '{{title}}'}">
