@@ -8,6 +8,7 @@
 
   <title>{% if title %} {{ title }} | {% endif %} {{ site.siteName }}</title>
   <meta property="og:title" content="{% if title %} {{ title }} | {% endif %} {{ site.siteName }}"/>
+  <meta name="twitter:title" content="{% if title %} {{ title }} | {% endif %} {{ site.siteName }}">
 
   <meta name="description" content="{% if socialSnippet %}{{ socialSnippet}}{% else %}{{site.socialSnippet}}{% endif %}">
   <meta property="og:description" content="{% if socialSnippet %}{{ socialSnippet}}{% else %}{{site.socialSnippet}}{% endif %}"/>
@@ -51,7 +52,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-config" content="/assets/images/browserconfig.xml">
   <meta name="theme-color" content="#141414">
-  {# <link rel="icon" type="image/png" href="{{ site.favicon }}"> #}
+
   <link rel="stylesheet" href="https://use.typekit.net/xvb5dev.css">
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
