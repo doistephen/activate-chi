@@ -200,6 +200,23 @@ collections:
         }
       - { name: "summary", label: "Summary", widget: "text" }
 
+  - name: "Announcement"
+    label: "Announcements"
+    label_singular: "Announcement"
+    folder: "site/announcements"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "date", label: "Date of Publishing", widget: "date" }
+      - { name: "title", label: "Title", widget: "string" }
+      - {
+          name: "socialSnippet",
+          label: "Social Sharing Snippet",
+          widget: "string",
+          hint: "This snippet of text will be used in Twitter and Facebook sharing cards underneath the image and article title. Make it describe the article content and something that will encourage people to read it!",
+        }
+      - { name: "body", label: "Announcement Content", widget: "markdown" }
+
   - name: "blog"
     label: "Blog Posts"
     label_singular: "Blog post"
