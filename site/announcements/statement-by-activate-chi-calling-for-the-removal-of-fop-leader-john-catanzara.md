@@ -32,15 +32,14 @@ Activate:Chi appreciates the 35 Aldermen who have raised their voice in calling 
 
 To all Aldermen: this resolution and its support shows your conscious knowledge of the mass existence of bigotry within the CPD. It is your duty as our representatives to ensure this is only the beginning of action that will be taken. Otherwise, there is nothing stopping the CPD from sweeping this under the rug and electing another racist as their leader.
 
+---<br>
 **Activate:Chi**
 
-email: info@activate-chi.org
-
+email: info@activate-chi.org <br>
 web: activate-chi.org
 
 ---
 
-1. https://www.wbez.org/stories/chicago-police-union-president-defends-those-who-stormed-us-capitol/6842fa80-3b83-4396-af05-a5f15f4ac740
-2. https://www.civicfed.org/civic-federation/blog/what-chicago-police-department-budget
-3. https://www.nbcchicago.com/news/local/chicago-politics/35-chicago-aldermen-back-resolution-calling-for-fop-president-to-resign-over-comments-on-
-   capitol-riot/2413389/
+1. [https://www.wbez.org/stories/chicago-police-union-president-defends-those-who-stormed-us-capitol/6842fa80-3b83-4396-af05-a5f15f4ac740](https://www.wbez.org/stories/chicago-police-union-president-defends-those-who-stormed-us-capitol/6842fa80-3b83-4396-af05-a5f15f4ac740)
+2. [https://www.civicfed.org/civic-federation/blog/what-chicago-police-department-budget](https://www.civicfed.org/civic-federation/blog/what-chicago-police-department-budget)
+3. [https://www.nbcchicago.com/news/local/chicago-politics-35-chicago-aldermen-back-resolution-calling-for-fop-president-to-resign-over-comments-on-capitol-riot/2413389/](https://www.nbcchicago.com/news/local/chicago-politics-35-chicago-aldermen-back-resolution-calling-for-fop-president-to-resign-over-comments-on-capitol-riot/2413389/)

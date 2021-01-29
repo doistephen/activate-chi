@@ -1,0 +1,14 @@
+
+{% extends "layouts/default.njk" %}
+
+{% block announcement %}{% endblock %}
+
+{% block body %}
+    <main class="space-y-16">
+        <article class="pt-8 mx-auto prose">
+        <date class="block mb-3 text-sm text-hue">{{ date | readableDate }}</date>
+            <h1>{{title}}</h1>
+            {{ content | safe }}
+        </article>
+    </main>
+{% endblock %}

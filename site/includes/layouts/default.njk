@@ -4,10 +4,23 @@
 {# <canvas class="fixed top-0 left-0 w-screen h-screen in"></canvas> #}
 <body class="relative flex flex-col min-h-screen text-xl antialiased leading-normal text-white z-1 font-text bg-gray">
 
+ {% block announcement %}
+    {% if site.announcementBanner %}
+        <div class="flex justify-center px-4 py-3 border-b border-hue border-opacity-60 bg-hue bg-opacity-10">
+            <div class="max-w-full text-base prose text-center text-white text-opacity-90">
+                {{site.announcementBanner | markdownify | safe }}
+            </div>
+        </div>
+    {% endif %}
+ {% endblock %}
+
 <div class="container pt-4 pb-16 space-y-4 sm:pb-20">
     {% include "components/_nav.njk" %}
-    <div id="content">
-        {{ content | safe }}
-    </div>
+    {% block body %}
+        <div id="content">
+            {{ content | safe }}
+        </div>
+    {% endblock %}
 </div>
+
 {% include "components/_html-foot.njk" %}

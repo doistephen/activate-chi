@@ -56,6 +56,13 @@ module.exports = {
             letterSpacing: "0.025em",
           },
         ],
+        "3xl": [
+          "1.875rem",
+          {
+            lineHeight: "1.375",
+            letterSpacing: "0.025em",
+          },
+        ],
         "4xl": [
           "2.25rem",
           {

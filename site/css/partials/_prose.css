@@ -3,7 +3,7 @@
   max-width: 65ch;
 }
 .prose a {
-  @apply underline text-link;
+  @apply text-link hover:underline;
 }
 .prose strong {
   @apply font-bold;
@@ -47,7 +47,6 @@
   @apply text-3xl;
   margin-top: 0;
   margin-bottom: 0.8888889em;
-  line-height: 1.1111111;
 }
 .prose h2 {
   @apply text-2xl font-normal leading-tight text-white;
