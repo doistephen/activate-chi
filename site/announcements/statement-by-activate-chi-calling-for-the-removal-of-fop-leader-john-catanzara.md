@@ -5,7 +5,7 @@ socialSnippet: "Activate:Chi calls for the immediate removal of FOP Leader John
   Catanzara. Anything less than the most expedited removal possible is
   unacceptable. "
 ---
-Activate:Chi calls for the immediate removal of FOP Leader John Catanzara. His comments minimizing and defending the violent terrorist attacks that occured at the Capitol are not only disgraceful, but discongruent with the concepts of liberty and democracy1. He has also shown a history of racism and undue use of force. Anything less than the most expedited removal possible is unacceptable.
+Activate:Chi calls for the immediate removal of FOP Leader John Catanzara. His comments minimizing and defending the violent terrorist attacks that occurred at the Capitol are not only disgraceful, but incongruent with the concepts of liberty and democracy1. He has also shown a history of racism and undue use of force. Anything less than the most expedited removal possible is unacceptable.
 
 It needs to be said that those under and around him need to be clearly and critically investigated as well. We are all living in the unprecedented time where the sitting president has been impeached twice and we should all think about the implications. “Impeachment” is simply a word meaning to charge the highest office with crime - however, as John Catanzara shows, there are racists, apologists, and white supremicists filling these positions from top to bottom. It is our duty to root all of them out. No one believes the impeachment of a racist president will purge America of racism, so why would we believe the removal of a racist police union leader would purge the CPD of racism? John Catanzara represents the CPD by both title and actions. The CPD received over $1.68 billion in tax dollars2 to elect a racist as one of their leaders. When rotten apples ruin the bunch, you do not try to eat through the rot, you throw away the apples and start new.
 
@@ -35,7 +35,7 @@ To all Aldermen: this resolution and its support shows your conscious knowledge 
 email: info@activate-chi.org
 web: activate-chi.org
 
----
+- - -
 
 1: https://www.wbez.org/stories/chicago-police-union-president-defends-those-who-stormed-us-capitol/6842fa80-3b83-4396-af05-a5f15f4ac740
 2: https://www.civicfed.org/civic-federation/blog/what-chicago-police-department-budget
