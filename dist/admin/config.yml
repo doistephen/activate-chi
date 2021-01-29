@@ -20,6 +20,16 @@ collections:
               default: "Activate:Chi",
             }
           - {
+              name: "announcementBanner",
+              label: "Announcement Banner",
+              widget: "markdown",
+              minimal: true,
+              hint: "Fill this field to include a banner at the top of all webpages on the site. Use the banner to make announcements and draw attention to pertinent information.",
+              buttons: ["link"],
+              editor_components: [],
+              modes: ["rich_text"],
+            }
+          - {
               name: "permalink",
               label: "Website URL",
               widget: "string",
@@ -167,7 +177,7 @@ collections:
 
   - name: "organizers"
     label: "Organizers"
-    label_singular: "Organizer"
+    label_singular: "organizer"
     folder: "site/organizers"
     create: true
     description: "Members of Activate:Chi to display on the homepage in the Organizer section."
@@ -184,7 +194,7 @@ collections:
 
   - name: "initiatives"
     label: "Initiatives"
-    label_singular: "Initiative"
+    label_singular: "initiative"
     folder: "site/initiatives"
     create: true
     description: "Activate:Chi initiatives to display on the homepage in the Initiatives section."
@@ -202,7 +212,7 @@ collections:
 
   - name: "Announcement"
     label: "Announcements"
-    label_singular: "Announcement"
+    label_singular: "announcement"
     folder: "site/announcements"
     create: true
     slug: "{{slug}}"
@@ -219,7 +229,7 @@ collections:
 
   - name: "blog"
     label: "Blog Posts"
-    label_singular: "Blog post"
+    label_singular: "blog post"
     folder: "site/blog"
     create: true
     slug: "{{slug}}"
@@ -251,7 +261,7 @@ collections:
 
   - name: "bidenTracker"
     label: "Biden Promise Tracker"
-    label_singular: "Policy promise"
+    label_singular: "policy promise"
     folder: "site/bidenTracker"
     create: true
     fields:
@@ -265,5 +275,5 @@ collections:
           name: "isAccomplished",
           label: "Has it been accomplished",
           widget: "select",
-          options: ["no", "started", "accomplished"],
+          options: ["no", "in progress", "yes"],
         }
