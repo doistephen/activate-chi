@@ -32,7 +32,9 @@ Activate:Chi appreciates the 35 Aldermen who have raised their voice in calling 
 To all Aldermen: this resolution and its support shows your conscious knowledge of the mass existence of bigotry within the CPD. It is your duty as our representatives to ensure this is only the beginning of action that will be taken. Otherwise, there is nothing stopping the CPD from sweeping this under the rug and electing another racist as their leader.
 
 **Activate:Chi**
+
 email: info@activate-chi.org
+
 web: activate-chi.org
 
 - - -
