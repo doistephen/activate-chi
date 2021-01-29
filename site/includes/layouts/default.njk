@@ -1,5 +1,8 @@
 {% include "components/_html-head.njk" %}
-<body class="flex flex-col min-h-screen text-xl antialiased leading-normal text-white font-text bg-gray">
+<div class="fixed top-0 bottom-0 left-0 right-0 bg-repeat noise-bg -z-1"></div>
+{# <div class="absolute w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-full cursor top-1/2 left-1/2 bg-yellow" data-cursor></div> #}
+{# <canvas class="fixed top-0 left-0 w-screen h-screen in"></canvas> #}
+<body class="relative flex flex-col min-h-screen text-xl antialiased leading-normal text-white z-1 font-text bg-gray">
 
 <div class="container pt-4 pb-16 space-y-4 sm:pb-20">
     {% include "components/_nav.njk" %}
@@ -7,7 +10,4 @@
         {{ content | safe }}
     </div>
 </div>
-
-<div class="fixed top-0 bottom-0 left-0 right-0 bg-repeat noise-bg -z-1"></div>
-
 {% include "components/_html-foot.njk" %}
