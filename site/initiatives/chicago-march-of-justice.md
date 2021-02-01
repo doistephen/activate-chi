@@ -8,4 +8,7 @@ summary: Activate:Chi organized the Chicago March of Justice in reaction to the
   brutality towards Black Americans by the police and calling for immediate
   change in the city of Chicago. An estimated 30,000+ people attended the march,
   and it marked the beginning of Activate.
+links:
+  - label: Recap video of the march
+    url: https://vimeo.com/427223085
 ---
