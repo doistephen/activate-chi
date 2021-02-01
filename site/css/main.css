@@ -7,6 +7,6 @@
 
 @import "tailwindcss/components";
 @import "partials/_utilities";
-@import "partials/_typography.css";
 @import "partials/_prose";
 @import "tailwindcss/utilities";
+@import "partials/_typography.css";
