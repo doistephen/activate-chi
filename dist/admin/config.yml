@@ -1,378 +1,310 @@
-{
-  "backend": { "name": "git-gateway", "branch": "master" },
-  "media_folder": "assets/images/uploads",
-  "collections":
-    [
-      {
-        "name": "sections",
-        "label": "Site Copy",
-        "files":
-          [
-            {
-              "name": "site",
-              "label": "Site Data",
-              "file": "site/data/site.json",
-              "fields":
-                [
-                  {
-                    "name": "siteName",
-                    "label": "Site Name",
-                    "widget": "string",
-                    "hint": "The name of the website. Should probably just say 'Activate:Chi'",
-                    "default": "Activate:Chi",
-                  },
-                  {
-                    "name": "announcementBanner",
-                    "label": "Announcement Banner",
-                    "widget": "markdown",
-                    "minimal": true,
-                    "hint": "Fill this field to include a banner at the top of all webpages on the site. Use the banner to make announcements and draw attention to pertinent information.",
-                    "buttons": ["link"],
-                    "editor_components": [],
-                    "modes": ["rich_text"],
-                  },
-                  {
-                    "name": "permalink",
-                    "label": "Website URL",
-                    "widget": "string",
-                    "hint": "The URL that this website lives on",
-                    "default": "https://activate-chi.org",
-                  },
-                  {
-                    "name": "socialSnippet",
-                    "label": "Social Sharing Description",
-                    "widget": "string",
-                    "hint": "The short snippet of text that appears in the website share card on social media. Should be around 200 characters max.",
-                  },
-                  {
-                    "name": "socialGraphic",
-                    "label": "Social Sharing Graphic",
-                    "widget": "image",
-                    "hint": "The graphic that appears in the website share card on social media. Should be 2400px × 1260px",
-                  },
-                  {
-                    "name": "favicon",
-                    "label": "Website Icon",
-                    "widget": "image",
-                    "hint": "The little icon that appears in the browser tab next to the site title.",
-                  },
-                  {
-                    "name": "footerHeading",
-                    "label": "Footer heading",
-                    "widget": "string",
-                    "hint": "The text that appears above the sign up button in the site footer",
-                  },
-                  {
-                    "name": "volunteerLink",
-                    "label": "Link to volunteer sign up form",
-                    "widget": "string",
-                    "hint": "The link to the Activate:Chi volunteer sign up form",
-                  },
-                  {
-                    "name": "twitterLink",
-                    "label": "Link to A:C Twitter account",
-                    "widget": "string",
-                  },
-                  {
-                    "name": "instagramLink",
-                    "label": "Link to A:C Instagram account",
-                    "widget": "string",
-                  },
-                  {
-                    "name": "facebookLink",
-                    "label": "Link to A:C Facebook account",
-                    "widget": "string",
-                  },
-                ],
-            },
-            {
-              "name": "introSection",
-              "label": "Intro Section",
-              "file": "site/data/introSection.json",
-              "fields":
-                [
-                  {
-                    "name": "introText",
-                    "label": "Intro Text",
-                    "widget": "string",
-                    "hint": "This field should not be longer than one sentence. The site automatically puts the words `Activate:Chi` at the beginning of the sentence for you, so the field contents above should continue the sentence after those words.",
-                  },
-                  {
-                    "name": "bannerImage",
-                    "label": "Banner Image",
-                    "widget": "image",
-                    "allow_multiple": false,
-                    "hint": "Image file should be 2048px × 640px in size and .jpg format. You should use an image compression website to minimize the size of your image.",
-                  },
-                ],
-            },
-            {
-              "name": "initiativesSection",
-              "label": "Initiatives Section",
-              "file": "site/data/initiativesSection.json",
-              "fields":
-                [
-                  {
-                    "name": "introText",
-                    "label": "Intro Text",
-                    "widget": "string",
-                    "hint": "This field should describe A:C's initiative strategy and should not be longer than one sentence.",
-                  },
-                ],
-            },
-            {
-              "name": "aboutSection",
-              "label": "About Section",
-              "file": "site/data/aboutSection.json",
-              "fields":
-                [
-                  {
-                    "name": "snippet",
-                    "label": "Section snippet",
-                    "widget": "text",
-                    "hint": "The text that appears in the larger paragraph underneath `About Activate:Chi`",
-                  },
-                  {
-                    "name": "mission",
-                    "label": "Our mission",
-                    "widget": "string",
-                  },
-                  {
-                    "name": "vision",
-                    "label": "Our vision",
-                    "widget": "string",
-                  },
-                  {
-                    "name": "ourStory",
-                    "label": "Our story",
-                    "widget": "markdown",
-                    "hint": "A longer, 2-3 paragraph background on Activate:Chi, its origins, and history.",
-                    "buttons":
-                      [
-                        "bold",
-                        "italic",
-                        "link",
-                        "bulleted-list",
-                        "numbered-list",
-                      ],
-                    "editor_components": [],
-                    "modes": ["rich_text"],
-                  },
-                ],
-            },
-            {
-              "name": "blogPage",
-              "label": "Blog Page",
-              "file": "site/data/blogPage.json",
-              "fields":
-                [
-                  {
-                    "name": "blogName",
-                    "label": "Blog name",
-                    "widget": "string",
-                    "hint": "The name of the Activate:Chi blog",
-                  },
-                  {
-                    "name": "introText",
-                    "label": "Intro sentence",
-                    "widget": "string",
-                    "hint": "This field should not be longer than one sentence. The site automatically puts the Blog Name at the beginning of the sentence for you, so the field contents above should continue the sentence after those words.",
-                  },
-                  {
-                    "name": "callForWriters",
-                    "label": "Call for writers",
-                    "widget": "markdown",
-                    "minimal": true,
-                    "buttons": ["bold", "italic", "link"],
-                    "editor_components": [],
-                    "modes": ["rich_text"],
-                    "hint": "The small text to display underneath the intro sentence that gives people a way to contact A:C when they're interested in writing for the blog.",
-                  },
-                  {
-                    "name": "blogTypes",
-                    "label": "Types of blogs",
-                    "widget": "list",
-                    "allow_add": true,
-                    "label_singular": "type of blog",
-                    "field":
-                      { "name": "title", "label": "Title", "widget": "string" },
-                  },
-                ],
-            },
-            {
-              "name": "gallerySection",
-              "label": "Gallery Section",
-              "file": "site/data/gallerySection.json",
-              "fields":
-                [
-                  {
-                    "name": "images",
-                    "label": "Gallery images",
-                    "widget": "list",
-                    "collapsed": true,
-                    "field":
-                      {
-                        "name": "images",
-                        "label": "Images",
-                        "widget": "image",
-                        "allow_multiple": true,
-                        "hint": "Images you want to be included in the gallery marquee.",
-                      },
-                  },
-                ],
-            },
-          ],
-      },
-      {
-        "name": "organizers",
-        "label": "Organizers",
-        "label_singular": "organizer",
-        "folder": "site/organizers",
-        "create": true,
-        "description": "Members of Activate:Chi to display on the homepage in the Organizer section.",
-        "fields":
-          [
-            { "name": "name", "label": "Name", "widget": "string" },
-            { "name": "job", "label": "Job", "widget": "string" },
-            {
-              "name": "image",
-              "label": "Image",
-              "widget": "image",
-              "allow_multiple": false,
-            },
-            { "name": "summary", "label": "Summary", "widget": "text" },
-          ],
-      },
-      {
-        "name": "initiatives",
-        "label": "Initiatives",
-        "label_singular": "initiative",
-        "folder": "site/initiatives",
-        "create": true,
-        "description": "Activate:Chi initiatives to display on the homepage in the Initiatives section.",
-        "fields":
-          [
-            { "name": "title", "label": "Title", "widget": "string" },
-            {
-              "name": "type",
-              "label": "Type of Initiative",
-              "widget": "string",
-            },
-            { "name": "dates", "label": "Dates", "widget": "string" },
-            {
-              "name": "image",
-              "label": "Image",
-              "widget": "image",
-              "allow_multiple": false,
-            },
-            { "name": "summary", "label": "Summary", "widget": "text" },
-            {
-              "name": "links",
-              "label": "Links",
-              "widget": "list",
-              "hint": "Any links you want to include on the site related to the initiative. Maybe to websites or videos created as part of the project.",
-              "fields":
-                [
-                  {
-                    "name": "label",
-                    "label": "Label",
-                    "widget": "string",
-                    "hint": "Display value for the link",
-                  },
-                  {
-                    "name": "url",
-                    "label": "URL",
-                    "widget": "string",
-                    "hint": "Url to the link",
-                  },
-                ],
-            },
-          ],
-      },
-      {
-        "name": "Announcement",
-        "label": "Announcements",
-        "label_singular": "announcement",
-        "folder": "site/announcements",
-        "create": true,
-        "slug": "{{slug}}",
-        "fields":
-          [
-            { "name": "date", "label": "Date of Publishing", "widget": "date" },
-            { "name": "title", "label": "Title", "widget": "string" },
-            {
-              "name": "socialSnippet",
-              "label": "Social Sharing Snippet",
-              "widget": "string",
-              "hint": "This snippet of text will be used in Twitter and Facebook sharing cards underneath the image and article title. Make it describe the article content and something that will encourage people to read it!",
-            },
-            {
-              "name": "body",
-              "label": "Announcement Content",
-              "widget": "markdown",
-            },
-          ],
-      },
-      {
-        "name": "blog",
-        "label": "Blog Posts",
-        "label_singular": "blog post",
-        "folder": "site/blog",
-        "create": true,
-        "slug": "{{slug}}",
-        "fields":
-          [
-            { "name": "title", "label": "Title", "widget": "string" },
-            { "name": "author", "label": "Author", "widget": "string" },
-            {
-              "name": "authorPortrait",
-              "label": "Author Portrait",
-              "widget": "image",
-              "allow_multiple": false,
-              "hint": "An image of the author. The photo will be displayed very small on the page so it doesn't need to be a large image file.",
-            },
-            { "name": "date", "label": "Date of Publishing", "widget": "date" },
-            {
-              "name": "socialSnippet",
-              "label": "Social Sharing Snippet",
-              "widget": "string",
-              "hint": "This snippet of text will be used in Twitter and Facebook sharing cards underneath the image and article title. Make it describe the article content and something that will encourage people to read it!",
-            },
-            {
-              "name": "image",
-              "label": "Featured Image",
-              "widget": "image",
-              "allow_multiple": false,
-              "hint": "Image file should be 2048px × 640px in size and .jpg format. You should use an image compression website to minimize the size of your image.",
-            },
-            {
-              "name": "body",
-              "label": "Article Content",
-              "widget": "markdown",
-            },
-          ],
-      },
-      {
-        "name": "bidenTracker",
-        "label": "Biden Promise Tracker",
-        "label_singular": "policy promise",
-        "folder": "site/bidenTracker",
-        "create": true,
-        "fields":
-          [
-            { "name": "title", "label": "Title", "widget": "string" },
-            {
-              "name": "link",
-              "label": "Link to Relevant Information",
-              "widget": "string",
-            },
-            {
-              "name": "isAccomplished",
-              "label": "Has it been accomplished",
-              "widget": "select",
-              "options": ["no", "in progress", "yes"],
-            },
-          ],
-      },
-    ],
-}
+backend:
+  name: git-gateway
+  branch: master
+media_folder: assets/images/uploads
+collections:
+  - name: sections
+    label: Site Copy
+    files:
+      - name: site
+        label: Site Data
+        file: site/data/site.json
+        fields:
+          - name: siteName
+            label: Site Name
+            widget: string
+            hint: The name of the website. Should probably just say 'Activate:Chi'
+            default: Activate:Chi
+          - name: announcementBanner
+            label: Announcement Banner
+            widget: markdown
+            minimal: true
+            hint: Fill this field to include a banner at the top of all webpages on the
+              site. Use the banner to make announcements and draw attention to
+              pertinent information.
+            buttons:
+              - link
+            editor_components: []
+            modes:
+              - rich_text
+          - name: permalink
+            label: Website URL
+            widget: string
+            hint: The URL that this website lives on
+            default: https://activate-chi.org
+          - name: socialSnippet
+            label: Social Sharing Description
+            widget: string
+            hint: The short snippet of text that appears in the website share card on social
+              media. Should be around 200 characters max.
+          - name: socialGraphic
+            label: Social Sharing Graphic
+            widget: image
+            hint: The graphic that appears in the website share card on social media. Should
+              be 2400px × 1260px
+          - name: favicon
+            label: Website Icon
+            widget: image
+            hint: The little icon that appears in the browser tab next to the site title.
+          - name: footerHeading
+            label: Footer heading
+            widget: string
+            hint: The text that appears above the sign up button in the site footer
+          - name: volunteerLink
+            label: Link to volunteer sign up form
+            widget: string
+            hint: The link to the Activate:Chi volunteer sign up form
+          - name: twitterLink
+            label: Link to A:C Twitter account
+            widget: string
+          - name: instagramLink
+            label: Link to A:C Instagram account
+            widget: string
+          - name: facebookLink
+            label: Link to A:C Facebook account
+            widget: string
+      - name: introSection
+        label: Intro Section
+        file: site/data/introSection.json
+        fields:
+          - name: introText
+            label: Intro Text
+            widget: string
+            hint: This field should not be longer than one sentence. The site automatically
+              puts the words `Activate:Chi` at the beginning of the sentence for
+              you, so the field contents above should continue the sentence
+              after those words.
+          - name: bannerImage
+            label: Banner Image
+            widget: image
+            allow_multiple: false
+            hint: Image file should be 2048px × 640px in size and .jpg format. You should
+              use an image compression website to minimize the size of your
+              image.
+      - name: initiativesSection
+        label: Initiatives Section
+        file: site/data/initiativesSection.json
+        fields:
+          - name: introText
+            label: Intro Text
+            widget: string
+            hint: This field should describe A:C's initiative strategy and should not be
+              longer than one sentence.
+      - name: aboutSection
+        label: About Section
+        file: site/data/aboutSection.json
+        fields:
+          - name: snippet
+            label: Section snippet
+            widget: text
+            hint: The text that appears in the larger paragraph underneath `About
+              Activate:Chi`
+          - name: mission
+            label: Our mission
+            widget: string
+          - name: vision
+            label: Our vision
+            widget: string
+          - name: ourStory
+            label: Our story
+            widget: markdown
+            hint: A longer, 2-3 paragraph background on Activate:Chi, its origins, and
+              history.
+            buttons:
+              - bold
+              - italic
+              - link
+              - bulleted-list
+              - numbered-list
+            editor_components: []
+            modes:
+              - rich_text
+      - name: blogPage
+        label: Blog Page
+        file: site/data/blogPage.json
+        fields:
+          - name: blogName
+            label: Blog name
+            widget: string
+            hint: The name of the Activate:Chi blog
+          - name: introText
+            label: Intro sentence
+            widget: string
+            hint: This field should not be longer than one sentence. The site automatically
+              puts the Blog Name at the beginning of the sentence for you, so
+              the field contents above should continue the sentence after those
+              words.
+          - name: callForWriters
+            label: Call for writers
+            widget: markdown
+            minimal: true
+            buttons:
+              - bold
+              - italic
+              - link
+            editor_components: []
+            modes:
+              - rich_text
+            hint: The small text to display underneath the intro sentence that gives people
+              a way to contact A:C when they're interested in writing for the
+              blog.
+          - name: blogTypes
+            label: Types of blogs
+            widget: list
+            allow_add: true
+            label_singular: type of blog
+            field:
+              name: title
+              label: Title
+              widget: string
+      - name: gallerySection
+        label: Gallery Section
+        file: site/data/gallerySection.json
+        fields:
+          - name: images
+            label: Gallery images
+            widget: list
+            collapsed: true
+            field:
+              name: images
+              label: Images
+              widget: image
+              allow_multiple: true
+              hint: Images you want to be included in the gallery marquee.
+  - name: organizers
+    label: Organizers
+    label_singular: organizer
+    folder: site/organizers
+    create: true
+    description: Members of Activate:Chi to display on the homepage in the Organizer
+      section.
+    fields:
+      - name: name
+        label: Name
+        widget: string
+      - name: job
+        label: Job
+        widget: string
+      - name: image
+        label: Image
+        widget: image
+        allow_multiple: false
+      - name: summary
+        label: Summary
+        widget: text
+  - name: initiatives
+    label: Initiatives
+    label_singular: initiative
+    folder: site/initiatives
+    create: true
+    description: Activate:Chi initiatives to display on the homepage in the
+      Initiatives section.
+    fields:
+      - name: title
+        label: Title
+        widget: string
+      - name: type
+        label: Type of Initiative
+        widget: string
+      - name: dates
+        label: Dates
+        widget: string
+      - name: image
+        label: Image
+        widget: image
+        allow_multiple: false
+      - name: summary
+        label: Summary
+        widget: text
+      - name: links
+        label: Links
+        widget: list
+        hint: Any links you want to include on the site related to the initiative. Maybe
+          to websites or videos created as part of the project.
+        fields:
+          - name: label
+            label: Label
+            widget: string
+            hint: Display value for the link
+          - name: url
+            label: URL
+            widget: string
+            hint: Url to the link
+  - name: Announcement
+    label: Announcements
+    label_singular: announcement
+    folder: site/announcements
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - name: date
+        label: Date of Publishing
+        widget: date
+      - name: title
+        label: Title
+        widget: string
+      - name: socialSnippet
+        label: Social Sharing Snippet
+        widget: string
+        hint: This snippet of text will be used in Twitter and Facebook sharing cards
+          underneath the image and article title. Make it describe the article
+          content and something that will encourage people to read it!
+      - name: body
+        label: Announcement Content
+        widget: markdown
+  - name: blog
+    label: Blog Posts
+    label_singular: blog post
+    folder: site/blog
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - name: title
+        label: Title
+        widget: string
+      - name: author
+        label: Author
+        widget: string
+      - name: authorPortrait
+        label: Author Portrait
+        widget: image
+        allow_multiple: false
+        hint: An image of the author. The photo will be displayed very small on the page
+          so it doesn't need to be a large image file.
+      - name: date
+        label: Date of Publishing
+        widget: date
+      - name: socialSnippet
+        label: Social Sharing Snippet
+        widget: string
+        hint: This snippet of text will be used in Twitter and Facebook sharing cards
+          underneath the image and article title. Make it describe the article
+          content and something that will encourage people to read it!
+      - name: image
+        label: Featured Image
+        widget: image
+        allow_multiple: false
+        hint: Image file should be 2048px × 640px in size and .jpg format. You should
+          use an image compression website to minimize the size of your image.
+      - name: body
+        label: Article Content
+        widget: markdown
+  - name: bidenTracker
+    label: Biden Promise Tracker
+    label_singular: policy promise
+    folder: site/bidenTracker
+    create: true
+    fields:
+      - name: title
+        label: Title
+        widget: string
+      - name: link
+        label: Link to Relevant Information
+        widget: string
+      - name: isAccomplished
+        label: Has it been accomplished
+        widget: select
+        options:
+          - no
+          - in progress
+          - yes
