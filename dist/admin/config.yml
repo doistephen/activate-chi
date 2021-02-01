@@ -158,16 +158,6 @@ collections:
               The small text to display underneath the intro sentence that gives people
               a way to contact A:C when they're interested in writing for the
               blog.
-          - name: blogTypes
-            label: Blog Types
-            widget: list
-            allow_add: true
-            summary: "{{fields.title}}"
-            field:
-              widget: string
-              name: title
-              label: Title
-              singular_name: type of blog
       - name: gallerySection
         label: Gallery Section
         file: site/data/gallerySection.json
@@ -182,7 +172,6 @@ collections:
               widget: image
               allow_multiple: true
               hint: Images you want to be included in the gallery marquee.
-
   - name: organizers
     label: Organizers
     label_singular: organizer
@@ -232,9 +221,7 @@ collections:
       - name: links
         label: Links
         widget: list
-        hint:
-          Any links you want to include on the site related to the initiative. Maybe
-          to websites or videos created as part of the project.
+        hint: Any links you want to include on the site related to the initiative. Maybe to websites or videos created as part of the project.
         fields:
           - name: label
             label: Label

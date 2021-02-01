@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% block body %}
 <main class="space-y-8 md:space-y-16 lg:space-y-24">
     {# hero section #}
     {% include "components/_intro-section.njk" %}
@@ -17,3 +18,4 @@ layout: default
     {# footer section #}
     {% include "components/_footer.njk" %}
 </main>
+{% endblock %}
