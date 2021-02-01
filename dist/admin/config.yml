@@ -149,14 +149,14 @@ collections:
               a way to contact A:C when they're interested in writing for the
               blog.
           - name: blogTypes
-            label: Types of blogs
+            label: Blog Types
             widget: list
             allow_add: true
-            label_singular: type of blog
             field:
+              widget: string
               name: title
               label: Title
-              widget: string
+              singular_name: type of blog
       - name: gallerySection
         label: Gallery Section
         file: site/data/gallerySection.json
