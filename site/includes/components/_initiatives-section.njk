@@ -10,7 +10,7 @@
         <ul class="border-t border-white border-opacity-25 col-span-full"
             x-data="{ selected: `none` }">
             {% for item in collections.initiative.reverse() %}
-                {{ initiative.initiative(item.data.title, item.data.type, item.data.dates, item.data.summary, item.data.image) }}
+                {{ initiative.initiative(item.data.title, item.data.type, item.data.dates, item.data.summary, item.data.image, item.data.links) }}
             {% endfor %}
         </ul>
     </div>
