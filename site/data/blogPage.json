@@ -1,5 +1,9 @@
 {
   "blogName": "The Activate:Chi Blog",
   "introText": "stories of marginalized voices and small efforts cascading into big changes for our communities.",
-  "callForWriters": "Interested in contributing an essay for the blog? <br> Send an email to [sanjeechoudhuri@activate-chi.org](mailto:sanjeechoudhuri@activate-chi.org)."
+  "callForWriters": "Interested in contributing an essay for the blog? <br> Send an email to [sanjeechoudhuri@activate-chi.org](mailto:sanjeechoudhuri@activate-chi.org).",
+  "blogTypes": [
+    "Connecting the Dots",
+    "Elevated Voices"
+  ]
 }
