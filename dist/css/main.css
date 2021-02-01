@@ -591,6 +591,10 @@ button:focus {
   }
 }
 
+[x-cloak] {
+  display: none;
+}
+
 .grid-absolute {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;

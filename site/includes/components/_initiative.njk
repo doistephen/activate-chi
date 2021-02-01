@@ -38,9 +38,9 @@
                     <date>{{date}}</date>
                 </div>
                 {% if links.length > 0 %}
-                <div class="self-stretch border border-white border-opacity-25">
-                    <h4 class="px-4 py-2 text-sm text-white text-opacity-75 border-b border-white border-opacity-25">See more:</h4>
-                    <ul class="px-4 py-4 space-y-2">
+                <div class="self-stretch space-y-1">
+                    <h4 class="pt-4 text-sm text-white text-opacity-75 border-t border-white border-opacity-25">See more:</h4>
+                    <ul class="space-y-1">
                         {% for link in links %}
                             <li class="text-sm">
                                 <a class="flex items-center space-x-1 text-link hover:underline" target="_blank" href="{{ link.url }}">
