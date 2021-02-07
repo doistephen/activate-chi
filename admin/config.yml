@@ -221,7 +221,9 @@ collections:
       - name: links
         label: Links
         widget: list
-        hint: Any links you want to include on the site related to the initiative. Maybe to websites or videos created as part of the project.
+        hint:
+          Any links you want to include on the site related to the initiative. Maybe
+          to websites or videos created as part of the project.
         fields:
           - name: label
             label: Label
@@ -293,6 +295,18 @@ collections:
           use an image compression website to minimize the size of your image.
       - name: body
         label: Article Content
+        widget: markdown
+  - name: openPositions
+    label: Open Positions
+    label_singluar: open position
+    folder: site/open-positions
+    create: true
+    fields:
+      - name: name
+        label: Title
+        widget: string
+      - name: body
+        label: Content
         widget: markdown
   - name: bidenTracker
     label: Biden Promise Tracker

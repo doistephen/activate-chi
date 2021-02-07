@@ -1,0 +1,49 @@
+---
+layout: default
+title: Open Positions
+eleventyExcludeFromCollections: true
+socialSnippet: Apply to become an organizer for Activate:Chi!
+---
+
+{% import "components/_button.njk" as button %}
+
+{% block body %}
+    <main class="space-y-16">
+        <grid class="grid items-start justify-between gap-6 lg:grid-cols-12">
+            <h1 class="block max-w-4xl text-3xl leading-snug tracking-wide lg:col-span-9 lg:col-start-4 font-display">{{title}}</h1>
+            <aside class="flex flex-col items-start space-y-6 lg:col-span-3 lg:row-start-2 lg:sticky top-32">
+                <div class="w-full space-y-4 lg:space-y-6">
+                    <h2 class="pt-4 text-sm text-white text-opacity-75 border-t border-white border-opacity-25">Current open positions:</h2>
+                    <ul class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:space-y-2 lg:block">
+                        {% for item in collections.openPosition | alphabetize %}
+                            <li class="text-sm">
+                                <a href="#{{ item.data.name | lower | replace(' ', '-') }}"
+                                    @click="activeCategory === '{{type}}' ? activeCategory = 'both' : activeCategory = '{{type}}'"
+                                    :class="{'text-hue text-opacity-100' : activeCategory == '{{type}}'}"
+                                    class="text-base tracking-wide text-white text-opacity-90 focus:ring hover:underline">
+                                    {{ item.data.name }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="hidden lg:block">
+                    {{ button.button("Apply now!", "https://forms.gle/vkPRoNZoDKJR3jkt9", color=true, newTab=true) }}
+                </div>
+            </aside>
+            <main class="space-y-16 lg:col-span-9">
+                {% for item in collections.openPosition | alphabetize %}
+                    <article  id="{{ item.data.name | lower | replace(' ', '-') }}" class="flex flex-col pt-16 space-y-8 border-t border-white border-opacity-25" style="scroll-margin-top: 8rem">
+                        <div class="prose">
+                            <h2>{{ item.data.name }}</h2>
+                            {{ item.templateContent | markdownify | safe }}
+                        </div>
+                        <div class="self-center block lg:hidden">
+                            {{ button.button("Apply now!", "https://forms.gle/vkPRoNZoDKJR3jkt9", color=true, newTab=true) }}
+                        </div>
+                    </article>
+                {% endfor %}
+            </main>
+        </grid>
+    </main>
+{% endblock %}

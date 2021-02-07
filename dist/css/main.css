@@ -559,6 +559,10 @@ button:focus {
   outline-offset: 2px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*                                                  */
 
 .container {
