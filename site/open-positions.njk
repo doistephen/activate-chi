@@ -33,7 +33,7 @@ socialSnippet: Apply to become an organizer for Activate:Chi!
             </aside>
             <main class="space-y-16 lg:col-span-9">
                 {% for item in collections.openPosition | alphabetize %}
-                    <article  id="{{ item.data.name | lower | replace(' ', '-') }}" class="flex flex-col pt-16 space-y-8 border-t border-white border-opacity-25" style="scroll-margin-top: 8rem">
+                    <article  id="{{ item.data.name | lower | replace(' ', '-') }}" class="flex flex-col pt-24 space-y-8 border-t border-white border-opacity-25 sm:pt-16" style="scroll-margin-top: 8rem">
                         <div class="prose">
                             <h2>{{ item.data.name }}</h2>
                             {{ item.templateContent | markdownify | safe }}
