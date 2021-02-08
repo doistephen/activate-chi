@@ -1,4 +1,17 @@
  {% import "components/_organizer.njk" as organizer %}
+ {% import "components/_button.njk" as button %}
+
+{% macro openPositions() %}
+    {% if collections.openPosition.length > 0 %}
+        <div class="flex items-center flex-1 py-2.5">
+            <div class="flex flex-col items-center justify-between w-full p-4 my-3 space-y-4 border border-hue border-opacity-60 bg-hue bg-opacity-5 sm:flex-row sm:space-y-0 md:space-y-4 md:flex-col lg:flex-row lg:space-y-0">
+                <h3 class="text-lg">We're growing our team!</h3>
+                {{ button.button("See open positions", "/open-positions", color=false, newTab=false) }}
+            </div>
+        </div>
+    {% endif %}
+{% endmacro %}
+
 <section id="organizers" class="pt-24">
     <div class="grid items-start justify-between grid-cols-12 gap-6">
         <div class="flex col-span-full">
@@ -6,20 +19,27 @@
         </div>
         <ul x-data="{ selected: `none` }"
             class="grid items-start md:grid-cols-2 col-span-full gap-x-8 organizer-grid">
-            <div class="hidden md:block">
+            <div class="flex-col hidden md:flex">
                 {% for person in collections.organizer | alphabetize | onlyOdd %}
                     {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
                 {% endfor %}
+                {% if collections.organizer.length % 2 === 0 %}
+                    {{ openPositions() }}
+                {% endif %}
             </div>
-            <div class="hidden md:block">
+            <div class="flex-col hidden md:flex">
                 {% for person in collections.organizer | alphabetize | onlyEven %}
                     {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
                 {% endfor %}
+                {% if collections.organizer.length % 2 === 1 %}
+                    {{ openPositions() }}
+                {% endif %}
             </div>
             <div class="md:hidden">
                 {% for person in collections.organizer | alphabetize %}
                     {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
                 {% endfor %}
+                {{ openPositions() }}
             </div>
         </ul>
     </div>
