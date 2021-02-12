@@ -317,12 +317,10 @@ collections:
       - name: title
         label: Title
         widget: string
-      - name: link
-        label: Link to Relevant Information
-        widget: string
       - name: currentStatus
         label: Current Status
         widget: select
+        hint: Red means not started yet, yellow means in progress, green means accomplished (or at least as much as possible).
         options:
           - red
           - yellow
@@ -330,15 +328,22 @@ collections:
       - name: statusDescription
         label: Status Description
         widget: markdown
+        hint: Describe the current status of the promise.
         minimal: true
         buttons:
           - link
+          - bold
+          - italic
+          - bulleted-list
+          - numbered-list
         editor_components: []
         modes:
           - rich_text
       - name: statusLink
         label: Status Link
         widget: string
+        hint: Include a link to a source sharing info on the status of the promise.
       - name: promiseSource
         label: Promise Source
         widget: string
+        hint: Include a link to the official source describing the promise.
