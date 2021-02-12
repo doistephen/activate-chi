@@ -320,10 +320,25 @@ collections:
       - name: link
         label: Link to Relevant Information
         widget: string
-      - name: isAccomplished
-        label: Has it been accomplished
+      - name: currentStatus
+        label: Current Status
         widget: select
         options:
-          - no
-          - in progress
-          - yes
+          - red
+          - yellow
+          - green
+      - name: statusDescription
+        label: Status Description
+        widget: markdown
+        minimal: true
+        buttons:
+          - link
+        editor_components: []
+        modes:
+          - rich_text
+      - name: statusLink
+        label: Status Link
+        widget: string
+      - name: promiseSource
+        label: Promise Source
+        widget: string
