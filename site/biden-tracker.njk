@@ -22,7 +22,7 @@ socialSnippet: Keep track of the Biden Administration's progress fulfilling thei
                 </div>
             </header>
             <main id="table" class="pt-24 space-y-24">
-                <div class="grid grid-cols-2 py-4 mx-auto tracking-widest text-white text-opacity-75 uppercase border border-white border-opacity-50 divide-x divide-white divide-opacity-25 bg-opacity-5 text-xxs sm:grid-cols-4">
+                <div class="grid grid-cols-2 py-4 mx-auto tracking-widest text-white text-opacity-75 uppercase border divide-x divide-white border-hue border-opacity-60 bg-hue divide-opacity-25 bg-opacity-5 text-xxs sm:grid-cols-4">
                     <div class="flex flex-col items-center justify-center row-span-3 px-4 space-y-4 sm:row-span-1">
                         <h3>Total promises</h3>
                         <span class="block text-3xl leading-none text-white font-display">{{collections.bidenTracker.length}}</span>
@@ -32,7 +32,7 @@ socialSnippet: Keep track of the Biden Administration's progress fulfilling thei
                         <span class="block text-3xl leading-none text-white font-display">
                             {% set notstartedcount = 0 %}
                             {% for item in collections.bidenTracker %}
-                                {% if item.data.currentStatus === "red" %}
+                                {% if item.data.currentStatus === 2 %}
                                     {% set notstartedcount =  notstartedcount + 1 %}
                                 {% endif %}
                             {% endfor %}
@@ -44,7 +44,7 @@ socialSnippet: Keep track of the Biden Administration's progress fulfilling thei
                         <span class="block text-3xl leading-none text-white font-display">
                             {% set inprogresscount = 0 %}
                                 {% for item in collections.bidenTracker %}
-                                    {% if item.data.currentStatus === "yellow" %}
+                                    {% if item.data.currentStatus === 1 %}
                                         {% set inprogresscount =  inprogresscount + 1 %}
                                     {% endif %}
                                 {% endfor %}
@@ -56,7 +56,7 @@ socialSnippet: Keep track of the Biden Administration's progress fulfilling thei
                         <span class="block text-3xl leading-none text-white font-display">
                             {% set completedcount = 0 %}
                                 {% for item in collections.bidenTracker %}
-                                    {% if item.data.currentStatus === "green" %}
+                                    {% if item.data.currentStatus === 0 %}
                                         {% set completedcount =  completedcount + 1 %}
                                     {% endif %}
                                 {% endfor %}
@@ -66,9 +66,9 @@ socialSnippet: Keep track of the Biden Administration's progress fulfilling thei
                 </div>
                 <div>
                     <div class="hidden tracking-widest text-white text-opacity-75 uppercase lg:grid text-xxs lg:grid-cols-12">
-                        <div class="px-4 pb-2 pl-0 border-b border-opacity-60 border-hue lg:col-span-4">Name</div>
-                        <div class="px-4 pb-2 border-b border-opacity-60 border-hue lg:col-span-2">Status</div>
-                        <div class="px-4 pb-2 pr-0 border-b border-opacity-60 border-hue lg:col-span-6">Status description</div>
+                        <div class="px-4 pb-2 pl-0 border-b border-white border-opacity-50 lg:col-span-4">Name</div>
+                        <div class="px-4 pb-2 border-b border-white border-opacity-50 lg:col-span-2">Status</div>
+                        <div class="px-4 pb-2 pr-0 border-b border-white border-opacity-50 lg:col-span-6">Status description</div>
                     </div>
                     <ul class="border-t border-white border-opacity-25 lg:border-none">
                         {% for item in collections.bidenTracker | alphabetize("currentStatus") %}
