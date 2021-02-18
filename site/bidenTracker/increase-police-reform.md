@@ -1,6 +1,6 @@
 ---
 title: Increase police reform
-currentStatus: red
+currentStatus: 2
 statusDescription: Biden has spoken about creating a National Police Oversight
   Board however also proposed investing $300 million more in police for better
   training. No definite plans have been made.

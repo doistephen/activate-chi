@@ -15,7 +15,7 @@ socialSnippet: Apply to become an organizer for Activate:Chi!
                 <div class="w-full space-y-4 lg:space-y-6">
                     <h2 class="pt-4 text-sm text-white text-opacity-75 border-t border-white border-opacity-25">Current open positions:</h2>
                     <ul class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:space-y-2 lg:block">
-                        {% for item in collections.openPosition | alphabetize %}
+                        {% for item in collections.openPosition | alphabetize("name") %}
                             <li class="text-sm">
                                 <a href="#{{ item.data.name | lower | replace(' ', '-') }}"
                                     @click="activeCategory === '{{type}}' ? activeCategory = 'both' : activeCategory = '{{type}}'"
@@ -32,7 +32,7 @@ socialSnippet: Apply to become an organizer for Activate:Chi!
                 </div>
             </aside>
             <main class="space-y-16 lg:col-span-9">
-                {% for item in collections.openPosition | alphabetize %}
+                {% for item in collections.openPosition | alphabetize("name") %}
                     <article  id="{{ item.data.name | lower | replace(' ', '-') }}" class="flex flex-col pt-24 space-y-8 border-t border-white border-opacity-25 sm:pt-16" style="scroll-margin-top: 8rem">
                         <div class="prose">
                             <h2>{{ item.data.name }}</h2>

@@ -1,6 +1,6 @@
 ---
 title: Reverse Trump's corporate tax cut
-currentStatus: yellow
+currentStatus: 1
 statusDescription: The Biden administration has announced plans to dismantle or
   reverse many aspects of Trump's signature tax law. Currently there is no
   legislation.

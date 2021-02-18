@@ -32,8 +32,8 @@ module.exports = (eleventyConfig) => {
 
     return array;
   });
-  eleventyConfig.addFilter("alphabetize", (array) => {
-    array.sort((a, b) => a.data.name.localeCompare(b.data.name));
+  eleventyConfig.addFilter("alphabetize", (array, property) => {
+    array.sort((a, b) => (a.data[property] > b.data[property] ? 1 : -1));
     return array;
   });
   eleventyConfig.addFilter("onlyOdd", (array) => {

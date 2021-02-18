@@ -320,11 +320,15 @@ collections:
       - name: currentStatus
         label: Current Status
         widget: select
-        hint: Red means not started yet, yellow means in progress, green means accomplished (or at least as much as possible).
+        hint: Red means not started yet, yellow means in progress, green means
+          accomplished (or at least as much as possible).
         options:
-          - red
-          - yellow
-          - green
+          - label: red
+            value: 2
+          - label: yellow
+            value: 1
+          - label: green
+            value: 0
       - name: statusDescription
         label: Status Description
         widget: markdown

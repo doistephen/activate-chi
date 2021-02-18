@@ -2,26 +2,32 @@
 layout: default
 title: Biden Promise Tracker
 eleventyExcludeFromCollections: true
-socialSnippet: We're keeping track of the Biden Administration's progress fulfilling their first 100 days campaign promises.
+socialSnippet: Keep track of the Biden Administration's progress fulfilling their first 100 days campaign promises.
 ---
 
 {% block body %}
-        <div class="grid items-start justify-between gap-12 md:gap-24 lg:grid-cols-12">
-            <header class="pt-8 space-y-12 col-span-full">
-                <div class="space-y-4">
-                    <h1 class="max-w-4xl mx-auto text-4xl leading-snug tracking-wide text-center font-display">
-                        <span class="text-hue">Activate:Chi's</span> Biden Promise Tracker!
-                    </h1>
-                    <div class="max-w-2xl mx-auto prose text-center">
-                        <div class="text-xl leading-normal">We're keeping track of the Biden Administration's progress fulfilling their first 100 days campaign promises. Follow along and help us hold them accountable.</div>
+        <div class="">
+            <header class="pt-8">
+                <div class="flex flex-col items-center space-y-10">
+                    <div class="w-full max-w-4xl mx-auto">
+                        {% include "img/bidenLogo.svg" %}
                     </div>
+                    <h1 class="sr-only">Activate:Chi's Biden Promise Tracker!</h1>
+                    <div class="max-w-2xl mx-auto prose text-center">
+                        <div class="text-2xl leading-normal">We're keeping track of the Biden Administration's progress fulfilling their first 100 days campaign promises. Follow along and help us hold them accountable.</div>
+                    </div>
+                    <a href="#table" class="inline-flex p-4 border-white border-opacity-75 btn-outline">
+                        <span class="block w-3.5 h-3.5 text-current">{% include "img/arrow.svg" %}</span>
+                    </a>
                 </div>
-                <div class="grid max-w-3xl py-4 mx-auto tracking-widest text-white text-opacity-75 uppercase border border-white border-opacity-25 divide-x divide-white divide-opacity-25 bg-opacity-5 text-xxs lg:grid-cols-12">
-                    <div class="flex flex-col items-center px-4 space-y-4 lg:col-span-3">
+            </header>
+            <main id="table" class="pt-24 space-y-24">
+                <div class="grid grid-cols-2 py-4 mx-auto tracking-widest text-white text-opacity-75 uppercase border border-white border-opacity-50 divide-x divide-white divide-opacity-25 bg-opacity-5 text-xxs sm:grid-cols-4">
+                    <div class="flex flex-col items-center justify-center row-span-3 px-4 space-y-4 sm:row-span-1">
                         <h3>Total promises</h3>
                         <span class="block text-3xl leading-none text-white font-display">{{collections.bidenTracker.length}}</span>
                     </div>
-                    <div class="flex flex-col items-center px-4 space-y-4 lg:col-span-3">
+                    <div class="flex flex-col items-center px-4 py-2 space-y-4 sm:py-0">
                         <h3>Not yet started</h3>
                         <span class="block text-3xl leading-none text-white font-display">
                             {% set notstartedcount = 0 %}
@@ -33,7 +39,7 @@ socialSnippet: We're keeping track of the Biden Administration's progress fulfil
                             {{notstartedcount}}
                         </span>
                     </div>
-                    <div class="flex flex-col items-center px-4 space-y-4 lg:col-span-3">
+                    <div class="flex flex-col items-center px-4 py-2 space-y-4 sm:py-0">
                         <h3>In progress</h3>
                         <span class="block text-3xl leading-none text-white font-display">
                             {% set inprogresscount = 0 %}
@@ -45,7 +51,7 @@ socialSnippet: We're keeping track of the Biden Administration's progress fulfil
                             {{inprogresscount}}
                         </span>
                     </div>
-                    <div class="flex flex-col items-center px-4 space-y-4 lg:col-span-3">
+                    <div class="flex flex-col items-center px-4 py-2 space-y-4 sm:py-0">
                         <h3>Completed</h3>
                         <span class="block text-3xl leading-none text-white font-display">
                             {% set completedcount = 0 %}
@@ -58,47 +64,47 @@ socialSnippet: We're keeping track of the Biden Administration's progress fulfil
                         </span>
                     </div>
                 </div>
-            </header>
-            <main class="col-span-full">
-                <div class="hidden tracking-widest text-white text-opacity-75 uppercase lg:grid text-xxs lg:grid-cols-12">
-                    <div class="p-4 pl-0 border-b border-opacity-60 border-hue lg:col-span-4">Name</div>
-                    <div class="p-4 border-b border-opacity-60 border-hue lg:col-span-2">Status</div>
-                    <div class="p-4 pr-0 border-b border-opacity-60 border-hue lg:col-span-6">Status description</div>
-                </div>
-                <ul class="border-t border-white border-opacity-25 lg:border-none">
-                    {% for item in collections.bidenTracker %}
-                        <li class="grid py-4 text-base border-b border-white border-opacity-25 md:py-6 md:grid-cols-3 gap-y-4 md:gap-y-2 md:gap-x-6 lg:gap-x-0 lg:grid-cols-12 md:pb-6">
-                            <div class="px-4 pl-0 text-lg border-white border-opacity-25 md:border-r lg:border-r-0 md:col-span-2 lg:col-span-4">
-                                <h3><a class="hover:underline" target="_blank" href="{{item.data.statusLink}}">{{item.data.title}}</a></h3>
-                            </div>
-                            <div class="items-center hidden border-white border-opacity-25 md:flex lg:px-4 lg:col-span-2 md:col-start-3 md:row-start-1 md:row-end-3 lg:row-start-auto lg:row-end-auto">
-                                <div class="relative flex items-center justify-between w-full">
-                                    <div data-tippy-content="Not started" class="w-10 md:h-10 text-hue
-                                        {% if item.data.currentStatus === "red" %} opacity-100 {% else %} opacity-25 {% endif %}"
-                                        >{% include "img/bidenRed.svg" %}</div>
-                                    <div class="flex-1 h-px bg-white bg-opacity-25"></div>
-                                    <div data-tippy-content="In progress" class="w-10 md:h-10 text-yellow
-                                        {% if item.data.currentStatus === "yellow" %} opacity-100 {% else %} opacity-25 {% endif %}"
-                                        >{% include "img/bidenYellow.svg" %}</div>
-                                    <div class="flex-1 h-px bg-white bg-opacity-25"></div>
-                                    <div data-tippy-content="Completed" class="w-10 md:h-10 text-green
-                                        {% if item.data.currentStatus === "green" %} opacity-100 {% else %} opacity-25 {% endif %}"
-                                        >{% include "img/bidenGreen.svg" %}</div>
+                <div>
+                    <div class="hidden tracking-widest text-white text-opacity-75 uppercase lg:grid text-xxs lg:grid-cols-12">
+                        <div class="px-4 pb-2 pl-0 border-b border-opacity-60 border-hue lg:col-span-4">Name</div>
+                        <div class="px-4 pb-2 border-b border-opacity-60 border-hue lg:col-span-2">Status</div>
+                        <div class="px-4 pb-2 pr-0 border-b border-opacity-60 border-hue lg:col-span-6">Status description</div>
+                    </div>
+                    <ul class="border-t border-white border-opacity-25 lg:border-none">
+                        {% for item in collections.bidenTracker | alphabetize("currentStatus") %}
+                            <li class="grid py-4 text-base border-b border-white border-opacity-25 md:py-6 md:grid-cols-3 gap-y-4 md:gap-y-2 md:gap-x-6 lg:gap-x-0 lg:grid-cols-12 md:pb-6">
+                                <div class="px-4 pl-0 text-lg border-white border-opacity-25 md:border-r lg:border-r-0 md:col-span-2 lg:col-span-4">
+                                    <h3><a class="hover:underline" target="_blank" href="{{item.data.statusLink}}">{{item.data.title}}</a></h3>
                                 </div>
-                            </div>
-                            <div class="pr-0 text-white text-opacity-75 border-white border-opacity-25 md:border-r lg:border-r-0 lg:px-4 md:col-span-2 lg:col-span-6">
-                                <p class="max-w-md">{{item.data.statusDescription}} <a class="text-sm hover:underline text-link" target="_blank" href="{{item.data.statusLink}}">ref</a></p>
-                            </div>
-                            <div class="md:hidden">
-                                <p class="flex items-center space-x-2 text-xs tracking-widest uppercase font-display">
-                                    {% if item.data.currentStatus === "red" %}<span class="w-6 h-6 text-hue">{% include "img/bidenRed.svg" %}</span><span class="pt-1 text-hue">Not started</span>{% endif %}
-                                    {% if item.data.currentStatus === "yellow" %}<span class="w-6 h-6 text-yellow">{% include "img/bidenYellow.svg" %}</span><span class="pt-1 text-yellow">In progress</span>{% endif %}
-                                    {% if item.data.currentStatus === "green" %}<span class="w-6 h-6 text-green">{% include "img/bidenGreen.svg" %}</span><span class="pt-1 text-green">Completed!</span>{% endif %}
-                                </p>
-                            </div>
-                        </li>
-                    {% endfor %}
-                </ul>
+                                <div class="items-center hidden border-white border-opacity-25 md:flex lg:px-4 lg:col-span-2 md:col-start-3 md:row-start-1 md:row-end-3 lg:row-start-auto lg:row-end-auto">
+                                    <div class="relative flex items-center justify-between w-full">
+                                        <div data-tippy-content="Not started" class="w-10 md:h-10 text-hue
+                                            {% if item.data.currentStatus === 2 %} opacity-100 {% else %} opacity-25 {% endif %}"
+                                            >{% include "img/bidenRed.svg" %}</div>
+                                        <div class="flex-1 h-px bg-white bg-opacity-25"></div>
+                                        <div data-tippy-content="In progress" class="w-10 md:h-10 text-yellow
+                                            {% if item.data.currentStatus === 1 %} opacity-100 {% else %} opacity-25 {% endif %}"
+                                            >{% include "img/bidenYellow.svg" %}</div>
+                                        <div class="flex-1 h-px bg-white bg-opacity-25"></div>
+                                        <div data-tippy-content="Completed" class="w-10 md:h-10 text-green
+                                            {% if item.data.currentStatus === 0 %} opacity-100 {% else %} opacity-25 {% endif %}"
+                                            >{% include "img/bidenGreen.svg" %}</div>
+                                    </div>
+                                </div>
+                                <div class="pr-0 text-white text-opacity-75 border-white border-opacity-25 md:border-r lg:border-r-0 lg:px-4 md:col-span-2 lg:col-span-6">
+                                    <p class="max-w-md">{{item.data.statusDescription}} <a class="text-sm hover:underline text-link" target="_blank" href="{{item.data.statusLink}}">ref</a></p>
+                                </div>
+                                <div class="md:hidden">
+                                    <p class="flex items-center space-x-2 text-xs tracking-widest uppercase font-display">
+                                        {% if item.data.currentStatus === 2 %}<span class="w-6 h-6 text-hue">{% include "img/bidenRed.svg" %}</span><span class="pt-1 text-hue">Not started</span>{% endif %}
+                                        {% if item.data.currentStatus === 1 %}<span class="w-6 h-6 text-yellow">{% include "img/bidenYellow.svg" %}</span><span class="pt-1 text-yellow">In progress</span>{% endif %}
+                                        {% if item.data.currentStatus === 0 %}<span class="w-6 h-6 text-green">{% include "img/bidenGreen.svg" %}</span><span class="pt-1 text-green">Completed!</span>{% endif %}
+                                    </p>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </main>
         </div>
 {% endblock %}

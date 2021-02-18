@@ -20,7 +20,7 @@
         <ul x-data="{ selected: `none` }"
             class="grid items-start md:grid-cols-2 col-span-full gap-x-8 organizer-grid">
             <div class="flex-col hidden md:flex">
-                {% for person in collections.organizer | alphabetize | onlyOdd %}
+                {% for person in collections.organizer | alphabetize("name") | onlyOdd %}
                     {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
                 {% endfor %}
                 {% if collections.organizer.length % 2 === 0 %}
@@ -28,7 +28,7 @@
                 {% endif %}
             </div>
             <div class="flex-col hidden md:flex">
-                {% for person in collections.organizer | alphabetize | onlyEven %}
+                {% for person in collections.organizer | alphabetize("name") | onlyEven %}
                     {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
                 {% endfor %}
                 {% if collections.organizer.length % 2 === 1 %}
@@ -36,7 +36,7 @@
                 {% endif %}
             </div>
             <div class="md:hidden">
-                {% for person in collections.organizer | alphabetize %}
+                {% for person in collections.organizer | alphabetize("name") %}
                     {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
                 {% endfor %}
                 {{ openPositions() }}
