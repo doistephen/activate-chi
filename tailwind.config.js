@@ -21,6 +21,7 @@ module.exports = {
       hue: "#F86849",
       none: "transparent",
       link: "#619ffb",
+      green: "#26b565",
     },
     fontFamily: {
       display: ["Sporting Grotesque", "sans-serif", "Arial"],
