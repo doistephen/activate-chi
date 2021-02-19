@@ -3,8 +3,8 @@ title: "Serving Up Hope: Tackling Food Insecurity in Chicago"
 author: Sanjee Choudhuri
 authorPortrait: /assets/images/uploads/sanjee@2x.jpg
 date: 2021-02-19T02:18:04.113Z
-socialSnippet: TEST
-image: /assets/images/uploads/logoi.jpg
+socialSnippet: Learn how you can get involved in combating food insecurity in Chicago!
+image: /assets/images/uploads/logo_final.jpg
 ---
 It’s an undeniable fact that food isn’t just something we need to survive, but something we consider an essential part of our humanity. We use food as a center to gather our family and friends around and we break bread to find common ground with one another. When we travel we find as much culture in a restaurant as we do in a museum, and as much history in a bowl of local fare than we do in any book. As a people, we’ve even elevated our food to direct artistic expression through gastronomy and fine dining. At the most personal level, there’s that one dish that no matter where else you’ve had it, you know your mom’s version is always going to be better. Food is a basic necessity that we can bend, shape, and use not only for it’s direct purpose of feeding us but for so much more.
 
@@ -21,8 +21,6 @@ The numbers are staggering. Due to the impact of COVID-19 food insecurity has in
 “We need a stronger more resilient food system — one that prioritizes justice, one that strives to dismantle racism and one that honors community wisdom,” said Nicole Robinson, vice president of community impact for GCFD.
 
 The GCFD is just coming off a record year where they distributed over 93 million pounds of food throughout the city and they’re expecting a similar situation again in 2021. This extra effort means the GCFD, and pantries like Chicago Hope, need even more volunteers to help support their work throughout the entire process. We’ll go through that process below to point out all the ways you can get involved.
-
-\[graphic on process]
 
 **1. Bulk Donations**
 
