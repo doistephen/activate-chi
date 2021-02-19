@@ -1,5 +1,5 @@
 .prose {
-  @apply text-lg leading-relaxed text-white text-opacity-80;
+  @apply text-lg leading-relaxed text-white text-opacity-75;
   max-width: 65ch;
 }
 .prose a {
@@ -20,7 +20,7 @@
 }
 .prose ul > li:before {
   content: "";
-  @apply absolute bg-white bg-opacity-50 rounded-full w-1.5 h-1.5 left-1;
+  @apply absolute bg-white bg-opacity-60 rounded-full w-1.5 h-1.5 left-1;
   top: 0.6875em;
 }
 .prose hr {
@@ -75,7 +75,7 @@
   color: theme("colors.white");
   font-size: 0.875em;
   padding: 0.25em 0;
-  @apply border border-white border-opacity-25 bg-opacity-10 bg-gray;
+  @apply border border-white border-opacity-25 bg-opacity-5 bg-gray;
 }
 .prose code:after,
 .prose code:before {

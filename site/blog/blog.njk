@@ -8,10 +8,13 @@ socialSnippet: Showing how small efforts can cascade into big changes for our co
 <div>
     <main class="grid lg:grid-cols-12 gap-y-6 gap-x-12" x-data="{activeCategory: 'both'}">
         <header class="pt-8 space-y-4 col-span-full">
-            <h1 class="max-w-4xl mx-auto text-3xl leading-snug tracking-wide text-center font-display">
-                <span class="block text-hue">{{blogPage.blogName}}</span> {{blogPage.introText}}
-            </h1>
-            <div class="max-w-md mx-auto prose text-center">
+            <div class="space-y-1 text-center">
+                <h1 class="max-w-4xl mx-auto text-4xl leading-snug tracking-wide font-display">
+                    {{blogPage.blogName}}
+                </h1>
+                <h2 class="max-w-xl mx-auto text-2xl">{{blogPage.introText}}</h2>
+            </div>
+            <div class="max-w-md mx-auto prose text-center text-white text-opacity-75 ">
                 <div class="leading-normal">{{blogPage.callForWriters | markdownify | safe }}</div>
             </div>
         </header>

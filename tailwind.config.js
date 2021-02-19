@@ -23,6 +23,15 @@ module.exports = {
       link: "#619ffb",
       green: "#26b565",
     },
+    opacity: {
+      0: "0",
+      5: ".05",
+      25: ".25",
+      60: ".6",
+      75: ".75",
+      90: ".9",
+      100: "1",
+    },
     fontFamily: {
       display: ["Sporting Grotesque", "sans-serif", "Arial"],
       text: ["trade-gothic-next", "sans-serif", "Arial"],
@@ -86,14 +95,10 @@ module.exports = {
       },
       transitionDuration: {
         DEFAULT: "300ms",
+        0: "0ms",
       },
       transitionTimingFunction: {
         DEFAULT: "cubic-bezier(0.2, 0.8, 0.2, 1)",
-      },
-      opacity: {
-        5: ".05",
-        15: ".15",
-        90: ".9",
       },
       translate: {
         50: "50%",
@@ -121,6 +126,7 @@ module.exports = {
   variants: {
     extend: {
       translate: ["focus"],
+      rotate: ["group-hover"],
       scale: ["group-hover"],
       textColor: ["group-hover"],
       borderColor: ["group-hover"],

@@ -8,17 +8,19 @@ socialSnippet: Keep track of the Biden Administration's progress fulfilling thei
 {% block body %}
         <div class="">
             <header class="pt-8">
-                <div class="flex flex-col items-center space-y-10">
-                    <div class="w-full max-w-4xl mx-auto">
+                <div class="flex flex-col items-center space-y-16">
+                    <div class="w-full max-w-3xl pt-2 mx-auto transform -rotate-3">
                         {% include "img/bidenLogo.svg" %}
                     </div>
                     <h1 class="sr-only">Activate:Chi's Biden Promise Tracker!</h1>
-                    <div class="max-w-2xl mx-auto prose text-center">
-                        <div class="text-2xl leading-normal">We're keeping track of the Biden Administration's progress fulfilling their first 100 days campaign promises. Follow along and help us hold them accountable.</div>
+                    <div class="flex flex-col items-center space-y-8">
+                        <div class="max-w-2xl mx-auto prose text-center">
+                            <div class="text-2xl leading-normal">We're keeping track of the Biden Administration's progress fulfilling their first 100 days campaign promises. Follow along and help us hold them accountable.</div>
+                        </div>
+                        <a href="#table" class="inline-flex p-4 border-white border-opacity-75 btn-outline">
+                            <span class="block w-3.5 h-3.5 text-current">{% include "img/arrow.svg" %}</span>
+                        </a>
                     </div>
-                    <a href="#table" class="inline-flex p-4 border-white border-opacity-75 btn-outline">
-                        <span class="block w-3.5 h-3.5 text-current">{% include "img/arrow.svg" %}</span>
-                    </a>
                 </div>
             </header>
             <main id="table" class="pt-24 space-y-24">
@@ -66,9 +68,9 @@ socialSnippet: Keep track of the Biden Administration's progress fulfilling thei
                 </div>
                 <div>
                     <div class="hidden tracking-widest text-white text-opacity-75 uppercase lg:grid text-xxs lg:grid-cols-12">
-                        <div class="px-4 pb-2 pl-0 border-b border-white border-opacity-50 lg:col-span-4">Name</div>
-                        <div class="px-4 pb-2 border-b border-white border-opacity-50 lg:col-span-2">Status</div>
-                        <div class="px-4 pb-2 pr-0 border-b border-white border-opacity-50 lg:col-span-6">Status description</div>
+                        <div class="px-4 pb-2 pl-0 border-b border-white border-opacity-60 lg:col-span-4">Name</div>
+                        <div class="px-4 pb-2 border-b border-white border-opacity-60 lg:col-span-2">Status</div>
+                        <div class="px-4 pb-2 pr-0 border-b border-white border-opacity-60 lg:col-span-6">Status description</div>
                     </div>
                     <ul class="border-t border-white border-opacity-25 lg:border-none">
                         {% for item in collections.bidenTracker | alphabetize("currentStatus") %}
