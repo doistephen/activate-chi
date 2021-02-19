@@ -3,6 +3,7 @@ title: "Serving Up Hope: Tackling Food Insecurity in Chicago"
 author: Sanjee Choudhuri
 authorPortrait: /assets/images/uploads/sanjee@2x.jpg
 date: 2021-02-19T02:18:04.113Z
+tag: Connecting the Dots
 socialSnippet: Learn how you can get involved in combating food insecurity in Chicago!
 image: /assets/images/uploads/logo_final2.jpg
 ---
