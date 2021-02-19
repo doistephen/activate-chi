@@ -20,7 +20,7 @@ The numbers are staggering. Due to the impact of COVID-19 food insecurity has in
 
 “We need a stronger more resilient food system — one that prioritizes justice, one that strives to dismantle racism and one that honors community wisdom,” said Nicole Robinson, vice president of community impact for GCFD<sup>[3](https://www.wbez.org/stories/to-keep-up-with-pandemic-demands-chicago-food-pantries-expand-and-get-a-facelift/5077bd81-0126-4050-8f43-335e2ed71cf9)</sup>.
 
-The GCFD is just coming off a record year where they distributed over 93 million pounds of food throughout the city and they’re expecting a similar situation again in 2021. This extra effort means the GCFD, and pantries like Chicago Hope, need even more volunteers to help support their work throughout the entire process. We’ll go through that process below to show all the ways you can get involved.
+The GCFD is coming off a record year where they distributed over 93 million pounds of food throughout the city and they’re expecting a similar situation again in 2021. This extra effort means the GCFD, and pantries like Chicago Hope, need even more volunteers to help support their work throughout the entire process. We’ll go through that process below to show all the ways you can get involved.
 
 **1. Bulk Donations**
 
