@@ -62,7 +62,7 @@ It’s difficult for many people to see, in what is such a widespread and deeply
 
 We should provide for our families, provide for our friends, and collectively help provide for our community. Food can trigger so many emotions in all of us: warmth, nostalgia, happiness, and comfort. By volunteering and donating to help combat food insecurity in Chicago we can build our communities and provide that same comfort and warmth to thousands of Chicagoians. And now that you know how and why to do it, the only thing left is for you to get involved.
 
-*Thank you to Maggie Jordan, David Jordan, and Chicago Hope Food Pantry for graciously providing their time for an interview. If you have any questions, comments, or ideas for the next article or would like to write for Activate yourself please contact Sanjee Choudhuri at sanjeechoudhuri@activate-chi.org*
+*Thank you to Maggie Jordan, David Jordan, and Chicago Hope Food Pantry for graciously providing their time for an interview. If you have any questions, comments, or ideas for the next article or would like to write for Activate:Chi yourself please contact Sanjee Choudhuri at sanjeechoudhuri@activate-chi.org*
 
 <sup>1</sup><https://chicago.suntimes.com/2020/11/15/21563990/chicago-food-dispensary-struggles-amplified-by-pandemic-help>
 <sup>2</sup><https://www.chicagosfoodbank.org/wp-content/uploads/2020/12/Food-Depository-Hunger-Report-Dec-2020.><br>
