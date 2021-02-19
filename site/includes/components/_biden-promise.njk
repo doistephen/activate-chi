@@ -1,0 +1,34 @@
+<li class="grid py-4 text-base border-b border-white border-opacity-25 md:py-6 md:grid-cols-3 gap-y-4 md:gap-y-2 md:gap-x-6 lg:gap-x-0 lg:grid-cols-12 md:pb-6">
+    <div class="px-4 pl-0 text-lg border-white border-opacity-25 md:border-r lg:border-r-0 md:col-span-2 lg:col-span-4">
+        <h3><a class="hover:underline" target="_blank" href="{{item.data.statusLink}}">{{item.data.title}}</a></h3>
+    </div>
+    <div class="items-center hidden border-white border-opacity-25 md:flex lg:px-4 lg:col-span-2 md:col-start-3 md:row-start-1 md:row-end-3 lg:row-start-auto lg:row-end-auto">
+        <div class="relative flex items-center justify-between w-full">
+            <div data-tippy-content="Not started" class="w-10 md:h-10 text-hue
+                {% if item.data.currentStatus === 2 %} opacity-100 {% else %} opacity-25 {% endif %}"
+                >{% include "img/bidenRed.svg" %}</div>
+            <div class="flex-1 h-px bg-white bg-opacity-25"></div>
+            <div data-tippy-content="In progress" class="w-10 md:h-10 text-yellow
+                {% if item.data.currentStatus === 1 %} opacity-100 {% else %} opacity-25 {% endif %}"
+                >{% include "img/bidenYellow.svg" %}</div>
+            <div class="flex-1 h-px bg-white bg-opacity-25"></div>
+            <div data-tippy-content="Completed" class="w-10 md:h-10 text-green
+                {% if item.data.currentStatus === 0 %} opacity-100 {% else %} opacity-25 {% endif %}"
+                >{% include "img/bidenGreen.svg" %}</div>
+        </div>
+    </div>
+    <div class="pr-0 space-y-2 text-white border-white border-opacity-25 text-opacity-80 md:border-r lg:border-r-0 lg:px-4 md:col-span-2 lg:col-span-6">
+        <p class="max-w-md">{{item.data.statusDescription}}</p>
+        <small class="block">
+            {% if item.data.lastUpdated %}<span class="text-sm text-white text-opacity-60">Last updated: {{item.data.lastUpdated}} | </span>{% endif %}
+            <a class="text-sm hover:underline text-link" target="_blank" href="{{item.data.statusLink}}">ref</a></p>
+        </small>
+    </div>
+    <div class="md:hidden">
+        <p class="flex items-center space-x-2 text-xs tracking-widest uppercase font-display">
+            {% if item.data.currentStatus === 2 %}<span class="w-6 h-6 text-hue">{% include "img/bidenRed.svg" %}</span><span class="pt-1 text-hue">Not started</span>{% endif %}
+            {% if item.data.currentStatus === 1 %}<span class="w-6 h-6 text-yellow">{% include "img/bidenYellow.svg" %}</span><span class="pt-1 text-yellow">In progress</span>{% endif %}
+            {% if item.data.currentStatus === 0 %}<span class="w-6 h-6 text-green">{% include "img/bidenGreen.svg" %}</span><span class="pt-1 text-green">Completed!</span>{% endif %}
+        </p>
+    </div>
+</li>

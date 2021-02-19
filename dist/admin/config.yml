@@ -329,6 +329,13 @@ collections:
             value: 1
           - label: green
             value: 0
+      - name: lastUpdated
+        label: Date Last Updated
+        widget: datetime
+        default: ""
+        date_format: "MM/DD"
+        time_format: false
+        format: "MMMM DD"
       - name: statusDescription
         label: Status Description
         widget: markdown
