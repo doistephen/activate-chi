@@ -4,21 +4,21 @@ author: Sanjee Choudhuri
 authorPortrait: /assets/images/uploads/sanjee@2x.jpg
 date: 2021-02-19T02:18:04.113Z
 socialSnippet: Learn how you can get involved in combating food insecurity in Chicago!
-image: /assets/images/uploads/logo_final.jpg
+image: /assets/images/uploads/logo_final2.jpg
 ---
 It’s an undeniable fact that food isn’t just something we need to survive, but something we consider an essential part of our humanity. We use food as a center to gather our family and friends around and we break bread to find common ground with one another. When we travel we find as much culture in a restaurant as we do in a museum, and as much history in a bowl of local fare than we do in any book. As a people, we’ve even elevated our food to direct artistic expression through gastronomy and fine dining. At the most personal level, there’s that one dish that no matter where else you’ve had it, you know your mom’s version is always going to be better. Food is a basic necessity that we can bend, shape, and use not only for it’s direct purpose of feeding us but for so much more.
 
 It’s important for us, however, to go back to the first point: food is something we need to survive. All those wonderful other uses we have for food live in parallel with our basic human need to eat for sustenance and nutrition. In many cases, especially for those in food insecure households, food is simultaneously a thing of comfort and stress, relief and anxiety. 
 
-Many of us don’t have to worry about where our next plate will come from but for those that do, that worry is just as constant as the hunger driven by it. At Activate:Chi, we firmly believe that there is no reason a single person in the City of Chicago should ever go hungry because of a lack of access to nutritional food. Unfortunately, it’s estimated that one in seven people in Chicago will experience food insecurity this year, making us the third highest city in the nation for the number of people who live in food-insecure households<sup>[1]</sup>. It’s in this fight against hunger and pursuit for equity in nutrition where food banks and food pantries come in.
+Many of us don’t have to worry about where our next plate will come from but for those that do, that worry is just as constant as the hunger driven by it. At Activate:Chi, we firmly believe that there is no reason a single person in the City of Chicago should ever go hungry because of a lack of access to nutritional food. Unfortunately, it’s estimated that one in seven people in Chicago will experience food insecurity this year, making us the third highest city in the nation for the number of people who live in food-insecure households<sup>[1](https://chicago.suntimes.com/2020/11/15/21563990/chicago-food-dispensary-struggles-amplified-by-pandemic-help)</sup>. It’s in this fight against hunger and pursuit for equity in nutrition where food banks and food pantries come in.
 
 “Food insecurity is not just being hungry,” says David Jordan, Pantry Manager at Chicago Hope Food Pantry, “It's a lack of consistent and nutritious energy. It’s difficult to pull yourself out of bed in the morning if you literally do not have the energy to do so because you weren’t able to eat enough the day before.” It’s people like David and places like the Chicago Hope Food Pantry that hope to provide healthy food and produce to their community.
 
 Located in Logan Square, the Chicago Hope Food Pantry is run by mother-son duo Maggie Jordan and David Jordan. They provide groceries and produce to anywhere from 20 to 80 people during serving sessions, with each person usually representing a family of 3-5 people. Like many food pantries in Chicago, it’s part of the larger community of food pantries in the Chicago area united under the Greater Chicago Food Depository (GCFD). The GCFD connects over 700 food pantries, soup kitchens, shelters and other programs in Chicago - and most of them are needed more than ever.
 
-The numbers are staggering. Due to the impact of COVID-19 food insecurity has increased in Chicago by 51% in the last year<sup>[2]</sup>. However, the Greater Chicago Food Depository has risen to the challenge by forming new partnerships, increasing their volume, and developing innovative new grant programs focused on expanding food and nutrition access across communities. This has directly resulted in four new pantries opening through the city and dozens of facilities in vulnerable and marginalized communities receiving additional funding. 
+The numbers are staggering. Due to the impact of COVID-19 food insecurity has increased in Chicago by 51% in the last year<sup>[2](https://www.chicagosfoodbank.org/wp-content/uploads/2020/12/Food-Depository-Hunger-Report-Dec-2020.pdf)</sup>. However, the Greater Chicago Food Depository has risen to the challenge by forming new partnerships, increasing their volume, and developing innovative new grant programs focused on expanding food and nutrition access across communities. This has directly resulted in four new pantries opening through the city and dozens of facilities in vulnerable and marginalized communities receiving additional funding. 
 
-“We need a stronger more resilient food system — one that prioritizes justice, one that strives to dismantle racism and one that honors community wisdom,” said Nicole Robinson, vice president of community impact for GCFD<sup>[3]</sup>.
+“We need a stronger more resilient food system — one that prioritizes justice, one that strives to dismantle racism and one that honors community wisdom,” said Nicole Robinson, vice president of community impact for GCFD<sup>[3](https://www.wbez.org/stories/to-keep-up-with-pandemic-demands-chicago-food-pantries-expand-and-get-a-facelift/5077bd81-0126-4050-8f43-335e2ed71cf9)</sup>.
 
 The GCFD is just coming off a record year where they distributed over 93 million pounds of food throughout the city and they’re expecting a similar situation again in 2021. This extra effort means the GCFD, and pantries like Chicago Hope, need even more volunteers to help support their work throughout the entire process. We’ll go through that process below to point out all the ways you can get involved.
 
@@ -64,13 +64,6 @@ We should provide for our families, provide for our friends, and collectively he
 
 *Thank you to Maggie Jordan, David Jordan, and Chicago Hope Food Pantry for graciously providing their time for an interview. If you have any questions, comments, or ideas for the next article or would like to write for Activate yourself please contact Sanjee Choudhuri at sanjeechoudhuri@activate-chi.org*
 
-[1]:https://chicago.suntimes.com/2020/11/15/21563990/chicago-food-dispensary-struggles-amplified-by-pandemic-help
-
-[2]:https://www.chicagosfoodbank.org/wp-content/uploads/2020/12/Food-Depository-Hunger-Report-Dec-2020.pdf
-
-[3]:https://www.wbez.org/stories/to-keep-up-with-pandemic-demands-chicago-food-pantries-expand-and-get-a-facelift/5077bd81-0126-4050-8f43-335e2ed71cf9
-
-<sup>1</sup>https://chicago.suntimes.com/2020/11/15/21563990/chicago-food-dispensary-struggles-amplified-by-pandemic-help
-<sup>2</sup>https://www.chicagosfoodbank.org/wp-content/uploads/2020/12/Food-Depository-Hunger-Report-Dec-2020.<br>
-<sup>3</sup>https://www.wbez.org/stories/to-keep-up-with-pandemic-demands-chicago-food-pantries-expand-and-get-a-facelift/5077bd81-0126-4050-8f43-335e2ed71cf9
-
+<sup>1</sup><https://chicago.suntimes.com/2020/11/15/21563990/chicago-food-dispensary-struggles-amplified-by-pandemic-help>
+<sup>2</sup><https://www.chicagosfoodbank.org/wp-content/uploads/2020/12/Food-Depository-Hunger-Report-Dec-2020.><br>
+<sup>3</sup><https://www.wbez.org/stories/to-keep-up-with-pandemic-demands-chicago-food-pantries-expand-and-get-a-facelift/5077bd81-0126-4050-8f43-335e2ed71cf9>
