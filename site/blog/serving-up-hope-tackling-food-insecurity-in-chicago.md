@@ -71,6 +71,6 @@ We should provide for our families, provide for our friends, and collectively he
 [3]:https://www.wbez.org/stories/to-keep-up-with-pandemic-demands-chicago-food-pantries-expand-and-get-a-facelift/5077bd81-0126-4050-8f43-335e2ed71cf9
 
 <sup>1</sup>https://chicago.suntimes.com/2020/11/15/21563990/chicago-food-dispensary-struggles-amplified-by-pandemic-help
-<sup>2</sup>https://www.chicagosfoodbank.org/wp-content/uploads/2020/12/Food-Depository-Hunger-Report-Dec-2020.
+<sup>2</sup>https://www.chicagosfoodbank.org/wp-content/uploads/2020/12/Food-Depository-Hunger-Report-Dec-2020.<br>
 <sup>3</sup>https://www.wbez.org/stories/to-keep-up-with-pandemic-demands-chicago-food-pantries-expand-and-get-a-facelift/5077bd81-0126-4050-8f43-335e2ed71cf9
 
