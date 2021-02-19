@@ -25,6 +25,7 @@
             </dl>
         </div>
         <div class="fixed inset-y-0 right-0 z-20 w-full h-screen max-w-2xl px-6 pt-8 overflow-y-auto transition-transform transform bg-opacity-75 border-l border-white border-opacity-25 sm:p-16 noise-bg bg-gray"
+            x-cloak
             @click.away="isOpen = false"
             x-show="isOpen === true"
             x-transition:enter-start="translate-x-full"

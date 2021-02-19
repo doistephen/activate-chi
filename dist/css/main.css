@@ -750,6 +750,10 @@ html {
   border-color: #F86849 !important;
 }
 
+[x-cloak] {
+  display: none !important;
+}
+
 .prose {
   font-size: 1.125rem;
   line-height: 1.5;

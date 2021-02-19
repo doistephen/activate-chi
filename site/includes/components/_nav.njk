@@ -37,7 +37,7 @@
                     <span class="block w-3.5 h-3.5 text-current">{% include "img/menu.svg" %}</span>
                 </button>
             </div>
-            <div x-show="isOpen" class="fixed inset-0 z-40 flex flex-col w-screen h-screen px-4 pt-8 pb-5 transition transform bg-gray noise-bg" x-transition:enter-start="opacity-0 -translate-y-4" x-transition:leave-end="opacity-0 translate-y-4">
+            <div x-cloak x-show="isOpen" class="fixed inset-0 z-40 flex flex-col w-screen h-screen px-4 pt-8 pb-5 transition transform bg-gray noise-bg" x-transition:enter-start="opacity-0 -translate-y-4" x-transition:leave-end="opacity-0 translate-y-4">
                 <div class="flex flex-col items-center justify-center flex-1 space-y-8 divide-y divide-white divide-opacity-25">
                     <ul class="flex flex-col space-y-6" @click="isOpen = false">
                     <a class="block text-sm tracking-wide text-center font-display" href="/">Home</a>

@@ -55,3 +55,7 @@
 #mc_embed_signup input.mce_inline_error {
   border-color: theme("colors.hue") !important;
 }
+
+[x-cloak] {
+  display: none !important;
+}
