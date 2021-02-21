@@ -1,0 +1,40 @@
+---
+layout: default
+title: Recipe Adder
+eleventyExcludeFromCollections: true
+socialSnippet: Add recipes to our website
+---
+
+{% import "components/_button.njk" as button %}
+
+{% block body %}
+
+<form id="recipe-form" action="POST">
+    <input class="text-white border border-white border-opacity-25 bg-gray" id="name" name="name" type="text">
+    <input class="text-white border border-white border-opacity-25 bg-gray" id="description" name="description" type="text">
+    <input class="btn btn-outline" type="submit">
+</form>
+
+<script>
+
+    const form = document.querySelector("#recipe-form")
+
+    form.addEventListener("submit", e => {
+        e.preventDefault()
+        const data = new FormData(e.target)
+        const value = Object.fromEntries(data.entries())
+
+        fetch("/recipes.json", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(value)
+        })
+    })
+
+
+
+</script>
+
+{% endblock %}

@@ -82,6 +82,7 @@ module.exports = (eleventyConfig) => {
   // Include our static assets
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("admin");
+  eleventyConfig.addPassthroughCopy("recipes.json");
 
   return {
     templateFormats: ["md", "njk"],
