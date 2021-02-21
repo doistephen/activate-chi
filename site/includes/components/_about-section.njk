@@ -1,6 +1,8 @@
  {% import "components/_button.njk" as button %}
 
-<section id="about" class="relative pt-24 has-modal" x-data="{isOpen: false}" :class="{'modal-open' : isOpen === true}">
+<section id="about" class="relative pt-24 has-modal"
+    x-on:keydown.escape="isOpen = false"
+    x-data="{isOpen: false}" :class="{'modal-open' : isOpen === true}">
         <div class="grid items-start justify-between grid-cols-1 md:grid-cols-12 gap-x-12 gap-y-6">
             <div class="flex col-span-full">
                 <h2 class="text-xs tracking-wider rounded-full text-hue font-display">About Activate:Chi</h2>
@@ -26,14 +28,13 @@
         </div>
         <div class="fixed inset-y-0 right-0 z-20 w-full h-screen max-w-2xl px-6 pt-8 overflow-y-auto transition-transform transform bg-opacity-75 border-l border-white border-opacity-25 sm:p-16 noise-bg bg-gray"
             x-cloak
+            x-on:keydown.escape="isOpen = false"
             @click.away="isOpen = false"
             x-show="isOpen === true"
             x-transition:enter-start="translate-x-full"
             x-transition:leave-end="translate-x-full">
                 <div class="flex flex-col items-start justify-between text-base col-span-full">
-                <button @click="isOpen = false" class="inline-flex p-4 border-white border-opacity-75 btn-outline">
-                    <span class="block w-3.5 h-3.5 text-current transform rotate-90">{% include "img/arrow.svg" %}</span>
-                </button>
+                {{ button.iconButton(as="button", onClick="isOpen = false", icon="img/arrowLeft.svg")}}
             </div>
             <h2 class="mt-12 text-2xl font-display">Our Story</h2>
             <div class="mt-4 prose">{{aboutSection.ourStory | markdownify | safe}}</div>

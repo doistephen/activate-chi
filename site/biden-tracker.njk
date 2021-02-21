@@ -5,6 +5,7 @@ eleventyExcludeFromCollections: true
 socialSnippet: Keep track of the Biden Administration's progress fulfilling their first 100 days campaign promises.
 socialGraphic: /assets/images/uploads/biden-tracker-share-image@2x.jpg
 ---
+ {% import "components/_button.njk" as button %}
 
 {% block body %}
         <div class="">
@@ -18,9 +19,7 @@ socialGraphic: /assets/images/uploads/biden-tracker-share-image@2x.jpg
                         <div class="max-w-2xl mx-auto prose text-center">
                             <div class="text-2xl leading-normal">We're keeping track of the Biden Administration's progress fulfilling their first 100 days campaign promises. Follow along and help us hold them accountable.</div>
                         </div>
-                        <a href="#table" class="inline-flex p-4 border-white border-opacity-75 btn-outline">
-                            <span class="block w-3.5 h-3.5 text-current">{% include "img/arrow.svg" %}</span>
-                        </a>
+                        {{ button.iconButton(href="#table", icon="img/arrowDown.svg")}}
                     </div>
                 </div>
             </header>

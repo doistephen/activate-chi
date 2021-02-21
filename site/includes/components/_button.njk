@@ -10,3 +10,28 @@
         <span>{{text}}</span>
     </{{as}}>
 {% endmacro %}
+
+{% macro iconButton(as="a", onClick, href, icon, class, size) %}
+    <{{as}}
+        {% if onClick %}
+            @click="{{onClick}}"
+        {% endif %}
+        {% if href %}
+            href="{{href}}"
+        {% endif %}
+        class="inline-flex flex-shrink-0 items-center justify-center transition border-white border-opacity-75 btn-outline
+        {% if size === "small" %}
+            w-9 h-9
+        {% else %}
+            p-4
+        {% endif %}
+        {{class}}">
+        <span class="block text-current
+            {% if size === "small" %}
+                w-2.5 h-2.5
+            {% else %}
+                w-3.5 h-3.5
+            {% endif %}"
+        >{% include icon %}</span>
+    </{{as}}>
+{% endmacro %}

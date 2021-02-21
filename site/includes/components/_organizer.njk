@@ -1,10 +1,12 @@
+ {% import "components/_button.njk" as button %}
+
 {% macro organizer(name, job, summary, image) %}
 
 <li class="relative flex flex-col" data-organizer="wrapper">
 <button class="w-full py-3 text-left font-text group" @click="selected === '{{name}}' ? selected = 'none' : selected = '{{name}}'">
     <div class="flex items-center space-x-6 transition-all" data-organizer="metadata">
         <div class="flex flex-grow space-x-4 md:space-x-6">
-            <div class="flex-shrink-0 w-16 h-24 overflow-hidden border border-white border-opacity-60 rounded-full">
+            <div class="flex-shrink-0 w-16 h-24 overflow-hidden border border-white rounded-full border-opacity-60">
                 <img class="object-cover w-full h-full" src="{{image}}" alt="">
             </div>
             <div class="flex flex-col justify-center flex-grow">
@@ -12,9 +14,11 @@
                 <p class="text-base tracking-wide text-white text-opacity-60">{{job}}</p>
             </div>
         </div>
-        <div class="flex items-center justify-center flex-shrink-0 rounded-full w-9 h-9 btn-outline group-focus:ring">
+        {# <div class="flex items-center justify-center flex-shrink-0 rounded-full w-9 h-9 btn-outline group-focus:ring">
             <span :class="{'rotate-135' : selected === '{{name}}'}" class="block w-2.5 h-2.5 transition transform">{% include "img/plus.svg" %}</span>
-        </div>
+        </div> #}
+        <div class="transition transform" :class="{'rotate-135' : selected === '{{name}}'}">{{ button.iconButton(as="div", icon="img/plus.svg", size="small")}}</div>
+
         </div>
     </button>
     <div

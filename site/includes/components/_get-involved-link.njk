@@ -1,0 +1,20 @@
+ {% import "components/_button.njk" as button %}
+
+ {% macro getInvolvedButton(text, color=false) %}
+        <div x-data="{isOpen: false}" class="has-modal" :class="{'modal-open' : isOpen === true}" x-on:keydown.escape="isOpen = false">
+            <span @click="isOpen = true" >{{ button.button(text, as="button", color=color) }}</span>
+            <div x-cloak x-show="isOpen" class="fixed inset-0 z-50 bg-opacity-75 bg-gray">
+                <div class="container flex flex-row-reverse items-start justify-center py-8">
+                    {{ button.iconButton(as="button", onClick="isOpen = false", icon="img/close.svg", class="mt-4")}}
+                    <iframe
+                        x-show="isOpen"
+                        @click.away="isOpen = false"
+                        class="h-screen pb-16 overflow-y-auto transition transform"
+                        x-transition:enter-start="opacity-0 scale-90"
+                        x-transition:leave-end="opacity-0 scale-103"
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSei88vvBKV-oApI7-7IRWrf_vf99DYTgBtUx2pQ0ECsJutlMw/viewform?embedded=true" width="640" height="2403" frameborder="0" marginheight="0" marginwidth="0">Loading…
+                    </iframe>
+                </div>
+            </div>
+        </div>
+{% endmacro %}

@@ -1,3 +1,5 @@
+ {% import "components/_button.njk" as button %}
+
 <section id="intro" class="space-y-0">
     <header class="space-y-8">
         <div class="flex justify-center h-48 space-x-4 col-span-full sm:h-64 md:h-72 lg:h-80">
@@ -9,9 +11,7 @@
             <span class="text-hue">Activate:Chi</span> {{introSection.introText}}
         </h1>
         <div class="flex flex-col items-start justify-between text-base col-span-full">
-            <a href="#initiatives" class="inline-flex p-4 border-white border-opacity-75 btn-outline">
-                <span class="block w-3.5 h-3.5 text-current">{% include "img/arrow.svg" %}</span>
-            </a>
+            {{ button.iconButton(href="#initiatives", icon="img/arrowDown.svg")}}
         </div>
     </header>
 </section>
