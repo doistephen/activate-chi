@@ -328,11 +328,11 @@ collections:
           accomplished (or at least as much as possible).
         options:
           - label: red
-            value: 2
+            value: 3
           - label: yellow
-            value: 1
+            value: 2
           - label: green
-            value: 0
+            value: 1
       - name: lastUpdated
         label: Date Last Updated
         widget: datetime

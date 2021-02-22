@@ -5,15 +5,15 @@
     <div class="items-center hidden border-white border-opacity-25 md:flex lg:px-4 lg:col-span-2 md:col-start-3 md:row-start-1 md:row-end-3 lg:row-start-auto lg:row-end-auto">
         <div class="relative flex items-center justify-between w-full">
             <div data-tippy-content="Not started" class="w-10 md:h-10 text-hue
-                {% if item.data.currentStatus === 2 %} opacity-100 {% else %} opacity-25 {% endif %}"
+                {% if item.data.currentStatus === 3 %} opacity-100 {% else %} opacity-25 {% endif %}"
                 >{% include "img/bidenRed.svg" %}</div>
             <div class="flex-1 h-px bg-white bg-opacity-25"></div>
             <div data-tippy-content="In progress" class="w-10 md:h-10 text-yellow
-                {% if item.data.currentStatus === 1 %} opacity-100 {% else %} opacity-25 {% endif %}"
+                {% if item.data.currentStatus === 2 %} opacity-100 {% else %} opacity-25 {% endif %}"
                 >{% include "img/bidenYellow.svg" %}</div>
             <div class="flex-1 h-px bg-white bg-opacity-25"></div>
             <div data-tippy-content="Completed" class="w-10 md:h-10 text-green
-                {% if item.data.currentStatus === 0 %} opacity-100 {% else %} opacity-25 {% endif %}"
+                {% if item.data.currentStatus === 1 %} opacity-100 {% else %} opacity-25 {% endif %}"
                 >{% include "img/bidenGreen.svg" %}</div>
         </div>
     </div>
