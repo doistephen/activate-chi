@@ -1,6 +1,6 @@
 ---
 title: Assemble a coronavirus task force during his presidential transition
-currentStatus: 0
+currentStatus: 1
 lastUpdated: February 18
 statusDescription: Task force has been created.
 statusLink: https://www.washingtonpost.com/health/2020/11/09/biden-coronavirus-task-force/
