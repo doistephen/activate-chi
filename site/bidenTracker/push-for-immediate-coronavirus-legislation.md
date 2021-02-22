@@ -1,6 +1,7 @@
 ---
 title: Push for immediate coronavirus legislation
-currentStatus: 0
+currentStatus: 1
+lastUpdated: February 22
 statusDescription: Biden Administration has been pushing to use Budget
   Reconcilliation to pass COVID Stimulus
 statusLink: https://www.washingtonpost.com/us-policy/2021/02/02/biden-democrats-covid-relief/
