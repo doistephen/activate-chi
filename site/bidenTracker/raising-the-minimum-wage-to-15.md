@@ -1,6 +1,6 @@
 ---
 title: Raising the Minimum Wage to $15
-currentStatus: 1
+currentStatus: 2
 lastUpdated: February 21
 statusDescription: The Raise the Wage Act of 2021 would gradually raise the
   federal minimum wage to $15 an hour by 2025 but does not currently have enough
