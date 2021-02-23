@@ -27,35 +27,35 @@ The GCFD is coming off a record year where they distributed over 93 million poun
 
 It starts with bulk donations that are received by the Greater Chicago Food Depository. These donations usually come from federal government programs, but also from farmers, retail grocers, manufacturers, and distributors. They also collect from the hundreds of food drives that happen each year in the city.
 
-If you’re in the food industry and interested in making a bulk food donation: <https://www.chicagosfoodbank.org/food-industry-donations/>
+**[If you’re in the food industry and interested in making a bulk food donation](https://www.chicagosfoodbank.org/food-industry-donations)**
 
-Want to start a food drive? Read here: <https://myfooddrive.org/home.php>
+**[Want to start a food drive?](https://myfooddrive.org/home.php)**
 
 **2. Inspect and Repack**
 
 A vital step after receiving the donations is to inspect the food to ensure freshness and expiration, repack into family/individual servings, and then prepare for distribution. The GCFD goes through hundreds of thousands of pounds of produce, non-perishables, and other goods each day at their main warehouse and it requires an army of volunteers to keep up. All food needs to be carefully inspected before being sent out to various food banks, soup kitchens, shelters, and more.
 
-Volunteer to Repack: <https://volunteers.chicagosfoodbank.org/index.php?section=IndividualOpportunities&action=calendar>
+**[Volunteer to Repack](https://volunteers.chicagosfoodbank.org/index.php?section=IndividualOpportunities&action=calendar)**
 
-**3. Delivery**
+**[](https://volunteers.chicagosfoodbank.org/index.php?section=IndividualOpportunities&action=calendar)3. Delivery**
 
 After the donations have been vetted and repacked it is sent and delivered to the hundreds of locations GCFD is partnered with using a fleet of climate controlled vans. Two-person teams help deliver fresh produce, canned goods, and more to a variety of food pantries, shelters, and programs. Vehicles are provided. Drivers must be at least 21 years old and willing to commit to regular volunteering. If you’re interested in driving fill out the volunteering contact form and say you want to drive in the message box!
 
-Volunteering Contact Form: <https://www.chicagosfoodbank.org/contact/?subject=Volunteer%20inquiry>
+**[Volunteering Contact Form](https://www.chicagosfoodbank.org/contact/?subject=Volunteer%20inquiry)**
 
 **4. Individual Donations**
 
 Once the food leaves the GCFD warehouse it heads to individual food banks and pantries like Chicago Hope. Many of these food banks and pantries also take donations from individuals as well as the bulk donations they receive from GCFD. If you would like to donate food and other necessary supplies (sanitary items, hygiene items, etc) look for a food bank near you and contact them to see how to donate. At Activate:Chi we try to encourage people to get involved with their community, so we recommend working with food banks in your area before looking beyond!
 
-Find a food bank near you: <https://www.chicagosfoodbank.org/find-food/>
+**[Find a food bank near you](https://www.chicagosfoodbank.org/find-food/)**
 
 **5. Stock, Organize, Serve, and Tear Down**
 
 Now that the food has reached the specific food banks and food pantries it needs to be reinspected, and then stocked and organized to be ready to serve. They also need a team of volunteers to help serve the food during open sessions and then tear down afterwards. If you’re interested in volunteering at your local food bank, use the link below to find your local food bank to ask how you can get involved!
 
-Find a food bank near you: <https://www.chicagosfoodbank.org/find-food/>
+**[Find a food bank near you](https://www.chicagosfoodbank.org/find-food/)**
 
-![](/assets/images/uploads/yellow.png)
+![Food distributed by the greater Chicago Food Repository from 2016 through 2020. In 2020 they donated 93 million pounds, 18 million pounds more than in 2019.](/assets/images/uploads/yellow.png)
 
 David rightfully points out that food insecurity is a symptom of a larger issue in many cases. “Poverty is expensive,” says David, “For many people, they can’t afford to be near healthy food and as housing costs near public transportation increases, many have limited access to get healthy food as well.” He shares that he started at Chicago Hope not as a volunteer, but as a client. It was his own past experiences being food-insecure that drove him to help more. “These are people worried for their family, their jobs, their rent, and a host of other things. I want to at least free them from worrying about where their next meal is coming from. \[I want] to provide them food with the respect and dignity they deserve as people.” 
 
@@ -63,7 +63,7 @@ It’s difficult for many people to see, in what is such a widespread and deeply
 
 We should provide for our families, provide for our friends, and collectively help provide for our community. Food can trigger so many emotions in all of us: warmth, nostalgia, happiness, and comfort. By volunteering and donating to help combat food insecurity in Chicago we can build our communities and provide that same comfort and warmth to thousands of Chicagoians. Now that you know how and why to do it, the only thing left is for you to get involved.
 
-*Thank you to Maggie Jordan, David Jordan, and Chicago Hope Food Pantry for graciously providing their time for an interview. If you have any questions, comments, or ideas for the next article or would like to write for Activate:Chi yourself please contact Sanjee Choudhuri at sanjeechoudhuri@activate-chi.org*
+> Thank you to Maggie Jordan, David Jordan, and Chicago Hope Food Pantry for graciously providing their time for an interview. If you have any questions, comments, or ideas for the next article or would like to write for Activate:Chi yourself please contact Sanjee Choudhuri at sanjeechoudhuri@activate-chi.org
 
 <sup>1</sup><https://chicago.suntimes.com/2020/11/15/21563990/chicago-food-dispensary-struggles-amplified-by-pandemic-help>
 <sup>2</sup><https://www.chicagosfoodbank.org/wp-content/uploads/2020/12/Food-Depository-Hunger-Report-Dec-2020.><br>
