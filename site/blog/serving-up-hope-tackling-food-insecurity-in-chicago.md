@@ -53,7 +53,7 @@ Once the food leaves the GCFD warehouse it heads to individual food banks and pa
 
 Now that the food has reached the specific food banks and food pantries it needs to be reinspected, and then stocked and organized to be ready to serve. They also need a team of volunteers to help serve the food during open sessions and then tear down afterwards. If you’re interested in volunteering at your local food bank, use the link below to find your local food bank to ask how you can get involved!
 
-**[Find a food bank near you](https://www.chicagosfoodbank.org/find-food/)**
+🔗 [Find a food bank near you](https://www.chicagosfoodbank.org/find-food/)
 
 ![Food distributed by the greater Chicago Food Repository from 2016 through 2020. In 2020 they donated 93 million pounds, 18 million pounds more than in 2019.](/assets/images/uploads/yellow.png)
 
