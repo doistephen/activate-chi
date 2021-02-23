@@ -37,7 +37,7 @@ A vital step after receiving the donations is to inspect the food to ensure fres
 
 **[Volunteer to Repack](https://volunteers.chicagosfoodbank.org/index.php?section=IndividualOpportunities&action=calendar)**
 
-**[](https://volunteers.chicagosfoodbank.org/index.php?section=IndividualOpportunities&action=calendar)3. Delivery**
+[](https://volunteers.chicagosfoodbank.org/index.php?section=IndividualOpportunities&action=calendar)**3. Delivery**
 
 After the donations have been vetted and repacked it is sent and delivered to the hundreds of locations GCFD is partnered with using a fleet of climate controlled vans. Two-person teams help deliver fresh produce, canned goods, and more to a variety of food pantries, shelters, and programs. Vehicles are provided. Drivers must be at least 21 years old and willing to commit to regular volunteering. If you’re interested in driving fill out the volunteering contact form and say you want to drive in the message box!
 
@@ -63,7 +63,9 @@ It’s difficult for many people to see, in what is such a widespread and deeply
 
 We should provide for our families, provide for our friends, and collectively help provide for our community. Food can trigger so many emotions in all of us: warmth, nostalgia, happiness, and comfort. By volunteering and donating to help combat food insecurity in Chicago we can build our communities and provide that same comfort and warmth to thousands of Chicagoans. Now that you know how and why to do it, the only thing left is for you to get involved.
 
-> Thank you to Maggie Jordan, David Jordan, and Chicago Hope Food Pantry for graciously providing their time for an interview. If you have any questions, comments, or ideas for the next article or would like to write for Activate:Chi yourself please contact Sanjee Choudhuri at sanjeechoudhuri@activate-chi.org
+- - -
+
+*Thank you to Maggie Jordan, David Jordan, and Chicago Hope Food Pantry for graciously providing their time for an interview. If you have any questions, comments, or ideas for the next article or would like to write for Activate:Chi yourself please contact Sanjee Choudhuri at [sanjeechoudhuri@activate-chi.org](mailto:sanjeechoudhuri@activate-chi.org)*
 
 <sup>1</sup><https://chicago.suntimes.com/2020/11/15/21563990/chicago-food-dispensary-struggles-amplified-by-pandemic-help>
 <sup>2</sup><https://www.chicagosfoodbank.org/wp-content/uploads/2020/12/Food-Depository-Hunger-Report-Dec-2020.><br>
