@@ -20,7 +20,7 @@ module.exports = {
       yellow: "#FFB906",
       hue: "#F86849",
       none: "transparent",
-      link: "#619ffb",
+      link: "#7cc9ff",
       green: "#26b565",
     },
     opacity: {
@@ -44,40 +44,42 @@ module.exports = {
           "1rem",
           {
             lineHeight: "1.5",
+            letterSpacing: "0.035em",
           },
         ],
         lg: [
           "1.125rem",
           {
             lineHeight: "1.5",
+            letterSpacing: "0.035em",
           },
         ],
         xl: [
           "1.25rem",
           {
             lineHeight: "1.5",
-            letterSpacing: "0.025em",
+            letterSpacing: "0.035em",
           },
         ],
         "2xl": [
           "1.5rem",
           {
             lineHeight: "1.5",
-            letterSpacing: "0.025em",
+            letterSpacing: "0.035em",
           },
         ],
         "3xl": [
           "1.875rem",
           {
             lineHeight: "1.375",
-            letterSpacing: "0.025em",
+            letterSpacing: "0.035em",
           },
         ],
         "4xl": [
           "2.25rem",
           {
             lineHeight: "1.4",
-            letterSpacing: "0.025em",
+            letterSpacing: "0.035em",
           },
         ],
       },

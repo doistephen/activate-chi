@@ -1,4 +1,6 @@
-<a href="{{item.fileSlug}}" class="flex flex-col-reverse px-4 pt-6 pb-8 space-y-6 space-y-reverse border border-white border-opacity-25 lg:space-y-0 lg:p-5 lg:space-x-8 lg:flex-row group focus:outline-none">
+ {% import "components/_button.njk" as button %}
+
+<a href="{{item.url}}" class="flex flex-col-reverse px-4 pt-6 pb-8 space-y-6 space-y-reverse border border-white border-opacity-25 lg:space-y-0 lg:p-5 lg:space-x-8 lg:flex-row group focus:outline-none">
     <div class="flex flex-col justify-between">
         <div class="flex flex-col items-center flex-1 p-1 space-y-6 lg:items-start lg:space-y-8">
             {% if item.data.tag %}
@@ -7,17 +9,14 @@
                 <span class="text-opacity-90 text-hue">{{item.data.tag | title}}</span>
             </span>
             {% endif %}
-            <div class="flex flex-col items-center lg:items-start">
-                <h2 class="font-display">{{item.data.title}}</h2>
+            <div class="flex flex-col items-center space-y-2 lg:items-start">
+                <h2 class="text-2xl leading-snug text-center lg:text-left">{{item.data.title}}</h2>
                 <span class="text-base text-white text-opacity-60">By {{item.data.author}}</span>
             </div>
-            <div class="px-5 pt-3 pb-2 -ml-1 text-xs tracking-wide text-center btn-outline font-display group-focus:ring">
-                <span class="grid-inset-0">Read essay</span>
-            </div>
+            {{button.button(text="Read article", as="div")}}
         </div>
-        <div class="hidden w-12 pt-8 border-b border-white border-opacity-60 lg:block lg:mt-auto"></div>
     </div>
-    <div class="flex-shrink-0 w-full overflow-hidden border border-white border-opacity-60 h-36 md:h-64 lg:max-w-sm">
+    <div class="flex-shrink-0 w-full overflow-hidden border border-white border-opacity-60 h-36 md:h-56 lg:h-64 lg:max-w-sm">
         <img class="object-cover w-full h-full" src="{{item.data.image}}" alt="">
     </div>
 </a>

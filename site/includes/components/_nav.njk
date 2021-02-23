@@ -11,15 +11,9 @@
         </a>
         <div class="sm:flex hidden items-center -mr-2.5 space-x-5 divide-x divide-white divide-opacity-25">
             <ul class="flex space-x-3">
-                {% if collections.blog.length > 0 %}
-                    {{ button.button("Blog", "/blog") }}
-                {% endif %}
                 {{volunteer.getInvolvedButton("Get involved")}}
-                <form class="flex items-stretch" action="https://www.paypal.com/donate" method="post" target="_top">
-                    <input type="hidden" name="hosted_button_id" value="CEU8K69RQ47CS" />
-                    <input type="submit" class="flex justify-center px-4 pt-3 pb-2 text-xs tracking-wide border-opacity-75 cursor-pointer md:px-5 btn-outline font-display border-hue btn-highlight" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" value="Donate"/>
-                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                </form>
+                {{ button.button("Blog", "/blog") }}
+                {{ button.button(text="Donate", color=true, href="https://www.paypal.com/donate?token=9CDwJ5HMmLS97lEIoEogwoKkx_CSBnE2JdQZThKEVq3hW3PY19c7ZapxbxQvMGvbmjyY-Er7YGQAKWWZ") }}
             </ul>
             <ul class="flex pl-2.5">
                 <li><a target="_blank" href="{{site.twitterLink}}" class="block p-2.5 text-white text-opacity-90 transition transform hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2 rounded-full"><span class="block w-5 h-5">{% include "img/twitter.svg" %}</span></a></li>
@@ -46,8 +40,8 @@
                     <a class="block text-sm tracking-wide text-center font-display" href="/#initiatives">Our initiatives</a>
                     <a class="block text-sm tracking-wide text-center font-display" href="/#about">About Activate:Chi</a>
                     <a class="block text-sm tracking-wide text-center font-display" href="/#organizers">Our organizers</a>
-                        {{ button.button("Read the blog", "/blog") }}
                         {{ button.button("Get involved", site.volunteerLink, color=true, newTab=true) }}
+                        {{ button.button("Blog", "/blog") }}
                     </ul>
                     <ul class="flex justify-around pt-5">
                         <li><a target="_blank" href="{{site.twitterLink}}" class="block p-4 text-white text-opacity-100 transition transform rounded-full hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2"><span class="block w-5 h-5">{% include "img/twitter.svg" %}</span></a></li>

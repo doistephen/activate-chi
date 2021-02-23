@@ -1,8 +1,23 @@
  {% import "components/_get-involved-link.njk" as button %}
 
 <footer class="pt-24">
-    <div class="flex flex-col items-center px-4 pt-12 -mx-4 space-y-6 border-t border-white border-opacity-25">
-        <h2 class="max-w-md text-xl leading-relaxed text-center font-display">{{site.footerHeading}}</h2>
-        {{button.getInvolvedButton("Sign up to get involved", color="true")}}
+    <div class="items-center px-4 pt-12 -mx-4 border-t border-white border-opacity-25 site-grid gap-y-6">
+        <div class="flex flex-col items-center space-y-6 text-center md:items-start md:col-span-6 md:text-left">
+            <h2 class="max-w-md text-xl leading-relaxed font-display">{{site.footerHeading}}</h2>
+            {{button.getInvolvedButton("Sign up to get involved", color="true")}}
+        </div>
+        <div class="hidden space-y-4 md:block md:col-span-6 lg:space-y-6">
+            <h2 class="text-sm text-white">Most recent statements</h2>
+            <ul class="space-y-3">
+            {% for link in collections.announcements.reverse().slice(0, 2) %}
+                <li>
+                    <a href="{{link.url}}" title="{{link.data.title}}" class="flex flex-col text-base tracking-wide text-white text-opacity-90 group">
+                        <date class="text-xs text-white text-opacity-60">{{link.data.date | readableDate}}</date>
+                        <span class="truncate text-md text-link group-hover:underline">{{link.data.title}}</span>
+                    </a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
     </div>
 </footer>
