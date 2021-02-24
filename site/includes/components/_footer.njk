@@ -1,11 +1,11 @@
- {% import "components/_get-involved-link.njk" as button %}
+ {% import "components/_get-involved-link.njk" as button with context %}
 
  {% macro footerLink(title, url, dot=false)%}
     <li class="py-1.5 first:pt-0 last:pb-0">
-        <a href="{{url}}" title="{{link.data.title}}" class="items-start space-x-1 space-y-0.5 flex w-full text-base tracking-wide text-white text-opacity-75 hover:text-opacity-90">
+        <a href="{{url}}" title="{{link.data.title}}" class="flex items-start w-full text-base tracking-wide text-white text-opacity-75 hover:text-opacity-90 hover:underline">
             <span class="text-sm group-hover:underline">{{title}}</span>
         {% if dot %}
-            <span class="block w-1.5 h-1.5 rounded-full bg-opacity-60 bg-hue animate-pulse"></span>
+            <span class="block w-1.5 h-1.5 rounded-full bg-opacity-60 bg-hue mt-0.5 ml-1 -mr-3 animate-pulse"></span>
         {% endif %}
         </a>
     </li>
