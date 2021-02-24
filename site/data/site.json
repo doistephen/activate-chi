@@ -35,7 +35,8 @@
     },
     {
       "title": "Open organizer positions!",
-      "link": "/open-positions"
+      "link": "/open-positions",
+      "dot": true
     }
   ]
 }

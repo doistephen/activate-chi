@@ -22,28 +22,7 @@
             <div class="flex flex-col items-center flex-shrink-0 space-y-4 md:items-start lg:space-y-6">
                 <h2 class="text-sm font-bold text-white">Links</h2>
                 <ul class="flex flex-col items-center md:items-start">
-                {% for link in [
-                    {
-                        title: "Our initiatives",
-                        link: "/#initiatives"
-                    },{
-                        title: "About us",
-                        link: "/#about"
-                    },{
-                        title: "Our organizers",
-                        link: "/#organizers"
-                    },{
-                        title: "Blog",
-                        link: "/blog"
-                    },{
-                        title: "Donate",
-                        link: "https://www.paypal.com/donate?token=9CDwJ5HMmLS97lEIoEogwoKkx_CSBnE2JdQZThKEVq3hW3PY19c7ZapxbxQvMGvbmjyY-Er7YGQAKWWZ"
-                    }, {
-                        title: "Open organizer positions!",
-                        link: "/open-positions",
-                        dot: true
-                    }
-                ] %}
+                {% for link in site.footerLinks %}
                     {{footerLink(link.title, link.link, link.dot)}}
                 {% endfor %}
                 </ul>
