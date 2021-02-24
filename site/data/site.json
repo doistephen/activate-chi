@@ -11,5 +11,31 @@
   "announcementBanner": "We're growing our team! [Click here](https://activate-chi.org/open-positions) to see how you can join us and contribute your skills to our mission!",
   "favicon": "/assets/images/favicon.svg",
   "og_description": "The 2020 election is only days away. It's important to participate in for so many reasons. Share what yours is!",
-  "socialGraphic": "/assets/images/uploads/social-share@2x.jpg"
+  "socialGraphic": "/assets/images/uploads/social-share@2x.jpg",
+  "footerLinks": [
+    {
+      "title": "Our initiatives",
+      "link": "/#initiatives"
+    },
+    {
+      "title": "About us",
+      "link": "#/about-us"
+    },
+    {
+      "title": "Our organizers",
+      "link": "/#organizers"
+    },
+    {
+      "title": "Blog",
+      "link": "/blog"
+    },
+    {
+      "title": "Donate",
+      "link": "https://www.paypal.com/donate?token=9CDwJ5HMmLS97lEIoEogwoKkx_CSBnE2JdQZThKEVq3hW3PY19c7ZapxbxQvMGvbmjyY-Er7YGQAKWWZ"
+    },
+    {
+      "title": "Open organizer positions!",
+      "link": "/open-positions"
+    }
+  ]
 }
