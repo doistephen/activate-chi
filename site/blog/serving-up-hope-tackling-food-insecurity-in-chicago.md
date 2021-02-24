@@ -70,6 +70,6 @@ _Thank you to Maggie Jordan, David Jordan, and Chicago Hope Food Pantry for grac
 
 ### References
 
-1. [https://chicago.suntimes.com/2020/11/15/21563990/chicago-food-dispensary-struggles-amplified-by-pandemic-help](https://chicago.suntimes.com/2020/11/15/21563990/chicago-food-dispensary-struggles-amplified-by-pandemic-help)
-2. [https://www.chicagosfoodbank.org/wp-content/uploads/2020/12/Food-Depository-Hunger-Report-Dec-2020](https://www.chicagosfoodbank.org/wp-content/uploads/2020/12/Food-Depository-Hunger-Report-Dec-2020)
-3. [https://www.wbez.org/stories/to-keep-up-with-pandemic-demands-chicago-food-pantries-expand-and-get-a-facelift/5077bd81-0126-4050-8f43-335e2ed71cf9](https://www.wbez.org/stories/to-keep-up-with-pandemic-demands-chicago-food-pantries-expand-and-get-a-facelift/5077bd81-0126-4050-8f43-335e2ed71cf9)
+1. [chicago.suntimes.com](https://chicago.suntimes.com/2020/11/15/21563990/chicago-food-dispensary-struggles-amplified-by-pandemic-help)
+2. [chicagosfoodbank.org](https://www.chicagosfoodbank.org/wp-content/uploads/2020/12/Food-Depository-Hunger-Report-Dec-2020)
+3. [wbez.org](https://www.wbez.org/stories/to-keep-up-with-pandemic-demands-chicago-food-pantries-expand-and-get-a-facelift/5077bd81-0126-4050-8f43-335e2ed71cf9)

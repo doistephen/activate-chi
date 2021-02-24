@@ -9,7 +9,7 @@
                 :class="{'md:opacity-90' : selected !== '{{title}}'}">
         	    <img loading="lazy" class="object-cover w-full h-full" src="{{image}}" alt="">
         	</div>
-        	<div class="flex flex-col justify-end pl-2 space-y-2 text-center transition transform sm:text-left sm:pl-0"
+        	<div class="flex flex-col items-center justify-end pl-0 space-y-2 text-center transition transform sm:items-start sm:text-left"
                 :class="{'md:-translate-x-38' : selected === '{{title}}'}">
         	        <div class="flex items-baseline space-x-2 text-sm tracking-wider">
                         <span class="text-hue text-opacity-90">{{type}}</span>

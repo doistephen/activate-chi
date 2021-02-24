@@ -41,6 +41,6 @@ web: activate-chi.org
 
 ---
 
-1. <https://www.wbez.org/stories/chicago-police-union-president-defends-those-who-stormed-us-capitol/6842fa80-3b83-4396-af05-a5f15f4ac740>
-2. <https://www.civicfed.org/civic-federation/blog/what-chicago-police-department-budget>
-3. <https://www.nbcchicago.com/news/local/chicago-politics-35-chicago-aldermen-back-resolution-calling-for-fop-president-to-resign-over-comments-on-capitol-riot/2413389/>
+1. [wbez.org](https://www.wbez.org/stories/chicago-police-union-president-defends-those-who-stormed-us-capitol/6842fa80-3b83-4396-af05-a5f15f4ac740)
+2. [civicfed.org](https://www.civicfed.org/civic-federation/blog/what-chicago-police-department-budget)
+3. [nbcchicago.com](https://www.nbcchicago.com/news/local/chicago-politics-35-chicago-aldermen-back-resolution-calling-for-fop-president-to-resign-over-comments-on-capitol-riot/2413389)
