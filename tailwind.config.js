@@ -5,11 +5,13 @@ module.exports = {
       center: true,
       padding: {
         DEFAULT: "1rem",
+        xs: "1.5rem",
         sm: "2rem",
         lg: "3rem",
       },
     },
     screens: {
+      xs: "475px",
       sm: "640px",
       md: "768px",
       lg: "1120px",
@@ -122,6 +124,7 @@ module.exports = {
       },
       animation: {
         marquee: "marquee 60s linear infinite",
+        ping: "ping 2s cubic-bezier(0, 0, 0.2, 1) infinite",
       },
     },
   },
@@ -135,6 +138,7 @@ module.exports = {
       backgroundColor: ["group-hover"],
       opacity: ["group-hover"],
       ringWidth: ["group-focus"],
+      padding: ["first", "last"],
     },
   },
   plugins: [],

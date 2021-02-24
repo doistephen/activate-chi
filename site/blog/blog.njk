@@ -8,17 +8,18 @@ socialSnippet: Showing how small efforts can cascade into big changes for our co
 <div>
     <main class="site-grid gap-y-6" x-data="{activeCategory: 'both'}">
         <header class="pt-8 space-y-4 col-span-full">
-            <div class="space-y-1 text-center">
-                <h1 class="max-w-4xl mx-auto text-4xl leading-snug tracking-wide font-display">
-                    {{blogPage.blogName}}
+            <div class="space-y-1">
+                <h1 class="text-4xl leading-snug tracking-wide font-display">
+                    {# {{blogPage.blogName}} #}
+                    <span class="text-hue">Activate:Chi</span> Blog
                 </h1>
-                <h2 class="max-w-xl mx-auto text-2xl">{{blogPage.introText}}</h2>
+                <h2 class="max-w-2xl text-2xl">{{blogPage.introText}}</h2>
             </div>
-            <div class="max-w-md mx-auto prose text-center text-white text-opacity-75 ">
+            <div class="max-w-full prose text-white text-opacity-75">
                 <div class="leading-normal">{{blogPage.callForWriters | markdownify | safe }}</div>
             </div>
         </header>
-        <aside class="top-0 hidden col-span-3 space-y-4 lg:space-y-6 lg:block">
+        <aside class="sticky hidden col-span-3 space-y-4 top-32 lg:space-y-6 lg:block">
 
             <h2 class="pt-4 text-sm text-white text-opacity-75 border-t border-white border-opacity-25">Filter blog types:</h2>
             <ul class="space-y-2">
