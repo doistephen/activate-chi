@@ -16,7 +16,7 @@ socialSnippet: Apply to become an organizer for Activate:Chi!
                     <h2 class="max-w-2xl text-2xl text-white text-opacity-75">We're looking to bring on new organizers! Check out the open positions below and apply if you're interested in joining our team.</h2>
                 </div>
             </header>
-            <aside class="flex flex-col items-start space-y-6 lg:col-span-3 lg:row-start-2 lg:sticky top-32">
+            <aside class="flex flex-col items-start space-y-6 col-span-full lg:col-span-3 lg:row-start-2 lg:sticky top-32">
                 <div class="w-full space-y-4 lg:space-y-6">
                     <h2 class="pt-4 text-sm text-white text-opacity-75 border-t border-white border-opacity-25">Current open positions:</h2>
                     <ul class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:space-y-2 lg:block">
@@ -36,7 +36,7 @@ socialSnippet: Apply to become an organizer for Activate:Chi!
                     {{ button.button("Apply now!", "https://forms.gle/vkPRoNZoDKJR3jkt9", color=true, newTab=true) }}
                 </div>
             </aside>
-            <main class="space-y-16 lg:col-span-9">
+            <main class="space-y-16 col-span-full lg:col-span-9">
                 {% for item in collections.openPosition | alphabetize("name") %}
                     <article  id="{{ item.data.name | lower | replace(' ', '-') }}" class="flex flex-col pt-24 space-y-8 border-t border-white border-opacity-25 sm:pt-16" style="scroll-margin-top: 8rem">
                         <div class="prose">

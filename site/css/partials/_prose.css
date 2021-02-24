@@ -3,7 +3,7 @@
   max-width: 65ch;
 }
 .prose a {
-  @apply text-link hover:underline;
+  @apply break-all text-link hover:underline;
 }
 .prose strong {
   @apply font-bold;

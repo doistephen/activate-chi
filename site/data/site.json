@@ -14,12 +14,16 @@
   "socialGraphic": "/assets/images/uploads/social-share@2x.jpg",
   "footerLinks": [
     {
+      "title": "Home",
+      "link": "/"
+    },
+    {
       "title": "Our initiatives",
       "link": "/#initiatives"
     },
     {
       "title": "About us",
-      "link": "#/about-us"
+      "link": "/#about"
     },
     {
       "title": "Our organizers",
@@ -28,10 +32,6 @@
     {
       "title": "Blog",
       "link": "/blog"
-    },
-    {
-      "title": "Donate",
-      "link": "https://www.paypal.com/donate?token=9CDwJ5HMmLS97lEIoEogwoKkx_CSBnE2JdQZThKEVq3hW3PY19c7ZapxbxQvMGvbmjyY-Er7YGQAKWWZ"
     },
     {
       "title": "Open organizer positions!",

@@ -818,6 +818,10 @@ html {
   text-decoration: underline;
 }
 
+.prose a {
+  word-break: break-all;
+}
+
 .prose strong {
   font-weight: 700;
 }
