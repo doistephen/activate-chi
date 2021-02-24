@@ -1,27 +1,27 @@
  {% import "components/_get-involved-link.njk" as button %}
 
  {% macro footerLink(title, url, dot=false)%}
-    <li class="flex items-start space-x-1 space-y-0.5 py-1.5 first:pt-0 last:pb-0">
-        <a href="{{url}}" title="{{link.data.title}}" class="flex flex-col w-full text-base tracking-wide text-white text-opacity-75 hover:text-opacity-90 group">
+    <li class="py-1.5 first:pt-0 last:pb-0">
+        <a href="{{url}}" title="{{link.data.title}}" class="items-start space-x-1 space-y-0.5 flex w-full text-base tracking-wide text-white text-opacity-75 hover:text-opacity-90">
             <span class="text-sm group-hover:underline">{{title}}</span>
-        </a>
         {% if dot %}
             <span class="block w-1.5 h-1.5 rounded-full bg-opacity-60 bg-hue animate-pulse"></span>
         {% endif %}
+        </a>
     </li>
  {% endmacro %}
 
 <footer class="pt-24">
-    <div class="items-start px-4 pt-12 -mx-4 border-t border-white border-opacity-25 site-grid gap-y-6">
+    <div class="items-start px-4 pt-12 -mx-4 border-t border-white border-opacity-25 site-grid gap-y-12">
         <div class="flex flex-col items-center space-y-6 text-center md:items-start md:col-span-6 md:text-left">
             <div class="hidden w-8 h-8 md:block text-hue">{% include "img/chistar.svg" %}</div>
             <h2 class="max-w-md text-xl leading-relaxed font-display">{{site.footerHeading}}</h2>
             {{button.getInvolvedButton("Get involved", color="true")}}
         </div>
-        <div class="hidden space-x-16 md:flex md:col-span-6">
-            <div class="flex-shrink-0 space-y-4 lg:space-y-6">
+        <div class="flex flex-col space-y-12 lg:space-y-0 lg:space-x-16 lg:flex-row md:col-span-6">
+            <div class="flex flex-col items-center flex-shrink-0 space-y-4 md:items-start lg:space-y-6">
                 <h2 class="text-sm font-bold text-white">Links</h2>
-                <ul>
+                <ul class="flex flex-col items-center md:items-start">
                 {% for link in [
                     {
                         title: "Our initiatives",
@@ -48,11 +48,11 @@
                 {% endfor %}
                 </ul>
             </div>
-            <div class="space-y-4 lg:space-y-6">
+            <div class="flex flex-col items-center space-y-4 md:items-start lg:space-y-6">
                 <h2 class="text-sm font-bold text-white">Most recent public statements</h2>
-                <ul>
+                <ul class="flex flex-col items-center md:items-start">
                 {% for link in collections.announcements.reverse().slice(0, 3) %}
-                    <li class="py-2 first:pt-0 last:pb-0">
+                    <li class="py-2 text-center first:pt-0 last:pb-0 md:text-left">
                         <a href="{{link.url}}" title="{{link.data.title}}" class="flex flex-col space-y-1 text-base tracking-wide text-white text-opacity-90 group">
                             <span class="text-sm text-white text-opacity-75 group-hover:underline">{{link.data.title}}</span>
                             <date class="text-opacity-75 text-xxs text-hue">{{link.data.date | readableDate}}</date>

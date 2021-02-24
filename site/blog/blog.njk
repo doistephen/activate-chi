@@ -10,10 +10,9 @@ socialSnippet: Showing how small efforts can cascade into big changes for our co
         <header class="pt-8 space-y-4 col-span-full">
             <div class="space-y-1">
                 <h1 class="text-4xl leading-snug tracking-wide font-display">
-                    {# {{blogPage.blogName}} #}
                     <span class="text-hue">Activate:Chi</span> Blog
                 </h1>
-                <h2 class="max-w-2xl text-2xl">{{blogPage.introText}}</h2>
+                <h2 class="max-w-2xl text-2xl text-white text-opacity-75">{{blogPage.introText}}</h2>
             </div>
             <div class="max-w-full prose text-white text-opacity-75">
                 <div class="leading-normal">{{blogPage.callForWriters | markdownify | safe }}</div>
