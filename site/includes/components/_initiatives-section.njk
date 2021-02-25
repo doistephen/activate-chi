@@ -10,7 +10,7 @@
         {# <div class="col-span-full">{% include "components/_biden-tracker-section.njk" %}</div> #}
         <ul class="border-t border-white border-opacity-25 col-span-full"
             x-data="{ selected: `none` }">
-            {% for item in collections.initiative.reverse() %}
+            {% for item in collections.initiative | alphabetize("date") %}
                 {{ initiative.initiative(item.data.title, item.data.type, item.data.dates, item.data.summary, item.data.image, item.data.links) }}
             {% endfor %}
         </ul>
