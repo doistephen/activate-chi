@@ -1,6 +1,7 @@
 ---
 title: Chicago March of Justice
 type: Emergency Action
+date: 2020-06-07T00:10:49.840Z
 dates: June 6, 2020
 image: /assets/images/uploads/march.jpg
 summary: Activate:Chi organized the Chicago March of Justice in reaction to the
