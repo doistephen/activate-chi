@@ -1,6 +1,8 @@
 ---
 title: Extend the Voting Rights Act
 currentStatus: 1
+category: Racial equity
+rating: 3
 lastUpdated: February 21
 statusDescription: There are currently bills in progress to strengthen the
   Voting Rights Act, specifcally the "For the People Act" and the "John Lewis
