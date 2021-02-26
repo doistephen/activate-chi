@@ -1,34 +1,35 @@
 <li class="grid py-4 text-base border-b border-white border-opacity-25 md:py-6 md:grid-cols-3 gap-y-2 md:gap-y-0 md:gap-x-6 lg:gap-x-0 lg:grid-cols-12 md:pb-6">
-    <div class="px-4 pl-0 text-lg border-white border-opacity-25 md:border-r lg:border-r-0 md:col-span-2 lg:col-span-4">
-        <h3><a class="font-bold md:font-normal hover:underline" target="_blank" href="{{item.data.statusLink}}">{{item.data.title}}</a></h3>
+    <div class="flex flex-col px-4 pl-0 space-y-2 text-lg border-white border-opacity-25 md:border-r lg:border-r-0 md:col-span-2 lg:col-span-4">
+        <span class="text-xs text-hue text-opacity-90">{{item.data.category}}</span>
+        <h3 class="font-bold md:font-normal">{{item.data.title}}</h3>
+        <a class="text-sm hover:underline text-link" target="_blank" href="{{item.data.statusLink}}">ref</a></p>
     </div>
-    <div class="items-center hidden border-white border-opacity-25 md:flex lg:px-4 lg:col-span-2 md:col-start-3 md:row-start-1 md:row-end-3 lg:row-start-auto lg:row-end-auto">
+    <div class="flex items-center max-w-xs row-start-3 py-8 border-white border-opacity-25 lg:px-4 lg:col-span-3 md:col-start-3 md:row-start-1 md:row-end-3 lg:row-start-auto lg:row-end-auto">
+        <h4 class="mr-8 tracking-widest text-white text-opacity-75 uppercase md:hidden text-xxs">A:C Rating:</h4>
         <div class="relative flex items-center justify-between w-full">
-            <div data-tippy-content="Not started" class="w-10 md:h-10 text-hue
-                {% if item.data.currentStatus === 3 %} opacity-100 {% else %} opacity-25 {% endif %}"
-                >{% include "img/bidenRed.svg" %}</div>
+
+            <div style="left: calc(11.1111111111% * ({{item.data.rating}} - 1))"
+                class="absolute p-1 transform left -translate-x-1/2 bg-gray
+                {% if item.data.rating < 4 %}
+                    text-hue
+                {% elseif item.data.rating > 3 and item.data.rating < 8 %}
+                    text-yellow
+                {% elseif item.data.rating >= 8 %}
+                    text-green
+                {% endif %}">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle r="6.5" transform="matrix(-1 0 0 1 7 7)" fill="currentColor" fill-opacity="0.25" stroke="currentColor"/>
+                </svg>
+                <span class="absolute text-sm text-white transform -translate-x-1/2 bottom-5 left-1/2 font-display text-opacity-90">{{item.data.rating}}</span>
+            </div>
             <div class="flex-1 h-px bg-white bg-opacity-25"></div>
-            <div data-tippy-content="In progress" class="w-10 md:h-10 text-yellow
-                {% if item.data.currentStatus === 2 %} opacity-100 {% else %} opacity-25 {% endif %}"
-                >{% include "img/bidenYellow.svg" %}</div>
-            <div class="flex-1 h-px bg-white bg-opacity-25"></div>
-            <div data-tippy-content="Completed" class="w-10 md:h-10 text-green
-                {% if item.data.currentStatus === 1 %} opacity-100 {% else %} opacity-25 {% endif %}"
-                >{% include "img/bidenGreen.svg" %}</div>
         </div>
     </div>
-    <div class="pr-0 space-y-2 text-white border-white border-opacity-25 md:pt-2 lg:pt-0 text-opacity-90 md:border-r lg:border-r-0 lg:px-4 md:col-span-2 lg:col-span-6">
-        <p class="max-w-md">{{item.data.statusDescription}}</p>
+    <div class="pr-0 space-y-2 text-white border-white border-opacity-25 md:pt-2 lg:pt-0 text-opacity-90 md:border-r lg:border-r-0 lg:px-4 md:col-span-2 lg:col-span-5">
+        <p >{{item.data.statusDescription}}</p>
         <small class="block">
             {% if item.data.lastUpdated %}<span class="text-sm text-white text-opacity-60">Last updated: {{item.data.lastUpdated}} | </span>{% endif %}
             <a class="text-sm hover:underline text-link" target="_blank" href="{{item.data.statusLink}}">ref</a></p>
         </small>
-    </div>
-    <div class="md:hidden">
-        <p class="flex items-center space-x-2 text-xs tracking-widest uppercase font-display">
-            {% if item.data.currentStatus === 2 %}<span class="w-6 h-6 text-hue">{% include "img/bidenRed.svg" %}</span><span class="pt-1 text-hue">Not started</span>{% endif %}
-            {% if item.data.currentStatus === 1 %}<span class="w-6 h-6 text-yellow">{% include "img/bidenYellow.svg" %}</span><span class="pt-1 text-yellow">In progress</span>{% endif %}
-            {% if item.data.currentStatus === 0 %}<span class="w-6 h-6 text-green">{% include "img/bidenGreen.svg" %}</span><span class="pt-1 text-green">Completed!</span>{% endif %}
-        </p>
     </div>
 </li>

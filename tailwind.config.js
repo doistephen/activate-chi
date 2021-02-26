@@ -24,6 +24,7 @@ module.exports = {
       none: "transparent",
       link: "#7cc9ff",
       green: "#26b565",
+      current: "currentColor",
     },
     opacity: {
       0: "0",
