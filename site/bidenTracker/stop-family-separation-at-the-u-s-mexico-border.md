@@ -1,6 +1,8 @@
 ---
 title: Stop Family Separation at the U.S.-Mexico Border
 currentStatus: 1
+category: Immigration
+rating: 3
 lastUpdated: February 21
 statusDescription: Created a Task Force to Reunify Families, however ICE is
   going "rogue" with many orders.
