@@ -1,6 +1,8 @@
 ---
 title: Repair Alliances and Plan a Global Summit for Democracy
 currentStatus: 2
+category: Environment
+rating: 5
 lastUpdated: February 21
 statusDescription: Though the Summit for Democracy is still planned on, there
   are major challenges to both it's implementation and whether it will be useful
