@@ -1,6 +1,7 @@
 ---
 title: Assemble a coronavirus task force during his presidential transition
 currentStatus: 1
+category: COVID-19
 rating: 10
 lastUpdated: February 18
 statusDescription: Task force has been created.
