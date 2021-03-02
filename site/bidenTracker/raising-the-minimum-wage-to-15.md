@@ -4,9 +4,9 @@ currentStatus: 2
 category: Economy
 rating: 6
 lastUpdated: February 21
-statusDescription: The Raise the Wage Act of 2021 would gradually raise the
-  federal minimum wage to $15 an hour by 2025 but does not currently have enough
-  votes to pass.
-statusLink: https://www.epi.org/publication/why-america-needs-a-15-minimum-wage/
+statusDescription: The $15 minimum wage increase has been rejected in the
+  upcoming COVID Stimulus Bill by the parliamentarian, but the Biden
+  Administration has reaffirmed their support.
+statusLink: https://www.cnn.com/2021/02/17/politics/15-dollar-minimum-wage-biden/index.html
 promiseSource: https://www.forbes.com/advisor/personal-finance/bidens-first-100-days-third-stimulus-bill/
 ---
