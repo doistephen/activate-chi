@@ -136,6 +136,7 @@ module.exports = {
       scale: ["group-hover"],
       textColor: ["group-hover"],
       borderColor: ["group-hover"],
+      borderWidth: ["last"],
       backgroundColor: ["group-hover"],
       opacity: ["group-hover"],
       ringWidth: ["group-focus"],

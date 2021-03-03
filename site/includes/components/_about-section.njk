@@ -26,7 +26,7 @@
                 </dd>
             </dl>
         </div>
-        <div class="fixed inset-y-0 right-0 z-20 w-full max-w-2xl max-h-screen px-6 py-8 overflow-y-auto transition-transform transform bg-opacity-75 border-l border-white border-opacity-25 sm:p-16 noise-bg bg-gray"
+        <div class="fixed inset-y-0 right-0 z-30 w-full max-w-2xl max-h-screen px-6 py-8 overflow-y-auto transition-transform transform bg-opacity-75 border-l border-white border-opacity-25 sm:p-16 noise-bg bg-gray"
             x-cloak
             x-on:keydown.escape="isOpen = false"
             @click.away="isOpen = false"
@@ -39,6 +39,6 @@
             <h2 class="mt-12 text-2xl font-display">Our Story</h2>
             <div class="mt-4 prose">{{aboutSection.ourStory | markdownify | safe}}</div>
         </div>
-        <div class="fixed inset-0 z-10 transition-opacity bg-opacity-75 bg-gray" x-show="isOpen === true" x-transition:enter-start="opacity-0"
+        <div class="fixed inset-0 z-20 transition-opacity bg-opacity-75 bg-gray" x-show="isOpen === true" x-transition:enter-start="opacity-0"
             x-transition:leave-end="opacity-0"></div>
     </section>

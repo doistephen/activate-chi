@@ -7,7 +7,7 @@
         <div class="flex col-span-full">
             <h3 class="text-3xl leading-normal tracking-wide text-center text-white font-display">{{initiativesSection.introText}}</h2>
         </div>
-        {# <div class="col-span-full">{% include "components/_biden-tracker-section.njk" %}</div> #}
+        <div class="col-span-full">{% include "components/_biden-tracker-section.njk" %}</div>
         <ul class="border-t border-white border-opacity-25 col-span-full"
             x-data="{ selected: `none` }">
             {% for item in collections.initiative | alphabetize("date") %}
