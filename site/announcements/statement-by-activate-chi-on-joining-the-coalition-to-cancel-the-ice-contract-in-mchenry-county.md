@@ -18,7 +18,7 @@ To keep up to date on Activate:Chi and join our rapid response team text ACTIVAT
 
 Activate:Chi
 email: info@activate-chi.org
-web: activate-chi.org
+web: [activate-chi.org](https://activate-chi.org/)
 
 \[1]: <https://www.shawlocal.com/2020/12/03/the-struggle-is-real-the-struggle-goes-on-activists-rally-to-end-mchenry-county-jails-contract-with-ice/ajxxfku/>
 
