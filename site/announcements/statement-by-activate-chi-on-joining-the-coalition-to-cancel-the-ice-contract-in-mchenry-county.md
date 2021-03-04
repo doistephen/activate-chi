@@ -12,7 +12,7 @@ Currently, McHenry County is paid $95 a day for each immigrant detainee housed i
 
 This is just one example of the sprawling and abhorrent immigration detention system in the United States, which is the largest in the world. As of 2019 there were 510,854 immigrant detainees in the US, an order of magnitude larger than most other countries [](https://www.globaldetentionproject.org/countries/americas/united-states)\[2]. This is not because we attract the most detainees, but because we have a system which creates a profit-incentive to imprison individuals, and immigrants can be a vulnerable population to prey on. This is evident by the fact that 70 percent of these detainees are held in privately-run immigrant prisons run by for-profit groups like GEO Group and CoreCivic [](https://www.freedomforimmigrants.org/detention-statistics)\[4]. We all must do what we can to respect the dignity and humanity of immigrants as well as completely reform the idea of punishment and prisons in the United States. Activate:Chi believes in the Coalition to Cancel the Ice Contract in McHenry Country and will strive to support them to our fullest. 
 
-If you’re interested in joining this effort and would like to learn more please join the Coalitions's Facebook Group here: <https://www.facebook.com/groups/252228846373447/about>
+If you’re interested in joining this effort and would like to learn more please join the Coalition's Facebook Group here: <https://www.facebook.com/groups/252228846373447/about>
 
 To keep up to date on Activate:Chi and join our rapid response team text ACTIVATE to 60611.
 
