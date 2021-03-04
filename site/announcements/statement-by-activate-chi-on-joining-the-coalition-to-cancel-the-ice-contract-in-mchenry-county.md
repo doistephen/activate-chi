@@ -22,7 +22,7 @@ web: [activate-chi.org](https://activate-chi.org/)
 
 \[1]: <https://www.shawlocal.com/2020/12/03/the-struggle-is-real-the-struggle-goes-on-activists-rally-to-end-mchenry-county-jails-contract-with-ice/ajxxfku/>
 
-\[2]: ICE Memo
+\[2]: <https://activate-chi.org/announcements/statement-by-activate-chi-on-dhs-memo-on-enforcement-and-removals/>
 
 \[3]: <https://www.globaldetentionproject.org/countries/americas/united-states>
 
