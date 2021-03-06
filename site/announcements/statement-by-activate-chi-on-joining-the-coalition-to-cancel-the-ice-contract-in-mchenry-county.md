@@ -10,9 +10,9 @@ Activate:Chi is proud to announce we’ve joined a coalition of organizations se
 
 Here's how you can help:
 <ol>
-<li>Sign the "Cancel the ICE Contract in McHenry County" petition here: [https://actionnetwork.org/petitions/sign-the-petition-cancel-the-ice-contract-in-mchenry-county?source=direct_link&](https://actionnetwork.org/petitions/sign-the-petition-cancel-the-ice-contract-in-mchenry-county?source=direct_link&)
-<li> Pre-Order a "Cancel the ICE Contract" yard sign today: [https://forms.gle/bD9hDedqd8nKqULr6](https://forms.gle/bD9hDedqd8nKqULr6)
-<li> Join the coalition and stay updated by following this Facebook group: [https://www.facebook.com/groups/252228846373447/about](https://www.facebook.com/groups/252228846373447/about)</li>
+<li>Sign the "Cancel the ICE Contract in McHenry County" petition here: <https://actionnetwork.org/petitions/sign-the-petition-cancel-the-ice-contract-in-mchenry-county?source=direct_link&>
+<li> Pre-Order a "Cancel the ICE Contract" yard sign today: <https://forms.gle/bD9hDedqd8nKqULr6>
+<li> Join the coalition and stay updated by following this Facebook group: <https://www.facebook.com/groups/252228846373447/about></li>
 </ol>
 
 Currently, McHenry County is paid $95 a day for each immigrant detainee housed in the jail and has received $6.8 million a year in revenue over the past three years [](https://www.shawlocal.com/2020/12/03/the-struggle-is-real-the-struggle-goes-on-activists-rally-to-end-mchenry-county-jails-contract-with-ice/ajxxfku/)\[1]. There is no justification whatsoever for any government or organization to profit over the imprisonment of any person. Prisons, as they exist, should be a center for rehabilitation, not profit. They should provide opportunities both structured and open for an individual to learn, and create an environment which incentives an individual to positively grow. The goal of a prison should be to create less prisoners, however the current prison-industrial complex has created a system which incentives creating more prisoners and imprisoning them for longer. This profit incentive is the reason why McHenry Country currently has the contract with ICE to serve as an immigrant detention facility. Alongside that, at Activate:Chi we believe ICE is an immoral, despotic, unjust, and punitive organization which should be abolished, as we’ve stated before \[2].
