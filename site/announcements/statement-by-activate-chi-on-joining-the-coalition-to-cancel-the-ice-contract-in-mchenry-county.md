@@ -9,6 +9,7 @@ socialSnippet: Activate:Chi is proud to announce we’ve joined a coalition of
 Activate:Chi is proud to announce we’ve joined a coalition of organizations seeking to cancel the McHenry County Jail’s contract with Immigration and Customs Enforcement (ICE). [The Coalition to Cancel the ICE Contract in McHenry County](https://www.facebook.com/groups/252228846373447/about) has been working towards this goal for months, and we’re excited to support their effort however and wherever we can.
 
 Here's how you can help:
+
 <ol>
 <li>Sign the "Cancel the ICE Contract in McHenry County" petition here: <https://actionnetwork.org/petitions/sign-the-petition-cancel-the-ice-contract-in-mchenry-county?source=direct_link&>
 <li> Pre-Order a "Cancel the ICE Contract" yard sign today: <https://forms.gle/bD9hDedqd8nKqULr6>
