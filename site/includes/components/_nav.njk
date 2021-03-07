@@ -10,10 +10,13 @@
             {% include "img/logo.svg" %}
         </a>
         <div class="sm:flex hidden items-center -mr-2.5 space-x-5 divide-x divide-white divide-opacity-25">
-            <ul class="flex space-x-3">
-                {{volunteer.getInvolvedButton("Get involved")}}
-                {{ button.button("Blog", "/blog") }}
-                {{ button.button(text="Donate", color=true, href="https://www.paypal.com/donate?token=9CDwJ5HMmLS97lEIoEogwoKkx_CSBnE2JdQZThKEVq3hW3PY19c7ZapxbxQvMGvbmjyY-Er7YGQAKWWZ") }}
+            <ul class="flex items-center space-x-3">
+                {# <a class="px-3 text-xs tracking-wide rounded-full font-display hover:underline" href="/blog">Blog</a>
+                <a class="px-3 text-xs tracking-wide rounded-full font-display hover:underline" href="https://www.paypal.com/donate?token=9CDwJ5HMmLS97lEIoEogwoKkx_CSBnE2JdQZThKEVq3hW3PY19c7ZapxbxQvMGvbmjyY-Er7YGQAKWWZ">Donate</a>
+                <a class="px-3 text-xs tracking-wide rounded-full font-display hover:underline text-hue text-opacity-90" href="https://www.paypal.com/donate?token=9CDwJ5HMmLS97lEIoEogwoKkx_CSBnE2JdQZThKEVq3hW3PY19c7ZapxbxQvMGvbmjyY-Er7YGQAKWWZ">Get involved</a> #}
+                {{ button.button("Blog", "/blog", size="large") }}
+                {{ button.button(text="Donate", size="large", href="https://www.paypal.com/donate?token=9CDwJ5HMmLS97lEIoEogwoKkx_CSBnE2JdQZThKEVq3hW3PY19c7ZapxbxQvMGvbmjyY-Er7YGQAKWWZ") }}
+                {{volunteer.getInvolvedButton("Get involved", color=true, size="large")}}
             </ul>
             <ul class="flex pl-2.5">
                 <li><a target="_blank" href="{{site.twitterLink}}" class="block p-2.5 text-white text-opacity-90 transition transform hover:scale-105 hover:text-opacity-100 focus:outline-none focus:ring-2 rounded-full"><span class="block w-5 h-5">{% include "img/twitter.svg" %}</span></a></li>

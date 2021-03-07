@@ -28,7 +28,7 @@
                 </ul>
             </div>
             <div class="flex flex-col items-center space-y-4 md:items-start lg:space-y-6">
-                <h2 class="text-sm font-bold text-white">Most recent public statements</h2>
+                <h2 class="text-sm font-bold text-white"><a href="/announcements" class="hover:underline">Most recent public statements</a></h2>
                 <ul class="flex flex-col items-center md:items-start">
                 {% for link in collections.announcements.reverse().slice(0, 3) %}
                     <li class="py-2 text-center first:pt-0 last:pb-0 md:text-left">

@@ -1,8 +1,8 @@
  {% import "components/_button.njk" as button %}
 
- {% macro getInvolvedButton(text, color=false) %}
+ {% macro getInvolvedButton(text, color=false, size="large") %}
         <div x-data="{isOpen: false}" class="has-modal" :class="{'modal-open' : isOpen === true}" x-on:keydown.escape="isOpen = false">
-            <div class="hidden md:block" @click="isOpen = true" >{{ button.button(text, as="button", color=color) }}</div>
+            <div class="hidden md:block" @click="isOpen = true" >{{ button.button(text, as="button", color=color, size=size) }}</div>
             <div x-cloak x-show="isOpen" class="fixed inset-0 z-50 bg-opacity-75 bg-gray">
                 <div class="container flex flex-row-reverse items-start justify-center py-8">
                     {{ button.iconButton(as="button", onClick="isOpen = false", icon="img/close.svg", class="mt-4")}}
@@ -16,6 +16,6 @@
                     </iframe>
                 </div>
             </div>
-            {{ button.button(text, site.volunteerLink, color=color, class="md:hidden") }}
+            {{ button.button(text, site.volunteerLink, color=color, class="md:hidden", size=size) }}
         </div>
 {% endmacro %}

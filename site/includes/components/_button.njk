@@ -1,4 +1,4 @@
-{% macro button(text, href, as="a", color=false, newTab=false, class) %}
+{% macro button(text, href, as="a", color=false, newTab=false, class, size="large") %}
     <{{as}}
     {% if href %}
         href="{{href}}"
@@ -6,7 +6,10 @@
     {% if newTab %}
         target="_blank"
     {% endif %}
-    class="md:px-5 tracking-wide flex justify-center pt-3 pb-2 px-4 text-xs btn-outline font-display {% if color %} border-hue border-opacity-75 btn-highlight{% endif %} {{class}}">
+        class="tracking-wide flex justify-center text-xs btn-outline font-display
+        {% if color %} border-hue border-opacity-75 btn-highlight{% endif %}
+        {% if size === "small" %} pt-2 pb-1 px-3 md:px-4 {% elseif size === "large" %} pt-3 pb-2 px-4 md:px-5 {% endif %}
+        {{class}}">
         <span>{{text}}</span>
     </{{as}}>
 {% endmacro %}
