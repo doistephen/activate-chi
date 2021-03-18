@@ -141,6 +141,7 @@ module.exports = {
       opacity: ["group-hover"],
       ringWidth: ["group-focus"],
       padding: ["first", "last"],
+      animation: ["motion-safe", "motion-reduce"],
     },
   },
   plugins: [],

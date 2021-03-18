@@ -1,5 +1,5 @@
-<section id="gallery" class="relative w-screen py-24 overflow-hidden transform -translate-x-50 left-1/2" x-data="{isOpen: false}" :class="{'modal-open' : isOpen === true}">
-    <div class="flex flex-nowrap w-max animate-marquee">
+<section id="gallery" class="relative w-screen py-24 overflow-hidden transform -translate-x-50 left-1/2">
+    <div class="flex flex-nowrap w-max motion-safe:animate-marquee">
         <div class="flex flex-shrink-0 h-64 space-x-8 lg:space-x-20 md:h-80" data-marquee>
         {% for images in gallerySection.images %}
             <img loading="lazy" class="flex-shrink-0 object-cover w-auto h-full transition-all transform border border-white border-opacity-60 g-img" src="{{images}}" alt="">
@@ -9,32 +9,10 @@
 </section>
 
 <style>
-.g-img:hover {
-
-}
-    .g-img:nth-child(1) {
-        --tw-translate-y: 2rem;
-
-    }
-    .g-img:nth-child(2) {
-        --tw-translate-y: -3rem;
-        {# border-radius: 50%; #}
-    }
-    .g-img:nth-child(3) {
-        --tw-translate-y: 6rem;
-        {# --tw-rotate: 15deg; #}
-    }
-    .g-img:nth-child(4) {
-        --tw-translate-y: 3rem;
-        {# border-radius: 999px; #}
-            {# --tw-rotate: -10deg; #}
-    }
-    .g-img:nth-child(5) {
-        --tw-translate-y: -3rem;
-        {# border-radius: 50%; #}
-    }
-    .g-img:nth-child(6) {
-        --tw-translate-y: 2rem;
-        {# --tw-rotate: 3deg; #}
-    }
+    .g-img:nth-child(1) {--tw-translate-y: 2rem;}
+    .g-img:nth-child(2) {--tw-translate-y: -3rem;}
+    .g-img:nth-child(3) {--tw-translate-y: 6rem;}
+    .g-img:nth-child(4) {--tw-translate-y: 3rem;}
+    .g-img:nth-child(5) {--tw-translate-y: -3rem;}
+    .g-img:nth-child(6) {--tw-translate-y: 2rem;}
 </style>
