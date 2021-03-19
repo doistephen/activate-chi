@@ -1,42 +1,25 @@
-// const cursor = document.querySelector(".cursor");
-// const canvasTag = document.querySelector("canvas.in");
-// const moveCursor = function (x, y) {
-//   cursor.style.left = x + "px";
-//   cursor.style.top = y + "px";
-// };
-// const setupCanvas = function (canvas) {
-//   const w = window.innerWidth;
-//   const h = window.innerHeight;
-//   const dpi = window.devicePixelRatio;
-//   canvas.width = w * dpi;
-//   canvas.height = h * dpi;
-//   canvas.style.width = w + "px";
-//   canvas.style.height = h + "px";
-//   const context = canvas.getContext("2d");
-//   context.scale(dpi, dpi);
-//   context.fillStyle = "red";
-//   context.strokeStyle = "red";
-//   context.lineWidth = 80;
-//   context.lineCap = "round";
-//   context.lineJoin = "round";
-// };
-// const startToDraw = function (canvas) {
-//   const context = canvas.getContext("2d");
-//   context.fillStyle = "yellow";
-// };
-// const moveDraw = function (canvas, x, y) {
-//   const context = canvas.getContext("2d");
-//   context.lineTo(x, y);
-//   context.stroke();
-// };
-// document.addEventListener("mousemove", (e) => {
-//   moveCursor(e.pageX, e.pageY);
-//   moveDraw(canvasTag, e.pageX, e.pageY);
-// });
-// document.addEventListener("mousedown", () => {
-//   startToDraw(canvasTag);
-// });
-// setupCanvas(canvasTag);
+var textCTA = document.getElementById("text-cta");
+var html = document.querySelector("html");
+var hoverObject = document.getElementById("text-cta-hover");
+
+var hoverFunction = function hoverFunction() {
+  var update;
+  textCTA.addEventListener("mousemove", function (event) {
+    cancelAnimationFrame(update);
+    update = requestAnimationFrame(function () {
+      html.style.setProperty("--mouseX", "".concat(event.clientX, "px"));
+      html.style.setProperty("--mouseY", "".concat(event.clientY, "px"));
+    });
+    hoverObject.classList.remove("opacity-0", "invisible");
+    hoverObject.classList.add("opacity-100", "visible");
+  });
+};
+
+hoverFunction();
+textCTA.addEventListener("mouseleave", function () {
+  hoverObject.classList.remove("opacity-100", "visible");
+  hoverObject.classList.add("opacity-0", "invisible");
+});
 var marquee = document.querySelector("[data-marquee]");
 
 if (marquee) {

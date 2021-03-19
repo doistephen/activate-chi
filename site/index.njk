@@ -15,6 +15,18 @@ layout: default
     {% include "components/_about-section.njk" %}
     {# team section #}
     {% include "components/_organizers-section.njk" %}
+    <section id="text" class="relative pt-24" x-data="{}">
+        <h2 class="max-w-5xl mx-auto text-6xl leading-tight text-center text-hue font-display">
+            <a id="text-cta" class="hover:underline" href="sms:60611&body=ACTIVATE">Text <span class="text-white">ACTIVATE</span> to <span class="text-white">60611</span> to get action updates.</a>
+        </h2>
+        <div
+        id="text-cta-hover"
+        style="--tw-translate-x: var(--mouseX); --tw-translate-y: var(--mouseY);"
+        class="fixed top-0 left-0 flex items-center justify-center invisible w-32 h-32 text-base transform border rounded-full opacity-0 pointer-events-none border-hue bg-gray">
+            Click it!
+        </div>
+    </section>
+
     {# footer section #}
     {% include "components/_footer.njk" %}
 </main>

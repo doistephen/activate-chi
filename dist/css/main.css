@@ -21799,6 +21799,24 @@ html {
   }
 }
 
+.text-6xl {
+  font-size: 2rem;
+}
+
+@media (min-width: 640px) {
+  .text-6xl {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-6xl {
+    font-size: 3.75rem;
+  }
+}
+
+/* ****************************** */
+
 .text-4xl {
   font-size: 1.5rem;
 }
