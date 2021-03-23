@@ -19,25 +19,25 @@
         </div>
         <ul x-data="{ selected: `none` }"
             class="grid items-start md:grid-cols-2 col-span-full gap-x-8 organizer-grid">
-            <div class="flex-col hidden border-b border-white border-opacity-25 md:flex">
+            <div class="flex-col hidden border-white border-opacity-25 md:flex">
                 {% for person in collections.organizer | alphabetize("name") | onlyOdd %}
                     {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
                 {% endfor %}
-                <div class="hidden lg:block">
-                    {% if collections.organizer.length % 2 === 0 %}
+                {% if collections.organizer.length % 2 === 0 %}
+                    <div class="hidden border-white border-opacity-25 lg:block">
                         {{ openPositions() }}
-                    {% endif %}
-                </div>
+                    </div>
+                {% endif %}
             </div>
-            <div class="flex-col hidden border-b border-white border-opacity-25 md:flex">
+            <div class="flex-col hidden border-white border-opacity-25 md:flex">
                 {% for person in collections.organizer | alphabetize("name") | onlyEven %}
                     {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
                 {% endfor %}
-                <div class="hidden lg:block">
-                    {% if collections.organizer.length % 2 === 1 %}
+                {% if collections.organizer.length % 2 === 1 %}
+                    <div class="hidden border-b border-white border-opacity-25 lg:block">
                         {{ openPositions() }}
-                    {% endif %}
-                </div>
+                    </div>
+                {% endif %}
             </div>
             <div class="md:hidden">
                 {% for person in collections.organizer | alphabetize("name") %}
