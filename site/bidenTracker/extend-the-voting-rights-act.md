@@ -3,7 +3,7 @@ title: Extend the Voting Rights Act
 currentStatus: 1
 category: Racial equity
 rating: 5
-lastUpdated: February 21
+lastUpdated: March 25
 statusDescription: There are currently bills in progress to strengthen the
   Voting Rights Act, specifcally the "For the People Act" and the "John Lewis
   Voting Rights Advancement Act". On Sunday, March 7th, Biden signed an
