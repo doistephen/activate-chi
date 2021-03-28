@@ -6,9 +6,8 @@
     {% if newTab %}
         target="_blank"
     {% endif %}
-        class="tracking-wide flex justify-center text-xs btn-outline font-display
+        class="btn btn-outline
         {% if color %} border-hue border-opacity-75 btn-highlight{% endif %}
-        {% if size === "small" %} pt-2 pb-1 px-3 md:px-4 {% elseif size === "large" %} pt-3 pb-2 px-4 md:px-5 {% endif %}
         {{class}}">
         <span>{{text}}</span>
     </{{as}}>

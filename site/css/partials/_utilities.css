@@ -15,8 +15,12 @@
   @apply grid items-start justify-between grid-cols-1 md:grid-cols-12 gap-x-12;
 }
 
+.btn {
+  @apply flex items-center justify-center px-4 pt-3 pb-2 text-xs tracking-wide font-display md:px-5;
+}
+
 .btn-outline {
-  @apply relative inline-flex overflow-hidden text-white transition transform border border-white rounded-full border-opacity-60 focus:outline-none focus:ring text-opacity-90 hover:text-opacity-100 hover:border-opacity-75 hover:scale-103 group-hover:text-opacity-100 group-hover:border-opacity-75 group-focus:ring group-hover:scale-103 bg-gray;
+  @apply relative inline-flex text-white transition transform border border-white rounded-full border-opacity-60 focus:outline-none focus:ring text-opacity-90 hover:text-opacity-100 hover:border-opacity-75 hover:scale-103 group-hover:text-opacity-100 group-hover:border-opacity-75 group-focus:ring group-hover:scale-103 bg-gray;
 }
 .btn-outline::before {
   content: "";
@@ -62,4 +66,8 @@
 
 [x-cloak] {
   display: none !important;
+}
+
+.group:focus-within .focus-within-block {
+  display: block;
 }

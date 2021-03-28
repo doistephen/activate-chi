@@ -29,6 +29,7 @@ module.exports = {
     opacity: {
       0: "0",
       5: ".05",
+      10: ".1",
       25: ".25",
       60: ".6",
       75: ".75",
@@ -138,6 +139,7 @@ module.exports = {
       borderColor: ["group-hover"],
       borderWidth: ["last"],
       backgroundColor: ["group-hover"],
+      display: ["group-hover", "group-focus", "focus-within"],
       opacity: ["group-hover"],
       ringWidth: ["group-focus"],
       padding: ["first", "last"],
