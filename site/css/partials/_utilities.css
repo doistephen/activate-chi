@@ -69,5 +69,5 @@
 }
 
 .group:focus-within .focus-within-block {
-  display: block;
+  display: block !important;
 }

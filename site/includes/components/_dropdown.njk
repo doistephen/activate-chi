@@ -1,5 +1,5 @@
 {% macro dropdownLink(label, description, donateForm=false, as="a", href="", newTab="false") %}
-    <{{as}} {% if as==="a" %}href="{{href}}"{% endif %} {% if newTab %}target="_blank"{% endif %} class="relative block px-5 py-4 text-sm tracking-wide transition-colors duration-75 bg-opacity-0 hover:text-hue bg-hue hover:bg-opacity-10">
+    <{{as}} {% if as==="a" %}href="{{href}}"{% endif %} {% if newTab %}target="_blank"{% endif %} class="relative block px-5 py-4 text-sm tracking-wide transition-colors duration-75 bg-opacity-0 hover:text-hue bg-hue hover:bg-opacity-5">
         <h4 class="text-xs leading-tight">{{label}}</h4>
         <p class="text-xs text-white text-opacity-75 font-text">{{description}}</p>
         {% if donateForm %}
@@ -9,10 +9,15 @@
 {% endmacro %}
 
 
-<div class="border-opacity-75 md:relative btn btn-outline group border-hue btn-highlight" tabindex="0">
+<div x-data="{isOpen: false}" x-on:mouseover="isOpen = true" x-on:mouseleave="isOpen = false" class="border-opacity-75 md:relative btn btn-outline group border-hue btn-highlight group-focus:block" tabindex="0">
     <span>Support Us</span>
     <div class="absolute top-0 lg:-left-2.5 max-w-screen right-0 transform translate-y-10">
-        <div class="hidden max-w-xs py-2 m-2 border border-white border-opacity-25 w-max bg-gray focus-within-block group-hover:block">
+        <div x-show="isOpen" class="max-w-xs py-2 m-2 transition transform border border-white border-opacity-25 w-max bg-gray focus-within-block"
+            x-transition:enter-start="opacity-0 translate-y-0.5"
+            x-transition:enter-end="opacity-100"
+            x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0 translate-y-0.5"
+    >
             <ul class="flex flex-col">
                 <li>
                     {{ dropdownLink(label="Volunteer your skills", description="Sign up to help out at one of our future actions", href=site.volunteerLink) }}

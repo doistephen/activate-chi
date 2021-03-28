@@ -804,11 +804,11 @@ html {
 }
 
 .group[focus-within] .focus-within-block {
-  display: block;
+  display: block !important;
 }
 
 .group:focus-within .focus-within-block {
-  display: block;
+  display: block !important;
 }
 
 .prose {
