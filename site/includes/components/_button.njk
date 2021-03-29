@@ -7,7 +7,7 @@
         target="_blank"
     {% endif %}
         class="btn btn-outline
-        {% if color %} border-hue border-opacity-75 btn-highlight{% endif %}
+        {% if color %} border-hue border-opacity-60 btn-highlight{% endif %}
         {{class}}">
         <span>{{text}}</span>
     </{{as}}>
@@ -46,10 +46,10 @@
     {% if newTab %}
         target="_blank"
     {% endif %}
-        class="relative bg-gray pb-1.5 pt-1 px-3 border overflow-hidden border-link border-opacity-25 rounded-full text-sm text-opacity-90 block text-link hover:border-link group-hover:border-link hover:border-opacity-60 group-hover:border-opacity-60 transition
+        class="relative bg-link pb-1.5 pt-1 px-3 overflow-hidden border-link border-opacity-0 rounded-full text-sm block text-link bg-opacity-2 group-hover:bg-opacity-5 hover:bg-opacity-5 group-hover:border-opacity-25 group-focus:ring focus:ring transition
         {% if color %} text-hue {% endif %}
         {{class}}">
         <span>{{text}}</span>
-        <div class="absolute inset-0 transition-colors bg-opacity-0 bg-link group-hover:bg-opacity-5"></div>
+        <div class="absolute inset-0 transition-colors bg-opacity-5 bg-link group-hover:bg-opacity-10"></div>
     </{{as}}>
 {% endmacro %}

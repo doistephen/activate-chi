@@ -794,6 +794,16 @@ html {
   display: block !important;
 }
 
+.dropdown-trigger::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  bottom: -0.5rem;
+}
+
 .prose {
   font-size: 1.125rem;
   line-height: 1.5;

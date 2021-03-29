@@ -67,3 +67,8 @@
 .group:focus-within .focus-within-block {
   display: block !important;
 }
+
+.dropdown-trigger::after {
+  content: "";
+  @apply absolute inset-0 -bottom-2;
+}

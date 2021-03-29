@@ -6,14 +6,14 @@
         <div id="mc_embed_signup" class="col-span-2">
             <form  x-data="{val: ''}"
                 class="flex flex-col items-stretch space-y-2 col-span-full" action="https://activate-chi.us10.list-manage.com/subscribe/post?u=60a2dedaa48e24b5497be5707&amp;id=9a1d15b8b7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div class="flex items-center self-stretch px-4 py-3 pr-2 space-x-4 border border-opacity-75 divide-x divide-white bg-opacity-60 md:py-4 md:px-6 md:pr-4 md:space-x-6 divide-opacity-25 focus-within:bg-opacity-100 hover:bg-opacity-100 bg-gray border-hue focus-within:outline-none">
+                <div class="flex items-center self-stretch border divide-x divide-white border-opacity-60 bg-opacity-60 divide-opacity-25 focus-within:bg-opacity-100 hover:bg-opacity-100 bg-gray border-hue focus-within:ring">
                     {# email field #}
-                    <label for="mce-EMAIL" class="flex items-baseline flex-1 space-x-4 text-2xl leading-none tracking-wide">
+                    <label for="mce-EMAIL" class="flex items-baseline flex-1 px-6 py-4 space-x-4 text-2xl leading-none tracking-wide">
                         <span class="pt-1 text-base leading-tight tracking-wider text-white text-opacity-75">Your email:</span>
                         <input x-model="val" id="mce-EMAIL" name="EMAIL" type="email" class="flex-1 block overflow-x-auto text-lg tracking-wide rounded-none font-display required focus:outline-none bg-none">
                     </label>
                     {# submit button #}
-                    <label for="mce-SUBMIT" class="flex items-center pl-2 md:pl-4">
+                    <label for="mce-SUBMIT" class="flex items-center pl-2 pr-4 md:pl-4">
                         <div class="relative p-3 text-opacity-25 rounded-full cursor-pointer focus-within:ring">
                             <input id="mce-SUBMIT"  x-bind:disabled="val.length === 0" class="absolute inset-0 bg-none" type="submit" value=""></input>
                             <span class="block w-4 h-4 text-white" :class="{'text-opacity-100': val.length > 0, 'text-opacity-25': val.length === 0}">{% include "img/arrowRight.svg" %}</span>
