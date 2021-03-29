@@ -1,7 +1,6 @@
- {% import "components/_button.njk" as button %}
+{% import "components/_button.njk" as button %}
 
 {% macro organizer(name, job, summary, image) %}
-
 <li class="relative flex flex-col" data-organizer="wrapper">
     <button class="w-full py-3 text-left group font-text" @click="selected === '{{name}}' ? selected = 'none' : selected = '{{name}}'">
         <div class="flex items-center space-x-6 transition-all" data-organizer="metadata">

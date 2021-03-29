@@ -20,7 +20,7 @@
 }
 
 .btn-outline {
-  @apply relative inline-flex text-white transition transform border border-white rounded-full border-opacity-60 focus:outline-none focus:ring text-opacity-90 hover:text-opacity-100 hover:border-opacity-75 hover:scale-103 group-hover:text-opacity-100 group-hover:border-opacity-75 group-focus:ring group-hover:scale-103 bg-gray;
+  @apply relative inline-flex text-white transition transform border border-white rounded-full border-opacity-60 focus:outline-none focus:ring text-opacity-90 hover:text-opacity-100 hover:border-opacity-75 group-hover:text-opacity-100 group-hover:border-opacity-75 group-focus:ring bg-gray;
 }
 .btn-outline::before {
   content: "";
@@ -58,10 +58,6 @@
   .noise-bg {
     background-image: url("/assets/images/noise.png");
   }
-}
-
-#mc_embed_signup input.mce_inline_error {
-  border-color: theme("colors.hue") !important;
 }
 
 [x-cloak] {

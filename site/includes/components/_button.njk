@@ -37,3 +37,19 @@
         >{% include icon %}</span>
     </{{as}}>
 {% endmacro %}
+
+{% macro textButton(text, href, as="a", color=false, newTab=false, class) %}
+    <{{as}}
+    {% if href %}
+        href="{{href}}"
+    {% endif %}
+    {% if newTab %}
+        target="_blank"
+    {% endif %}
+        class="relative bg-gray pb-1.5 pt-1 px-3 border overflow-hidden border-link border-opacity-25 rounded-full text-sm text-opacity-90 block text-link hover:border-link group-hover:border-link hover:border-opacity-60 group-hover:border-opacity-60 transition
+        {% if color %} text-hue {% endif %}
+        {{class}}">
+        <span>{{text}}</span>
+        <div class="absolute inset-0 transition-colors bg-opacity-0 bg-link group-hover:bg-opacity-5"></div>
+    </{{as}}>
+{% endmacro %}
