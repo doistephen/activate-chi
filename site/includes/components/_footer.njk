@@ -22,7 +22,7 @@
             <div class="flex flex-col items-center flex-shrink-0 space-y-4 md:items-start lg:space-y-6">
                 <h2 class="text-sm font-bold text-white">Links</h2>
                 <ul class="flex flex-col items-center md:items-start">
-                {% for link in site.footerLinks %}
+                {% for link in footer.footerLinks %}
                     {{footerLink(link.title, link.link, link.dot)}}
                 {% endfor %}
                 </ul>
