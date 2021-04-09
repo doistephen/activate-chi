@@ -4,7 +4,6 @@ type: Vigil/March
 date: 2021-05-01T19:15:53.903Z
 dates: Spring 2021
 image: /assets/images/uploads/hold-for-justice-2x.jpg
-buttonText: See event on Facebook
 summary: >
   This is a preparatory event for the Derek Chauvin Trial. Activate:Chi is
   planning either of the following depending on the outcome:
@@ -15,5 +14,9 @@ summary: >
 
   A Rally & March to Call for Justice: If Derek Chauvin is not properly convicted, Activate:Chi will plan and host a march to call for justice and demand steps be taken in Chicago to support that call and ensure similar situations don't happen here.
 moreInfo: https://www.facebook.com/events/868071207078247
-links: []
+buttonText: See event on Facebook
+links:
+  - external: true
+    label: Facebook event
+    url: https://www.facebook.com/events/868071207078247
 ---
