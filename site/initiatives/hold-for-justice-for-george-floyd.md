@@ -1,9 +1,10 @@
 ---
-title: "'Hold for Justice\" for George Floyd"
+title: '"Hold for Justice" for George Floyd'
 type: Vigil/March
 date: 2021-05-01T19:15:53.903Z
 dates: Spring 2021
 image: /assets/images/uploads/hold-for-justice-2x.jpg
+buttonText: See event on Facebook
 summary: >
   This is a preparatory event for the Derek Chauvin Trial. Activate:Chi is
   planning either of the following depending on the outcome:

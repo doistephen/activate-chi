@@ -1,22 +1,6 @@
  {% import "components/_button.njk" as button %}
  {% import "components/_initiative.njk" as initiative %}
-{# <section id="initiatives" class="pt-24">
-    <div class="site-grid gap-y-6">
-        <div class="flex justify-center col-span-full">
-            <h2 class="text-xs tracking-wider rounded-full text-hue font-display">Our initiatives</h2>
-        </div>
-        <div class="flex col-span-full">
-            <h3 class="text-3xl leading-normal tracking-wide text-center text-white font-display">{{initiativesSection.introText}}</h2>
-        </div>
-        <div class="col-span-full">{% include "components/_biden-tracker-section.njk" %}</div>
-        <ul class="border-t border-white border-opacity-25 col-span-full"
-            x-data="{ selected: `none` }">
-            {% for item in collections.initiative | alphabetize("date") %}
-                {{ initiative.initiative(item.data.title, item.data.type, item.data.dates, item.data.summary, item.data.image, item.data.links) }}
-            {% endfor %}
-        </ul>
-    </div>
-</section> #}
+
 <section id="initiatives" class="grid items-stretch gap-6 pt-24 md:grid-cols-3">
     <div class="col-span-full">
         <h2 class="text-xs tracking-wider text-center md:text-left text-hue font-display">Our initiatives</h2>
@@ -28,13 +12,13 @@
         <a href="{{item.data.moreInfo}}" class="block pl-8 pr-5 space-y-6 text-center bg-white border border-white border-opacity-25 md:text-left md:col-span-2 bg-opacity-2 group">
             <div class="w-full space-y-6">
                 <div class="py-8 space-y-6">
-                    <p class="text-sm leading-normal tracking-wide text-hue text-opacity-90 font-text">{{item.data.type}}</p>
+                    <p class="text-sm leading-normal tracking-wide text-hue text-opacity-90 font-text">{{item.data.type}} – {{item.data.dates}}</p>
                     <div class="space-y-6">
                         <div class="flex-shrink w-full space-y-2">
                             <span class="block text-2xl leading-snug tracking-normal text-white text-opacity-90 font-display">{{item.data.title}}</span>
                             <span class="block max-w-lg text-lg leading-relaxed text-white text-opacity-60">{{item.data.summary | truncate(150)}}</span>
                         </div>
-                        {{ button.button(as="div", text="Learn more")}}
+                        {{ button.button(as="div", text=item.data.buttonText)}}
                     </div>
                 </div>
             </div>
