@@ -233,11 +233,12 @@ collections:
         widget: text
       - name: moreInfo
         label: Link to More Info
-        widget: text
+        widget: string
         hint: Link to somewhere people can learn more about the initiative. This could be a page on the website, a Facebook event, or even a Google Doc.
       - name: links
         label: Links
         widget: list
+        required: false
         hint:
           Any links you want to include on the site related to the initiative. Maybe
           to websites or videos created as part of the project.
