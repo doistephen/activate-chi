@@ -11,11 +11,11 @@
     </li>
  {% endmacro %}
 
-<footer class="container pt-24 pb-12">
+<footer class="container pb-12 pt-36">
     <div class="items-start px-4 pt-12 -mx-4 border-t border-white border-opacity-25 site-grid gap-y-12">
         <div class="flex flex-col items-center space-y-6 text-center md:items-start md:col-span-6 md:text-left">
             <div class="hidden w-8 h-8 md:block text-hue">{% include "img/chistar.svg" %}</div>
-            <h2 class="max-w-md text-xl leading-relaxed font-display">{{site.footerHeading}}</h2>
+            <h2 class="max-w-md text-xl leading-relaxed font-display">{{footer.heading}}</h2>
             {{ button.button("Get Involved", href=site.volunteerLink, newTab="true", color="true", size="large") }}
         </div>
         <div class="flex flex-col space-y-12 lg:space-y-0 lg:space-x-16 lg:flex-row md:col-span-6">

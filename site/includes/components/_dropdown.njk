@@ -1,4 +1,6 @@
-{% macro dropdownLink(label, description, donateForm=false, as="a", href="", newTab="false") %}
+{% import "components/_donate-link.njk" as form %}
+{% macro dropdownLink(label, description, donateForm=false, as="a", href="", newTab=false) %}
+<li class="px-2">
     <{{as}} {% if as==="a" %}href="{{href}}"{% endif %} {% if newTab %}target="_blank"{% endif %} class="relative block px-4 py-2 space-y-1 text-sm tracking-wide transition-colors duration-150 bg-opacity-0 border border-opacity-0 border-hue hover:border-opacity-25 bg-hue hover:bg-opacity-5">
         <h4 class="text-sm text-white font-text">{{label}}</h4>
         <p class="text-sm text-white text-opacity-60 font-text">{{description}}</p>
@@ -6,22 +8,20 @@
             {{form.donate(class="absolute inset-0 w-full")}}
         {% endif %}
     <{{as}}>
+</li>
 {% endmacro %}
 
-
-<div x-data="{isOpen: false}" x-on:mouseover="isOpen = true" x-on:mouseleave="isOpen = false" class="border-opacity-75 md:relative btn btn-outline group border-hue btn-highlight group-focus:block dropdown-trigger" tabindex="0">
-    <span>Support Us</span>
-    <div class="absolute top-0 lg:-left-2.5 -translate-x-1/2 max-w-screen right-0 transform translate-y-10">
+{% macro dropdownList(slot, label, color=false) %}
+<div x-data="{isOpen: false}" x-on:mouseover="isOpen = true" x-on:mouseleave="isOpen = false" class="{% if color %} border-hue border-opacity-60 btn-highlight{% endif %} md:relative btn btn-outline group group-focus:block dropdown-trigger">
+    <span>{{label}}</span>
+    <div class="absolute top-0 lg:-left-2.5 max-w-screen right-0 transform translate-y-10 focus:outline-none"  tabindex="0">
         <div x-show="isOpen" class="max-w-xs py-2 m-2 transition duration-300 transform border border-white border-opacity-10 w-max bg-gray focus-within-block"
             x-transition:enter-start="opacity-0 -translate-y-1"
             x-transition:leave-end="opacity-0">
             <ul class="flex flex-col">
-                <li class="px-2">
-                    {{ dropdownLink(label="Volunteer your skills", description="Sign up to help out at one of our future actions", href=site.volunteerLink) }}
-                    <div class="self-stretch h-px mx-1 my-2 bg-white bg-opacity-10"></div>
-                    {{ dropdownLink(as="div", label="Donate to our work", description="Help us pay for overhead costs and for supplies and permits for future actions", donateForm=true) }}
-                </li>
+            {{ slot | safe }}
             </ul>
         </div>
     </div>
 </div>
+{% endmacro %}

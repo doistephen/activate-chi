@@ -39,12 +39,14 @@
                     </div>
                 {% endif %}
             </div>
-            <div class="md:hidden">
+        </ul>
+        <div class="md:hidden">
+            <ul x-data="{ selected: `none` }" class="border-t border-b border-white border-opacity-25 divide-y divide-white divide-opacity-25">
                 {% for person in collections.organizer | alphabetize("name") %}
                     {{ organizer.organizer(person.data.name, person.data.job, person.data.summary, person.data.image) }}
                 {% endfor %}
-            </div>
-            <div class="lg:hidden col-span-full">{{ openPositions() }}</div>
-        </ul>
+            </ul>
+        </div>
+        <div class="lg:hidden col-span-full">{{ openPositions() }}</div>
     </div>
 </section>

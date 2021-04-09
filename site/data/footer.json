@@ -1,4 +1,30 @@
 {
-  "heading": "Interested in volunteering or becoming an organizer?",
-  "link": "https://docs.google.com/forms/d/e/1FAIpQLSei88vvBKV-oApI7-7IRWrf_vf99DYTgBtUx2pQ0ECsJutlMw/viewform"
+  "heading": "Interested in volunteering at a future action?",
+  "footerLinks": [
+    {
+      "title": "Home",
+      "link": "/"
+    },
+    {
+      "title": "Our initiatives",
+      "link": "/initiatives"
+    },
+    {
+      "title": "About us",
+      "link": "/#about"
+    },
+    {
+      "title": "Our organizers",
+      "link": "/#organizers"
+    },
+    {
+      "title": "Blog",
+      "link": "/blog"
+    },
+    {
+      "title": "Open organizer positions!",
+      "link": "/open-positions",
+      "dot": true
+    }
+  ]
 }

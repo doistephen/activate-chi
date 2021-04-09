@@ -10,7 +10,9 @@ summary: “Who’s Next?” was Activate:Chi’s initiative to increase voter t
   website that informed 5,000 visitors of key policy issues on the Biden/Harris
   agenda and encouraged viewers to share their reasons for voting online. Other
   actions included murals, a commissioned song, and swag giveaways.
+moreInfo: https://vote.activate-chi.org/
 links:
   - label: Share why you're voting website
     url: https://vote.activate-chi.org
+    external: true
 ---

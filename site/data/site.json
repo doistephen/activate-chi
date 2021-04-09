@@ -11,32 +11,5 @@
   "announcementBanner": "",
   "favicon": "/assets/images/favicon.svg",
   "og_description": "The 2020 election is only days away. It's important to participate in for so many reasons. Share what yours is!",
-  "socialGraphic": "/assets/images/uploads/social-share@2x.jpg",
-  "footerLinks": [
-    {
-      "title": "Home",
-      "link": "/"
-    },
-    {
-      "title": "Our initiatives",
-      "link": "/#initiatives"
-    },
-    {
-      "title": "About us",
-      "link": "/#about"
-    },
-    {
-      "title": "Our organizers",
-      "link": "/#organizers"
-    },
-    {
-      "title": "Blog",
-      "link": "/blog"
-    },
-    {
-      "title": "Open organizer positions!",
-      "link": "/open-positions",
-      "dot": true
-    }
-  ]
+  "socialGraphic": "/assets/images/uploads/social-share@2x.jpg"
 }

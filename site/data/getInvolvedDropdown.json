@@ -1,0 +1,13 @@
+[
+  {
+    "label": "Volunteer your skills",
+    "description": "Sign up to help out at one of our future actions",
+    "href": "site.volunteerLink"
+  },
+  {
+    "as": "div",
+    "label": "Donate to our work",
+    "description": "Help us pay for overhead costs and for supplies and permits for future actions",
+    "donateForm": true
+  }
+]

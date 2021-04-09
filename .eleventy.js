@@ -50,6 +50,10 @@ module.exports = (eleventyConfig) => {
     }
     return newArray;
   });
+  eleventyConfig.addFilter("shift", (array) => {
+    array.shift();
+    return array;
+  });
 
   // Plugins
   eleventyConfig.addPlugin(pluginDate);

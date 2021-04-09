@@ -1,0 +1,18 @@
+{% macro pageHeader(title, secondaryText, tertiaryText, center=false)%}
+<header class="pt-8 space-y-4 col-span-full">
+    <div class="space-y-1 {% if center %}text-center sm:text-left{% endif %}">
+        <h1 class="text-4xl leading-snug tracking-wide font-display">
+            {{title}}
+        </h1>
+        {% if secondaryText %}
+            <h2 class="max-w-2xl text-2xl text-white text-opacity-75">{{secondaryText}}</h2>
+        {% endif %}
+    </div>
+    {% if tertiaryText %}
+        <div class="max-w-full prose text-white text-opacity-75">
+            <div class="leading-normal">{{tertiaryText}}</div>
+        </div>
+    {% endif %}
+</header>
+
+{% endmacro %}

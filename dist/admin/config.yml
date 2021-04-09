@@ -2,6 +2,7 @@ backend:
   name: git-gateway
   branch: master
 media_folder: assets/images/uploads
+publish_mode: editorial_workflow
 collections:
   - name: sections
     label: Site Copy
@@ -54,14 +55,17 @@ collections:
             hint:
               The graphic that appears in the website share card on social media. Should
               be 2400px × 1260px
-          - name: footerHeading
-            label: Footer heading
-            widget: string
-            hint: The text that appears above the sign up button in the site footer
           - name: volunteerLink
             label: Link to volunteer sign up form
             widget: string
             hint: The link to the Activate:Chi volunteer sign up form
+      - name: footer
+        label: Footer Content
+        file: site/data/footer.json
+        fields:
+          - name: heading
+            label: Footer CTA title
+            widget: string
           - name: footerLinks
             label: Footer links
             widget: list
@@ -205,8 +209,6 @@ collections:
     label_singular: initiative
     folder: site/initiatives
     create: true
-    description: Activate:Chi initiatives to display on the homepage in the
-      Initiatives section.
     fields:
       - name: title
         label: Title
@@ -229,6 +231,10 @@ collections:
       - name: summary
         label: Summary
         widget: text
+      - name: moreInfo
+        label: Link to More Info
+        widget: text
+        hint: Link to somewhere people can learn more about the initiative. This could be a page on the website, a Facebook event, or even a Google Doc.
       - name: links
         label: Links
         widget: list
@@ -244,6 +250,10 @@ collections:
             label: URL
             widget: string
             hint: Url to the link
+          - name: external
+            label: Is this link to an external source?
+            widget: boolean
+            default: true
   - name: Announcement
     label: Announcements
     label_singular: announcement

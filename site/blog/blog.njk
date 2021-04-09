@@ -4,44 +4,32 @@ title: Connecting the Dots Blog
 eleventyExcludeFromCollections: true
 socialSnippet: Showing how small efforts can cascade into big changes for our communities.
 ---
+ {% import "components/_page-header.njk" as header %}
 
-<div>
-    <main class="site-grid gap-y-6" x-data="{activeCategory: 'both'}">
-        <header class="pt-8 space-y-4 col-span-full">
-            <div class="space-y-1">
-                <h1 class="text-4xl leading-snug tracking-wide font-display">
-                    <span class="text-hue">Activate:Chi</span> Blog
-                </h1>
-                <h2 class="max-w-2xl text-2xl text-white text-opacity-75">{{blogPage.introText}}</h2>
-            </div>
-            <div class="max-w-full prose text-white text-opacity-75">
-                <div class="leading-normal">{{blogPage.callForWriters | markdownify | safe }}</div>
-            </div>
-        </header>
-        <aside class="sticky hidden col-span-3 space-y-4 top-32 lg:space-y-6 lg:block">
+<main class="site-grid gap-y-6" x-data="{activeCategory: 'both'}">
+    {{header.pageHeader(title="Activate:Chi Blog", secondaryText=blogPage.introText, tertiaryText=blogPage.callForWriters | markdownify | safe )}}
+    <aside class="sticky hidden col-span-3 space-y-4 top-32 lg:space-y-6 lg:block">
 
-            <h2 class="pt-4 text-sm text-white text-opacity-75 border-t border-white border-opacity-25">Filter blog types:</h2>
-            <ul class="space-y-2">
-            {% for type in ["Connecting the Dots"] %}
-                <li class="text-sm">
-                    <button
-                        @click="activeCategory === '{{type}}' ? activeCategory = 'both' : activeCategory = '{{type}}'"
-                        :class="{'text-hue text-opacity-100' : activeCategory == '{{type}}'}"
-                        class="text-base tracking-wide text-white text-opacity-90 focus:ring hover:underline">
-                        {{type}}
-                    </button>
-                </li>
-            {% endfor %}
-            </ul>
-        </aside>
-        <ul class="grid gap-y-6 md:col-span-10 md:col-start-2 lg:col-start-4 lg:col-span-9 lg:gap-y-12">
-            {% for item in collections.blog.reverse() %}
-                <li
-                    :class="{'hidden' : activeCategory !== '{{item.data.tag}}' && activeCategory !== 'both'}, {'block' : activeCategory === '{{item.data.tag}}' || activeCategory === 'both'}" data-tag="{{item.data.tag}}">
-                    {% include "components/_blog-card.njk" %}
-                </li>
-            {% endfor %}
+        <h2 class="pt-4 text-sm text-white text-opacity-75 border-t border-white border-opacity-25">Filter blog types:</h2>
+        <ul class="space-y-2">
+        {% for type in ["Connecting the Dots"] %}
+            <li class="text-sm">
+                <button
+                    @click="activeCategory === '{{type}}' ? activeCategory = 'both' : activeCategory = '{{type}}'"
+                    :class="{'text-hue text-opacity-100' : activeCategory == '{{type}}'}"
+                    class="text-base tracking-wide text-white text-opacity-90 focus:ring hover:underline">
+                    {{type}}
+                </button>
+            </li>
+        {% endfor %}
         </ul>
-    </main>
-    {% include "components/_footer.njk" %}
-<div>
+    </aside>
+    <ul class="grid gap-y-6 md:col-span-10 md:col-start-2 lg:col-start-4 lg:col-span-9 lg:gap-y-12">
+        {% for item in collections.blog.reverse() %}
+            <li
+                :class="{'hidden' : activeCategory !== '{{item.data.tag}}' && activeCategory !== 'both'}, {'block' : activeCategory === '{{item.data.tag}}' || activeCategory === 'both'}" data-tag="{{item.data.tag}}">
+                {% include "components/_blog-card.njk" %}
+            </li>
+        {% endfor %}
+    </ul>
+</main>

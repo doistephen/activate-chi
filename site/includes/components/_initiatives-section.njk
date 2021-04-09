@@ -17,29 +17,31 @@
         </ul>
     </div>
 </section> #}
-<section id="initiatives" class="grid items-stretch grid-cols-3 gap-6 pt-24">
-    <div class="flex col-span-full">
-        <h2 class="text-xs tracking-wider rounded-full text-hue font-display">Our initiatives</h2>
+<section id="initiatives" class="grid items-stretch gap-6 pt-24 md:grid-cols-3">
+    <div class="col-span-full">
+        <h2 class="text-xs tracking-wider text-center md:text-left text-hue font-display">Our initiatives</h2>
     </div>
-    <a href="#" class="block col-span-2 pl-8 pr-5 space-y-6 bg-white border border-white border-opacity-25 bg-opacity-2 group">
-        <div class="flex w-full space-x-6">
-            {% for item in collections.initiative.reverse().slice(2, 3) %}
+    <div class="flex col-span-full">
+        <h3 class="text-3xl leading-normal tracking-wide text-center text-white font-display md:text-left">{{initiativesSection.introText}}</h2>
+    </div>
+    {% for item in collections.initiative.reverse().slice(0,1) %}
+        <a href="{{item.data.moreInfo}}" target="_blank" class="block pl-8 pr-5 space-y-6 text-center bg-white border border-white border-opacity-25 md:text-left md:col-span-2 bg-opacity-2 group">
+            <div class="w-full space-y-6">
                 <div class="py-8 space-y-6">
-                    <p class="text-sm leading-normal tracking-wide text-white text-opacity-90 font-text">We're currently working on</p>
+                    <p class="text-sm leading-normal tracking-wide text-hue text-opacity-90 font-text">{{item.data.type}}</p>
                     <div class="space-y-6">
                         <div class="flex-shrink w-full space-y-2">
                             <span class="block text-2xl leading-snug tracking-normal text-white text-opacity-90 font-display">{{item.data.title}}</span>
                             <span class="block max-w-lg text-lg leading-relaxed text-white text-opacity-60">{{item.data.summary | truncate(150)}}</span>
                         </div>
-                        {{ button.button(as="div", text="Learn more", icon="img/arrowRight.svg")}}
+                        {{ button.button(as="div", text="Learn more")}}
                     </div>
                 </div>
-                <div class="flex-shrink-0 w-64 my-5 overflow-hidden border border-white border-opacity-60">
-                    <img loading="lazy" class="object-cover w-full h-full opacity-75" src="{{item.data.image}}" alt="">
-                </div>
-            {% endfor %}
-        </div>
+            </div>
+        </a>
+    {% endfor %}
+    <a href="/initiatives" class="flex items-center justify-center p-8 border bg-link bg-opacity-2 group border-opacity-60 border-link">
+        {{button.textButton(as="div", "See all initiatives", class="transform group-hover:animate-spin")}}
     </a>
-    <a href="/initiatives" class="flex items-center justify-center p-8 border bg-link bg-opacity-2 group border-opacity-60 border-link">{{button.textButton(as="div", "See our past initiatives", class="transform group-hover:animate-spin")}}</a>
     <div class="col-span-full">{% include "components/_email-section.njk" %}</div>
 </section>

@@ -48,7 +48,7 @@
                             <li class="text-sm">
                                 <a class="flex items-center space-x-1 text-link hover:underline" target="_blank" href="{{ link.url }}">
                                     <span>{{ link.label }}</span>
-                                    <span class="block w-4 h-4 opacity-75">{% include "img/external-link.svg" %}</span>
+                                    {% if link.external %}<span class="block w-4 h-4 opacity-75">{% include "img/external-link.svg" %}</span>{% endif %}
                                 </a>
                             </li>
                         {% endfor %}

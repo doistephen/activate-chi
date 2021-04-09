@@ -1,18 +1,12 @@
 ---
 layout: default
 ---
+ {% import "components/_page-header.njk" as header %}
 <main class="space-y-6">
-    <header class="pt-8 space-y-4 col-span-full">
-        <div class="space-y-1">
-            <h1 class="text-4xl leading-snug tracking-wide font-display">
-                <span class="text-hue">Activate:Chi</span> Announcements
-            </h1>
-        </div>
-    </header>
+    {{header.pageHeader(title="Activate:Chi Announcements")}}
     <ul class="">
     {% for item in collections.announcements %}
         <li class="py-4 first:pt-0 last:pb-0"><a class="block text-white text-opacity-75 hover:text-opacity-90 hover:underline" href="{{item.url}}">{{item.data.title }}</a></li>
     {% endfor %}
     </ul>
 </main>
-    {% include "components/_footer.njk" %}

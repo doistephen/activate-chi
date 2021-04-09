@@ -1,9 +1,9 @@
  {% import "components/_button.njk" as button %}
 
 <div id="email" class="relative">
-    <div class="grid items-center grid-cols-3 gap-12 p-8 border border-hue border-opacity-60 bg-opacity-2 bg-hue">
-        <h2 class="text-lg">Join our email list to be notified about our future initiatives.</h2>
-        <div id="mc_embed_signup" class="col-span-2">
+    <div class="grid items-center p-8 border gap-y-6 gap-x-12 lg:grid-cols-3 border-hue border-opacity-60 bg-opacity-2 bg-hue">
+        <h2 class="text-lg text-center lg:text-left">Join our email list to be notified about our future initiatives.</h2>
+        <div id="mc_embed_signup" class="lg:col-span-2">
             <form  x-data="{val: ''}"
                 class="flex flex-col items-stretch space-y-2 col-span-full" action="https://activate-chi.us10.list-manage.com/subscribe/post?u=60a2dedaa48e24b5497be5707&amp;id=9a1d15b8b7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div class="flex items-center self-stretch border divide-x divide-white border-opacity-60 bg-opacity-60 divide-opacity-25 focus-within:bg-opacity-100 hover:bg-opacity-100 bg-gray border-hue focus-within:ring">

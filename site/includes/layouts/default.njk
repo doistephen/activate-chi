@@ -12,7 +12,7 @@
     {% endif %}
  {% endblock %}
 
-<div class="container pt-4 pb-16 space-y-4 sm:pb-20">
+<div class="container pt-4 space-y-4">
     {% include "components/_nav.njk" %}
     {% block body %}
         <div id="content">
@@ -20,5 +20,6 @@
         </div>
     {% endblock %}
 </div>
+{% include "components/_footer.njk" %}
 
 {% include "components/_html-foot.njk" %}
