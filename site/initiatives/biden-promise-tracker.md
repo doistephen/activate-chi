@@ -9,5 +9,8 @@ summary: >
   campaign's first 100 days promises! Follow along and see how you can help hold
   them accountable.
 moreInfo: https://activate-chi.org/biden-tracker
-links: []
+links:
+  - external: false
+    label: See the promise tracker
+    url: https://activate-chi.org/biden-tracker
 ---
