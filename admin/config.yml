@@ -234,6 +234,7 @@ collections:
       - name: moreInfo
         label: Link to More Info
         widget: string
+        required: false
         hint: Link to somewhere people can learn more about the initiative. This could be a page on the website, a Facebook event, or even a Google Doc.
       - name: links
         label: Links
