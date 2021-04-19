@@ -1,18 +1,16 @@
 ---
-title: '"Hold for Justice" for George Floyd'
-type: Vigil/March
-date: 2021-05-01T19:15:53.903Z
-dates: Spring 2021
-image: /assets/images/uploads/hold-for-justice-2x.jpg
-summary: >
-  This is a preparatory event for the Derek Chauvin Trial. Activate:Chi is
-  planning either of the following depending on the outcome:
-
-
-  A Celebration of Justice & Life: If Derek Chauvin is properly convicted to the full extent of the law Activate:Chi will host a candlelight vigil commemorating George Floyd and the fulfillment of justice.
-
-
-  A Rally & March to Call for Justice: If Derek Chauvin is not properly convicted, Activate:Chi will plan and host a march to call for justice and demand steps be taken in Chicago to support that call and ensure similar situations don't happen here.
+title: March Against Police Brutality
+type: Protest March
+date: 2021-04-24T19:15:53.903Z
+dates: April 24, 2021
+image: /assets/images/uploads/march-against-police-brutality-2x.jpg
+summary: ENOUGH IS ENOUGH. With the police violence that has been occurring
+  across the county, and specifically the murder of Daunte Wright and Adam
+  Toledo most recently, it is time for us to again push for major reforms to the
+  CPD. Last year there were incredible demonstrations across the country and we
+  cannot let the momentum fade. Join us in making our collective voice heard
+  across the city and nation that we will not stand idly by while vulnerable
+  communities are terrorized and brutalized by racist and militarized police.
 moreInfo: https://www.facebook.com/events/868071207078247
 buttonText: See event on Facebook
 links:
