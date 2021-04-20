@@ -1,7 +1,7 @@
 ---
 title: March Against Police Brutality
 type: Protest March
-date: 2021-04-24T19:15:53.903Z
+date: 2021-05-01T19:15:53.903Z
 dates: April 24, 2021
 image: /assets/images/uploads/march-against-police-brutality-2x.jpg
 summary: ENOUGH IS ENOUGH. With the police violence that has been occurring
