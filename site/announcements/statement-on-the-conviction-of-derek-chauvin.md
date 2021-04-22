@@ -1,6 +1,6 @@
 ---
 date: 2021-04-22T03:09:22.822Z
-title: Statement on the conviction of Derek Chauvin
+title: Statement on the Conviction of Derek Chauvin
 socialSnippet: We hope the family has found some peace and finds refuge in this
   moment of justice. However, this does not fix the injustices of the past or
   ensure that justice will take place in the future. At the end of the day,
