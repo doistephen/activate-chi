@@ -1,6 +1,6 @@
 ---
 date: 2021-02-23T22:26:59.909Z
-title: Statement by Activate:Chi on DHS Memo on Enforcement and Removals
+title: Statement on DHS Memo on Enforcement and Removals
 socialSnippet: Activate:Chi stands by the belief ICE should be abolished; we
   reject any and all steps backwards when it comes to respecting the dignity and
   humanity of immigrants.
