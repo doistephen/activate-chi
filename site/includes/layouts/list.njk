@@ -5,7 +5,7 @@ layout: default
 <main class="space-y-6">
     {{header.pageHeader(title="Activate:Chi Announcements")}}
     <ul class="">
-    {% for item in collections.announcements %}
+    {% for item in collections.announcements.reverse() %}
         <li class="py-4 first:pt-0 last:pb-0"><a class="block text-white text-opacity-75 hover:text-opacity-90 hover:underline" href="{{item.url}}">{{item.data.title }}</a></li>
     {% endfor %}
     </ul>
