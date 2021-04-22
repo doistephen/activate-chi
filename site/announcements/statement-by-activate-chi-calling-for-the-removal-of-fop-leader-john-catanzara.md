@@ -1,6 +1,6 @@
 ---
 date: 2021-01-18T16:29:31.711Z
-title: Statement by Activate:Chi calling for the removal of FOP Leader John Catanzara
+title: Statement calling for the removal of FOP Leader John Catanzara
 shortTitle: Remove the FOP Leader
 socialSnippet: Activate:Chi calls for the immediate removal of FOP Leader John
   Catanzara. Anything less than the most expedited removal possible is
