@@ -1,6 +1,7 @@
 ---
 title: Biden’s Amtrak Plan- What’s In It For Chicago?
 author: Travis Root
+socialGraphic: /assets/images/uploads/blog-amtrak-plan-share.png
 authorPortrait: /assets/images/uploads/travis.jpg
 date: 2021-04-29T15:51:28.115Z
 tag: Policy Updates
