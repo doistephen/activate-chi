@@ -6,7 +6,7 @@
   @apply text-link hover:underline;
 }
 .prose strong {
-  @apply font-bold;
+  @apply font-bold text-white;
 }
 .prose ol > li {
   @apply relative pl-8;
@@ -149,6 +149,7 @@
 .prose video {
   margin-top: 2em;
   margin-bottom: 2em;
+  @apply border border-white border-opacity-25;
 }
 .prose figure > * {
   margin-top: 0;

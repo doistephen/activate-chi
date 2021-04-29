@@ -12,7 +12,7 @@ socialSnippet: Showing how small efforts can cascade into big changes for our co
 
         <h2 class="pt-4 text-sm text-white text-opacity-75 border-t border-white border-opacity-25">Filter blog types:</h2>
         <ul class="space-y-2">
-        {% for type in ["Connecting the Dots"] %}
+        {% for type in ["Connecting the Dots", "Policy Updates"] %}
             <li class="text-sm">
                 <button
                     @click="activeCategory === '{{type}}' ? activeCategory = 'both' : activeCategory = '{{type}}'"
