@@ -309,6 +309,7 @@ collections:
         options:
           - Connecting the Dots
           - Elevated Voices
+          - Policy Updates
       - name: socialSnippet
         label: Social Sharing Snippet
         widget: string

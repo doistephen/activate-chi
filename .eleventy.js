@@ -1,6 +1,12 @@
 const htmlmin = require("html-minifier");
 const pluginDate = require("eleventy-plugin-date");
 const sitemap = require("@quasibit/eleventy-plugin-sitemap");
+const slugify = require("slugify");
+let opts = {
+  permalink: true,
+  permalinkClass: "direct-link",
+  permalinkSymbol: "#",
+};
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter("markdownify", (markdownString) => {
@@ -53,6 +59,14 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter("shift", (array) => {
     array.shift();
     return array;
+  });
+  eleventyConfig.addFilter("slugify", (input) => {
+    const options = {
+      replacement: "-",
+      remove: /[&,+()$~%.'":*?<>{}]/g,
+      lower: true,
+    };
+    return slugify(input, options);
   });
 
   // Plugins

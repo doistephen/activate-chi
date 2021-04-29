@@ -842,6 +842,8 @@ html {
 
 .prose strong {
   font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .prose ol > li {
@@ -1128,6 +1130,13 @@ html {
 .prose video {
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+.prose figure, .prose img, .prose video {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  --tw-border-opacity: .25;
+  border-width: 1px;
 }
 
 .prose figure > * {
