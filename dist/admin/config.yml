@@ -290,6 +290,10 @@ collections:
       - name: title
         label: Title
         widget: string
+      - name: slug
+        label: URL Slug
+        widget: string
+        hint: This should be a simplified version of the article title, just alphanumeric characters and - to connect words. i.e. biden-amtrak-plan
       - name: author
         label: Author
         widget: string
