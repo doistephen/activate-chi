@@ -54,6 +54,9 @@ module.exports = (eleventyConfig) => {
     array.shift();
     return array;
   });
+  eleventyConfig.addFilter("slicey", (array, number) => {
+    return array.slice(0, number);
+  });
 
   // Plugins
   eleventyConfig.addPlugin(pluginDate);
